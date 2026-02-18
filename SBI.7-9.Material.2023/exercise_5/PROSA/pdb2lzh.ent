@@ -1,0 +1,187 @@
+HEADER    HYDROLASE (O-GLYCOSYL)                  29-JUN-81   2LZH      2LZH   3
+COMPND    LYSOZYME (ORTHORHOMBIC) (E.C.3.2.1.17)                        2LZHD  1
+SOURCE    HEN (GALLUS GALLUS) EGG WHITE                                 2LZH   5
+AUTHOR    P.J.ARTYMIUK,C.C.F.BLAKE,D.W.RICE,K.S.WILSON                  2LZH   6
+REVDAT   7   16-JUL-88 2LZHF   1       SEQRES                           2LZHF  1
+REVDAT   6   22-OCT-84 2LZHE   1       SEQRES                           2LZHE  1
+REVDAT   5   31-MAY-84 2LZHD   1       COMPND                           2LZHD  2
+REVDAT   4   30-SEP-83 2LZHC   1       REVDAT                           2LZHC  1
+REVDAT   3   07-MAR-83 2LZHB   1       COMPND                           2LZHC  2
+REVDAT   2   15-APR-82 2LZHA   1       JRNL                             2LZHC  3
+REVDAT   1   28-SEP-81 2LZH    0                                        2LZHC  4
+JRNL        AUTH   P.J.ARTYMIUK,C.C.F.BLAKE,D.W.RICE,K.S.WILSON         2LZH   7
+JRNL        TITL   THE STRUCTURES OF THE MONOCLINIC AND ORTHORHOMBIC    2LZHA  1
+JRNL        TITL 2 FORMS OF HEN EGG-*WHITE LYSOZYME AT 6 ANGSTROMS      2LZHA  2
+JRNL        TITL 3 RESOLUTION.                                          2LZHA  3
+JRNL        REF    ACTA CRYSTALLOGR.,SECT.B      V.  38   778 1982      2LZHA  4
+JRNL        REFN   ASTM ACBCAR  DK ISSN 0567-7408                  107  2LZHA  5
+REMARK   1                                                              2LZH  13
+REMARK   2                                                              2LZH  14
+REMARK   2 RESOLUTION. 6.0 ANGSTROMS.                                   2LZH  15
+REMARK   3                                                              2LZH  16
+REMARK   3 REFINEMENT. NONE.                                            2LZH  17
+REMARK   4                                                              2LZH  18
+REMARK   4 STRUCTURE FACTORS FOR THIS COMPOUND ARE AVAILABLE FROM THE   2LZH  19
+REMARK   4 PROTEIN DATA BANK AS A SEPARATE ENTRY.                       2LZH  20
+REMARK   5                                                              2LZHA  6
+REMARK   5 CORRECTION. UPDATE JRNL REFERENCE TO REFLECT PUBLICATION.    2LZHA  7
+REMARK   5  15-APR-82.                                                  2LZHA  8
+REMARK   6                                                              2LZHB  2
+REMARK   6 CORRECTION. ADD E.C. CODE TO COMPND RECORD.  07-MAR-83.      2LZHB  3
+REMARK   7                                                              2LZHC  5
+REMARK   7 CORRECTION. INSERT REVDAT RECORDS. 30-SEP-83.                2LZHC  6
+REMARK   8                                                              2LZHD  3
+REMARK   8 CORRECTION. CORRECT COMPND RECORD.  31-MAY-84.               2LZHD  4
+REMARK   9                                                              2LZHE  2
+REMARK   9 CORRECTION. CORRECT SEQRES RECORDS.  22-OCT-84.              2LZHE  3
+REMARK  10                                                              2LZHF  2
+REMARK  10 CORRECTION. CORRECT SEQRES RECORDS.  16-JUL-88.              2LZHF  3
+SEQRES   1    129  LYS VAL PHE GLY ARG CYS GLU LEU ALA ALA ALA MET LYS  2LZH  21
+SEQRES   2    129  ARG HIS GLY LEU ASP ASN TYR ARG GLY TYR SER LEU GLY  2LZH  22
+SEQRES   3    129  ASN TRP VAL CYS ALA ALA LYS PHE GLU SER ASN PHE ASN  2LZH  23
+SEQRES   4    129  THR GLN ALA THR ASN ARG ASN THR ASP GLY SER THR ASP  2LZHE  4
+SEQRES   5    129  TYR GLY ILE LEU GLN ILE ASN SER ARG TRP TRP CYS ASN  2LZHF  4
+SEQRES   6    129  ASP GLY ARG THR PRO GLY SER ARG ASN LEU CYS ASN ILE  2LZHE  6
+SEQRES   7    129  PRO CYS SER ALA LEU LEU SER SER ASP ILE THR ALA SER  2LZH  27
+SEQRES   8    129  VAL ASN CYS ALA LYS LYS ILE VAL SER ASP GLY ASN GLY  2LZHE  7
+SEQRES   9    129  MET ASN ALA TRP VAL ALA TRP ARG ASN ARG CYS LYS GLY  2LZH  29
+SEQRES  10    129  THR ASP VAL GLN ALA TRP ILE ARG GLY CYS ARG LEU      2LZH  30
+CRYST1   59.400   68.700   30.800  90.00  90.00  90.00 P 21 21 21    4  2LZH  31
+ORIGX1      1.000000  0.000000  0.000000        0.00000                 2LZH  32
+ORIGX2      0.000000  1.000000  0.000000        0.00000                 2LZH  33
+ORIGX3      0.000000  0.000000  1.000000        0.00000                 2LZH  34
+SCALE1       .016835  0.000000  0.000000        0.00000                 2LZH  35
+SCALE2      0.000000   .014556  0.000000        0.00000                 2LZH  36
+SCALE3      0.000000  0.000000   .032468        0.00000                 2LZH  37
+ATOM      2  CA  LYS     1     -22.824  47.479  26.926  1.00  0.00      2LZH  38
+ATOM     11  CA  VAL     2     -24.634  50.616  25.784  1.00  0.00      2LZH  39
+ATOM     18  CA  PHE     3     -23.319  51.673  22.370  1.00  0.00      2LZH  40
+ATOM     29  CA  GLY     4     -22.915  55.205  21.022  1.00  0.00      2LZH  41
+ATOM     33  CA  ARG     5     -24.748  56.142  17.833  1.00  0.00      2LZH  42
+ATOM     44  CA  CYS     6     -21.496  56.408  15.894  1.00  0.00      2LZH  43
+ATOM     50  CA  GLU     7     -19.711  53.436  17.462  1.00  0.00      2LZH  44
+ATOM     59  CA  LEU     8     -22.482  50.958  16.649  1.00  0.00      2LZH  45
+ATOM     67  CA  ALA     9     -22.686  52.286  13.085  1.00  0.00      2LZH  46
+ATOM     72  CA  ALA    10     -18.959  51.652  12.683  1.00  0.00      2LZH  47
+ATOM     77  CA  ALA    11     -19.281  48.175  14.157  1.00  0.00      2LZH  48
+ATOM     82  CA  MET    12     -22.316  47.044  12.172  1.00  0.00      2LZH  49
+ATOM     90  CA  LYS    13     -20.376  48.223   9.129  1.00  0.00      2LZH  50
+ATOM     99  CA  ARG    14     -17.265  46.275  10.102  1.00  0.00      2LZH  51
+ATOM    110  CA  HIS    15     -19.674  43.342  10.368  1.00  0.00      2LZH  52
+ATOM    120  CA  GLY    16     -21.101  43.309   6.848  1.00  0.00      2LZH  53
+ATOM    124  CA  LEU    17     -24.416  45.088   7.400  1.00  0.00      2LZH  54
+ATOM    132  CA  ASP    18     -24.190  48.315   5.393  1.00  0.00      2LZH  55
+ATOM    140  CA  ASN    19     -26.522  47.442   2.507  1.00  0.00      2LZH  56
+ATOM    148  CA  TYR    20     -27.020  43.799   3.482  1.00  0.00      2LZH  57
+ATOM    160  CA  ARG    21     -30.060  42.640   1.515  1.00  0.00      2LZH  58
+ATOM    171  CA  GLY    22     -30.342  46.268    .433  1.00  0.00      2LZH  59
+ATOM    175  CA  TYR    23     -30.842  48.050   3.757  1.00  0.00      2LZH  60
+ATOM    187  CA  SER    24     -28.678  51.105   4.420  1.00  0.00      2LZH  61
+ATOM    193  CA  LEU    25     -26.491  51.133   7.524  1.00  0.00      2LZH  62
+ATOM    201  CA  GLY    26     -28.867  53.764   8.924  1.00  0.00      2LZH  63
+ATOM    205  CA  ASN    27     -31.839  51.409   8.661  1.00  0.00      2LZH  64
+ATOM    213  CA  TRP    28     -29.938  49.279  11.167  1.00  0.00      2LZH  65
+ATOM    227  CA  VAL    29     -28.750  51.886  13.667  1.00  0.00      2LZH  66
+ATOM    234  CA  CYS    30     -32.310  53.211  13.593  1.00  0.00      2LZH  67
+ATOM    240  CA  ALA    31     -33.990  49.888  14.335  1.00  0.00      2LZH  68
+ATOM    245  CA  ALA    32     -31.544  49.207  17.159  1.00  0.00      2LZH  69
+ATOM    250  CA  LYS    33     -32.041  52.612  18.781  1.00  0.00      2LZH  70
+ATOM    259  CA  PHE    34     -35.819  52.248  18.968  1.00  0.00      2LZH  71
+ATOM    270  CA  GLU    35     -35.615  48.538  19.758  1.00  0.00      2LZH  72
+ATOM    279  CA  SER    36     -33.032  48.587  22.540  1.00  0.00      2LZH  73
+ATOM    285  CA  ASN    37     -31.549  52.062  22.976  1.00  0.00      2LZH  74
+ATOM    293  CA  PHE    38     -28.129  50.799  21.930  1.00  0.00      2LZH  75
+ATOM    304  CA  ASN    39     -28.233  48.565  25.001  1.00  0.00      2LZH  76
+ATOM    312  CA  THR    40     -27.158  44.980  24.339  1.00  0.00      2LZH  77
+ATOM    319  CA  GLN    41     -28.358  43.768  27.725  1.00  0.00      2LZH  78
+ATOM    328  CA  ALA    42     -31.981  44.615  27.004  1.00  0.00      2LZH  79
+ATOM    333  CA  THR    43     -34.692  41.968  27.286  1.00  0.00      2LZH  80
+ATOM    340  CA  ASN    44     -38.470  42.086  26.955  1.00  0.00      2LZH  81
+ATOM    348  CA  ARG    45     -41.201  39.499  27.526  1.00  0.00      2LZH  82
+ATOM    359  CA  ASN    46     -44.050  39.306  25.029  1.00  0.00      2LZH  83
+ATOM    367  CA  THR    47     -47.334  37.754  26.127  1.00  0.00      2LZH  84
+ATOM    374  CA  ASP    48     -46.908  34.410  24.389  1.00  0.00      2LZH  85
+ATOM    382  CA  GLY    49     -44.104  33.401  26.744  1.00  0.00      2LZH  86
+ATOM    386  CA  SER    50     -41.384  34.381  24.279  1.00  0.00      2LZH  87
+ATOM    392  CA  THR    51     -38.728  36.941  25.188  1.00  0.00      2LZH  88
+ATOM    399  CA  ASP    52     -36.754  39.371  23.046  1.00  0.00      2LZH  89
+ATOM    407  CA  TYR    53     -32.976  39.636  23.302  1.00  0.00      2LZH  90
+ATOM    419  CA  GLY    54     -30.100  42.045  22.701  1.00  0.00      2LZH  91
+ATOM    423  CA  ILE    55     -29.445  45.176  20.659  1.00  0.00      2LZH  92
+ATOM    431  CA  LEU    56     -31.716  43.998  17.854  1.00  0.00      2LZH  93
+ATOM    439  CA  GLN    57     -34.236  42.214  20.072  1.00  0.00      2LZH  94
+ATOM    448  CA  ILE    58     -34.222  38.761  18.465  1.00  0.00      2LZH  95
+ATOM    456  CA  ASN    59     -37.065  36.463  19.520  1.00  0.00      2LZH  96
+ATOM    464  CA  SER    60     -36.834  33.097  21.264  1.00  0.00      2LZH  97
+ATOM    470  CA  ARG    61     -39.844  31.375  19.702  1.00  0.00      2LZH  98
+ATOM    481  CA  TRP    62     -37.765  31.074  16.534  1.00  0.00      2LZH  99
+ATOM    495  CA  TRP    63     -34.201  32.400  16.470  1.00  0.00      2LZH 100
+ATOM    509  CA  CYS    64     -32.540  31.455  19.751  1.00  0.00      2LZH 101
+ATOM    515  CA  ASN    65     -33.013  29.140  22.732  1.00  0.00      2LZH 102
+ATOM    523  CA  ASP    66     -33.394  30.450  26.271  1.00  0.00      2LZH 103
+ATOM    531  CA  GLY    67     -34.771  27.194  27.670  1.00  0.00      2LZH 104
+ATOM    535  CA  ARG    68     -38.201  28.531  28.625  1.00  0.00      2LZH 105
+ATOM    546  CA  THR    69     -40.089  29.075  25.387  1.00  0.00      2LZH 106
+ATOM    553  CA  PRO    70     -41.829  25.861  24.315  1.00  0.00      2LZH 107
+ATOM    560  CA  GLY    71     -42.965  26.407  20.733  1.00  0.00      2LZH 108
+ATOM    564  CA  SER    72     -39.261  26.876  20.133  1.00  0.00      2LZH 109
+ATOM    570  CA  ARG    73     -37.244  26.520  16.960  1.00  0.00      2LZH 110
+ATOM    581  CA  ASN    74     -33.684  27.726  17.477  1.00  0.00      2LZH 111
+ATOM    589  CA  LEU    75     -33.005  28.671  13.868  1.00  0.00      2LZH 112
+ATOM    597  CA  CYS    76     -29.985  30.769  14.804  1.00  0.00      2LZH 113
+ATOM    603  CA  ASN    77     -28.605  27.897  16.854  1.00  0.00      2LZH 114
+ATOM    611  CA  ILE    78     -27.465  30.113  19.714  1.00  0.00      2LZH 115
+ATOM    619  CA  PRO    79     -28.573  30.475  23.321  1.00  0.00      2LZH 116
+ATOM    626  CA  CYS    80     -30.485  33.750  23.615  1.00  0.00      2LZH 117
+ATOM    632  CA  SER    81     -27.989  34.840  26.269  1.00  0.00      2LZH 118
+ATOM    638  CA  ALA    82     -25.275  34.965  23.616  1.00  0.00      2LZH 119
+ATOM    643  CA  LEU    83     -27.139  37.848  21.999  1.00  0.00      2LZH 120
+ATOM    651  CA  LEU    84     -26.622  40.018  25.083  1.00  0.00      2LZH 121
+ATOM    659  CA  SER    85     -22.824  39.985  25.102  1.00  0.00      2LZH 122
+ATOM    665  CA  SER    86     -20.853  43.163  24.428  1.00  0.00      2LZH 123
+ATOM    671  CA  ASP    87     -19.724  41.746  21.101  1.00  0.00      2LZH 124
+ATOM    679  CA  ILE    88     -22.588  42.026  18.630  1.00  0.00      2LZH 125
+ATOM    687  CA  THR    89     -21.247  39.357  16.287  1.00  0.00      2LZH 126
+ATOM    694  CA  ALA    90     -23.822  36.741  17.267  1.00  0.00      2LZH 127
+ATOM    699  CA  SER    91     -26.675  39.234  16.966  1.00  0.00      2LZH 128
+ATOM    705  CA  VAL    92     -25.638  40.459  13.525  1.00  0.00      2LZH 129
+ATOM    712  CA  ASN    93     -24.975  36.908  12.308  1.00  0.00      2LZH 130
+ATOM    720  CA  CYS    94     -28.486  35.959  13.416  1.00  0.00      2LZH 131
+ATOM    726  CA  ALA    95     -30.075  39.197  12.220  1.00  0.00      2LZH 132
+ATOM    731  CA  LYS    96     -28.742  38.473   8.745  1.00  0.00      2LZH 133
+ATOM    740  CA  LYS    97     -30.804  35.277   8.785  1.00  0.00      2LZH 134
+ATOM    749  CA  ILE    98     -33.963  36.980  10.027  1.00  0.00      2LZH 135
+ATOM    757  CA  VAL    99     -33.838  39.714   7.392  1.00  0.00      2LZH 136
+ATOM    764  CA  SER   100     -33.259  37.299   4.517  1.00  0.00      2LZH 137
+ATOM    770  CA  ASP   101     -36.055  34.821   5.215  1.00  0.00      2LZH 138
+ATOM    778  CA  GLY   102     -38.784  36.932   3.611  1.00  0.00      2LZH 139
+ATOM    782  CA  ASN   103     -40.152  40.070   5.269  1.00  0.00      2LZH 140
+ATOM    790  CA  GLY   104     -36.987  42.178   5.378  1.00  0.00      2LZH 141
+ATOM    794  CA  MET   105     -36.782  44.454   8.425  1.00  0.00      2LZH 142
+ATOM    802  CA  ASN   106     -40.571  44.322   8.720  1.00  0.00      2LZH 143
+ATOM    810  CA  ALA   107     -39.694  41.436  11.032  1.00  0.00      2LZH 144
+ATOM    815  CA  TRP   108     -38.903  44.239  13.462  1.00  0.00      2LZH 145
+ATOM    829  CA  VAL   109     -42.028  46.011  14.701  1.00  0.00      2LZH 146
+ATOM    836  CA  ALA   110     -40.107  49.165  15.590  1.00  0.00      2LZH 147
+ATOM    841  CA  TRP   111     -38.243  49.640  12.304  1.00  0.00      2LZH 148
+ATOM    855  CA  ARG   112     -41.563  49.291  10.469  1.00  0.00      2LZH 149
+ATOM    866  CA  ASN   113     -43.420  51.837  12.596  1.00  0.00      2LZH 150
+ATOM    874  CA  ARG   114     -40.652  54.291  13.469  1.00  0.00      2LZH 151
+ATOM    885  CA  CYS   115     -37.855  53.905  10.932  1.00  0.00      2LZH 152
+ATOM    891  CA  LYS   116     -39.398  52.785   7.640  1.00  0.00      2LZH 153
+ATOM    900  CA  GLY   117     -39.742  55.737   5.279  1.00  0.00      2LZH 154
+ATOM    904  CA  THR   118     -37.998  58.434   7.284  1.00  0.00      2LZH 155
+ATOM    911  CA  ASP   119     -34.560  59.726   6.297  1.00  0.00      2LZH 156
+ATOM    919  CA  VAL   120     -32.563  57.046   8.108  1.00  0.00      2LZH 157
+ATOM    926  CA  GLN   121     -29.215  58.416   6.951  1.00  0.00      2LZH 158
+ATOM    935  CA  ALA   122     -29.679  60.923   9.774  1.00  0.00      2LZH 159
+ATOM    940  CA  TRP   123     -28.527  58.175  12.145  1.00  0.00      2LZH 160
+ATOM    954  CA  ILE   124     -25.051  58.012  10.641  1.00  0.00      2LZH 161
+ATOM    962  CA  ARG   125     -24.717  61.753  10.048  1.00  0.00      2LZH 162
+ATOM    973  CA  GLY   126     -21.527  62.722  11.871  1.00  0.00      2LZH 163
+ATOM    977  CA  CYS   127     -19.794  59.354  11.602  1.00  0.00      2LZH 164
+ATOM    983  CA  ARG   128     -16.315  58.362  10.452  1.00  0.00      2LZH 165
+ATOM    994  CA  LEU   129     -17.498  55.390   8.396  1.00  0.00      2LZH 166
+TER    1002      LEU   129                                              2LZH 167
+MASTER       21    0    0    0    0    0    0    6  129    1    0   10  2LZHF  5
+END                                                                     2LZH 169

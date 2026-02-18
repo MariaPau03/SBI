@@ -1,0 +1,1744 @@
+%!PS-Adobe-3.0 EPSF-3.0
+%%BoundingBox: 125 253 486 541
+%%Pages: 0
+%%Creator: (BLT 2.4 Graph)
+%%CreationDate: (Mon Feb 16 17:42:16 2026)
+%%Title: (session5.ps)
+%%DocumentData: Clean7Bit
+%%Orientation: Portrait
+%%DocumentNeededResources: font Helvetica Courier
+%%EndComments
+
+
+% including file "/mnt/NFS_UPF/soft/prosa2003/External/blt2.4/bltGraph.pro"
+
+%%BeginProlog
+%
+% PostScript prolog file of the BLT graph widget.
+%
+% Copyright 1989-1992 Regents of the University of California.
+% Permission to use, copy, modify, and distribute this
+% software and its documentation for any purpose and without
+% fee is hereby granted, provided that the above copyright
+% notice appear in all copies.  The University of California
+% makes no representations about the suitability of this
+% software for any purpose.  It is provided "as is" without
+% express or implied warranty.
+%
+% Copyright 1991-1997 Bell Labs Innovations for Lucent Technologies.
+%
+% Permission to use, copy, modify, and distribute this software and its
+% documentation for any purpose and without fee is hereby granted, provided
+% that the above copyright notice appear in all copies and that both that the
+% copyright notice and warranty disclaimer appear in supporting documentation,
+% and that the names of Lucent Technologies any of their entities not be used
+% in advertising or publicity pertaining to distribution of the software
+% without specific, written prior permission.
+%
+% Lucent Technologies disclaims all warranties with regard to this software,
+% including all implied warranties of merchantability and fitness.  In no event
+% shall Lucent Technologies be liable for any special, indirect or
+% consequential damages or any damages whatsoever resulting from loss of use,
+% data or profits, whether in an action of contract, negligence or other
+% tortuous action, arising out of or in connection with the use or performance
+% of this software.
+%
+
+200 dict begin
+
+/BaseRatio 1.3467736870885982 def	% Ratio triangle base / symbol size
+/BgColorProc 0 def			% Background color routine (symbols)
+/DrawSymbolProc 0 def			% Routine to draw symbol outline/fill
+/StippleProc 0 def			% Stipple routine (bar segments)
+/DashesProc 0 def			% Dashes routine (line segments)
+  
+% Define the array ISOLatin1Encoding (which specifies how characters are 
+% encoded for ISO-8859-1 fonts), if it isn't already present (Postscript 
+% level 2 is supposed to define it, but level 1 doesn't). 
+ 
+systemdict /ISOLatin1Encoding known not { 
+  /ISOLatin1Encoding [ 
+    /space /space /space /space /space /space /space /space 
+    /space /space /space /space /space /space /space /space 
+    /space /space /space /space /space /space /space /space 
+    /space /space /space /space /space /space /space /space 
+    /space /exclam /quotedbl /numbersign /dollar /percent /ampersand 
+    /quoteright 
+    /parenleft /parenright /asterisk /plus /comma /minus /period /slash 
+    /zero /one /two /three /four /five /six /seven 
+    /eight /nine /colon /semicolon /less /equal /greater /question 
+    /at /A /B /C /D /E /F /G 
+    /H /I /J /K /L /M /N /O 
+    /P /Q /R /S /T /U /V /W 
+    /X /Y /Z /bracketleft /backslash /bracketright /asciicircum /underscore 
+    /quoteleft /a /b /c /d /e /f /g 
+    /h /i /j /k /l /m /n /o 
+    /p /q /r /s /t /u /v /w 
+    /x /y /z /braceleft /bar /braceright /asciitilde /space 
+    /space /space /space /space /space /space /space /space 
+    /space /space /space /space /space /space /space /space 
+    /dotlessi /grave /acute /circumflex /tilde /macron /breve /dotaccent 
+    /dieresis /space /ring /cedilla /space /hungarumlaut /ogonek /caron 
+    /space /exclamdown /cent /sterling /currency /yen /brokenbar /section 
+    /dieresis /copyright /ordfeminine /guillemotleft /logicalnot /hyphen 
+    /registered /macron 
+    /degree /plusminus /twosuperior /threesuperior /acute /mu /paragraph 
+    /periodcentered 
+    /cedillar /onesuperior /ordmasculine /guillemotright /onequarter 
+    /onehalf /threequarters /questiondown 
+    /Agrave /Aacute /Acircumflex /Atilde /Adieresis /Aring /AE /Ccedilla 
+    /Egrave /Eacute /Ecircumflex /Edieresis /Igrave /Iacute /Icircumflex 
+    /Idieresis 
+    /Eth /Ntilde /Ograve /Oacute /Ocircumflex /Otilde /Odieresis /multiply 
+    /Oslash /Ugrave /Uacute /Ucircumflex /Udieresis /Yacute /Thorn 
+    /germandbls 
+    /agrave /aacute /acircumflex /atilde /adieresis /aring /ae /ccedilla 
+    /egrave /eacute /ecircumflex /edieresis /igrave /iacute /icircumflex 
+    /idieresis 
+    /eth /ntilde /ograve /oacute /ocircumflex /otilde /odieresis /divide 
+    /oslash /ugrave /uacute /ucircumflex /udieresis /yacute /thorn 
+    /ydieresis 
+  ] def 
+} if 
+
+% font ISOEncode font 
+% This procedure changes the encoding of a font from the default 
+% Postscript encoding to ISOLatin1.  It is typically invoked just 
+% before invoking "setfont".  The body of this procedure comes from 
+% Section 5.6.1 of the Postscript book. 
+
+/ISOEncode { 
+  dup length dict
+  begin 
+    {1 index /FID ne {def} {pop pop} ifelse} forall 
+    /Encoding ISOLatin1Encoding def 
+    currentdict 
+  end 
+
+  % I'm not sure why it's necessary to use "definefont" on this new 
+  % font, but it seems to be important; just use the name "Temporary" 
+  % for the font. 
+
+  /Temporary exch definefont 
+} bind def 
+
+/Stroke {
+  gsave
+    stroke
+  grestore
+} def
+
+/Fill {
+  gsave
+    fill
+  grestore
+} def
+
+/SetFont { 	
+  % Stack: pointSize fontName
+  findfont exch scalefont ISOEncode setfont
+} def
+
+/Box {
+  % Stack: x y width height
+  newpath
+  exch 4 2 roll moveto
+  dup 0 rlineto
+  exch 0 exch rlineto
+  neg 0 rlineto
+  closepath
+} def
+
+/SetFgColor {
+  % Stack: red green blue
+  CL 0 eq { 
+    pop pop pop 0 0 0 
+  } if
+  setrgbcolor
+  CL 1 eq { 
+    currentgray setgray 
+  } if
+} def
+
+/SetBgColor {
+  % Stack: red green blue
+  CL 0 eq { 
+    pop pop pop 1 1 1 
+  } if
+  setrgbcolor
+  CL 1 eq { 
+    currentgray setgray 
+  } if
+} def
+
+% The next two definitions are taken from "$tk_library/prolog.ps"
+
+% desiredSize EvenPixels closestSize
+%
+% The procedure below is used for stippling.  Given the optimal size
+% of a dot in a stipple pattern in the current user coordinate system,
+% compute the closest size that is an exact multiple of the device's
+% pixel size.  This allows stipple patterns to be displayed without
+% aliasing effects.
+
+/EvenPixels {
+  % Compute exact number of device pixels per stipple dot.
+  dup 0 matrix currentmatrix dtransform
+  dup mul exch dup mul add sqrt
+
+  % Round to an integer, make sure the number is at least 1, and compute
+  % user coord distance corresponding to this.
+  dup round dup 1 lt {pop 1} if
+  exch div mul
+} bind def
+
+% width height string filled StippleFill --
+%
+% Given a path and other graphics information already set up, this
+% procedure will fill the current path in a stippled fashion.  "String"
+% contains a proper image description of the stipple pattern and
+% "width" and "height" give its dimensions.  If "filled" is true then
+% it means that the area to be stippled is gotten by filling the
+% current path (e.g. the interior of a polygon); if it's false, the
+% area is gotten by stroking the current path (e.g. a wide line).
+% Each stipple dot is assumed to be about one unit across in the
+% current user coordinate system.
+
+% width height string StippleFill --
+%
+% Given a path already set up and a clipping region generated from
+% it, this procedure will fill the clipping region with a stipple
+% pattern.  "String" contains a proper image description of the
+% stipple pattern and "width" and "height" give its dimensions.  Each
+% stipple dot is assumed to be about one unit across in the current
+% user coordinate system.  This procedure trashes the graphics state.
+
+/StippleFill {
+    % The following code is needed to work around a NeWSprint bug.
+
+    /tmpstip 1 index def
+
+    % Change the scaling so that one user unit in user coordinates
+    % corresponds to the size of one stipple dot.
+    1 EvenPixels dup scale
+
+    % Compute the bounding box occupied by the path (which is now
+    % the clipping region), and round the lower coordinates down
+    % to the nearest starting point for the stipple pattern.  Be
+    % careful about negative numbers, since the rounding works
+    % differently on them.
+
+    pathbbox
+    4 2 roll
+    5 index div dup 0 lt {1 sub} if cvi 5 index mul 4 1 roll
+    6 index div dup 0 lt {1 sub} if cvi 6 index mul 3 2 roll
+
+    % Stack now: width height string y1 y2 x1 x2
+    % Below is a doubly-nested for loop to iterate across this area
+    % in units of the stipple pattern size, going up columns then
+    % across rows, blasting out a stipple-pattern-sized rectangle at
+    % each position
+
+    6 index exch {
+	2 index 5 index 3 index {
+	    % Stack now: width height string y1 y2 x y
+
+	    gsave
+	    1 index exch translate
+	    5 index 5 index true matrix tmpstip imagemask
+	    grestore
+	} for
+	pop
+    } for
+    pop pop pop pop pop
+} bind def
+
+
+/LS {	% Stack: x1 y1 x2 y2
+  newpath 4 2 roll moveto lineto stroke
+} def
+
+/EndText {
+  %Stack :
+  grestore
+} def
+
+/BeginText {
+  %Stack :  w h theta centerX centerY
+  gsave
+    % Translate the origin to the center of bounding box and rotate
+    translate neg rotate
+    % Translate back to the origin of the text region
+    -0.5 mul exch -0.5 mul exch translate
+} def
+
+/DrawAdjText {
+  %Stack : str strWidth x y
+  moveto				% Go to the text position
+  exch dup dup 4 2 roll
+
+  % Adjust character widths to get desired overall string width
+  % adjust X = (desired width - real width)/#chars
+
+  stringwidth pop sub exch
+  length div
+  0 3 -1 roll
+
+  % Flip back the scale so that the string is not drawn in reverse
+
+  gsave
+    1 -1 scale
+    ashow
+  grestore
+} def
+
+/DrawBitmap {
+  % Stack: ?bgColorProc? boolean centerX centerY width height theta imageStr
+  gsave
+    6 -2 roll translate			% Translate to center of bounding box
+    4 1 roll neg rotate			% Rotate by theta
+    
+    % Find upperleft corner of bounding box
+    
+    2 copy -.5 mul exch -.5 mul exch translate
+    2 copy scale			% Make pixel unit scale
+    newpath
+    0 0 moveto 0 1 lineto 1 1 lineto 1 0 lineto
+    closepath
+    
+    % Fill rectangle with background color
+    
+    4 -1 roll { 
+      gsave 
+	4 -1 roll exec fill 
+      grestore 
+    } if
+    
+    % Paint the image string into the unit rectangle
+    
+    2 copy true 3 -1 roll 0 0 5 -1 roll 0 0 6 array astore 5 -1 roll
+    imagemask
+  grestore
+} def
+
+% Symbols:
+
+% Skinny-cross
+/Sc {
+  % Stack: x y symbolSize
+  gsave
+    3 -2 roll translate 45 rotate
+    0 0 3 -1 roll Sp
+  grestore
+} def
+
+% Skinny-plus
+/Sp {
+  % Stack: x y symbolSize
+  gsave
+    3 -2 roll translate
+    2 idiv
+    dup 2 copy
+    newpath neg 0 moveto 0 lineto
+    DrawSymbolProc
+    newpath neg 0 exch moveto 0 exch lineto
+    DrawSymbolProc
+  grestore
+} def
+
+% Cross
+/Cr {
+  % Stack: x y symbolSize
+  gsave
+    3 -2 roll translate 45 rotate
+    0 0 3 -1 roll Pl
+  grestore
+} def
+
+% Plus
+/Pl {
+  % Stack: x y symbolSize
+  gsave
+    3 -2 roll translate
+    dup 2 idiv
+    exch 6 idiv
+
+    %
+    %          2   3		The plus/cross symbol is a
+    %				closed polygon of 12 points.
+    %      0   1   4    5	The diagram to the left
+    %           x,y		represents the positions of
+    %     11  10   7    6	the points which are computed
+    %				below.
+    %          9   8
+    %
+
+    newpath
+    2 copy exch neg exch neg moveto dup neg dup lineto
+    2 copy neg exch neg lineto 2 copy exch neg lineto
+    dup dup neg lineto 2 copy neg lineto 2 copy lineto
+    dup dup lineto 2 copy exch lineto 2 copy neg exch lineto
+    dup dup neg exch lineto exch neg exch lineto
+    closepath
+    DrawSymbolProc
+  grestore
+} def
+
+% Circle
+/Ci {
+  % Stack: x y symbolSize
+  gsave
+    3 copy pop
+    moveto newpath
+    2 div 0 360 arc
+    closepath DrawSymbolProc
+  grestore
+} def
+
+% Square
+/Sq {
+  % Stack: x y symbolSize
+  gsave
+    dup dup 2 div dup
+    6 -1 roll exch sub exch
+    5 -1 roll exch sub 4 -2 roll Box
+    DrawSymbolProc
+  grestore
+} def
+
+% Line
+/Li {
+  % Stack: x y symbolSize
+  gsave
+    3 1 roll exch 3 -1 roll 2 div 3 copy
+    newpath
+    sub exch moveto add exch lineto
+    stroke
+  grestore
+} def
+
+% Diamond
+/Di {
+  % Stack: x y symbolSize
+  gsave
+    3 1 roll translate 45 rotate 0 0 3 -1 roll Sq
+  grestore
+} def
+    
+% Triangle
+/Tr {
+  % Stack: x y symbolSize
+  gsave
+    3 -2 roll translate
+    BaseRatio mul 0.5 mul		% Calculate 1/2 base
+    dup 0 exch 30 cos mul		% h1 = height above center point
+    neg					% b2 0 -h1
+    newpath moveto			% point 1;  b2
+    dup 30 sin 30 cos div mul		% h2 = height below center point
+    2 copy lineto			% point 2;  b2 h2
+    exch neg exch lineto		% 
+    closepath
+    DrawSymbolProc
+  grestore
+} def
+
+% Arrow
+/Ar {
+  % Stack: x y symbolSize
+  gsave
+    3 -2 roll translate
+    BaseRatio mul 0.5 mul		% Calculate 1/2 base
+    dup 0 exch 30 cos mul		% h1 = height above center point
+					% b2 0 h1
+    newpath moveto			% point 1;  b2
+    dup 30 sin 30 cos div mul		% h2 = height below center point
+    neg					% -h2 b2
+    2 copy lineto			% point 2;  b2 h2
+    exch neg exch lineto		% 
+    closepath
+    DrawSymbolProc
+  grestore
+} def
+
+% Bitmap
+/Bm {
+  % Stack: x y symbolSize
+  gsave
+    3 1 roll translate pop DrawSymbolProc
+  grestore
+} def
+
+%%EndProlog
+
+%%BeginSetup
+gsave					% Save the graphics state
+
+% Default line/text style parameters
+
+1 setlinewidth				% width
+1 setlinejoin				% join
+0 setlinecap				% cap
+[] 0 setdash				% dashes
+
+/CL 0 def				% Set color level mode
+0 0 0 setrgbcolor			% color
+
+% Transform coordinate system to use X11 coordinates
+
+% 1. Flip y-axis over by reversing the scale,
+% 2. Translate the origin to the other side of the page,
+%    making the origin the upper left corner
+0.749212 -0.749354 scale
+0 -1057 translate
+
+% User defined page layout
+
+% Set color level
+/CL 2 def
+
+% Set origin
+168 336 translate
+
+
+%%EndSetup
+
+12 /Helvetica-Bold SetFont
+45 58 416 283 Box
+
+1 1 1 SetBgColor
+Fill
+gsave clip
+
+
+% Element "pair-diff"
+
+0 setlinejoin
+0 setlinecap
+0 0 0 SetFgColor
+1 setlinewidth
+[  6 3] 0 setdash
+/DashesProc {} def
+/DashesProc {} def
+ newpath 71.1995 78.7192 moveto
+ 72.2475 78.124 lineto
+DashesProc stroke
+ newpath  72.2475 78.124 moveto
+ 73.2955 75.8821 lineto
+ 74.3434 77.1279 lineto
+ 75.3914 77.5465 lineto
+ 76.4394 78.0177 lineto
+ 77.4874 79.8243 lineto
+ 78.5354 81.3937 lineto
+ 79.5833 82.5894 lineto
+ 80.6313 81.7513 lineto
+ 81.6793 83.3543 lineto
+ 82.7273 88.04 lineto
+ 83.7753 88.2605 lineto
+ 84.8232 92.9071 lineto
+ 85.8712 94.6506 lineto
+ 86.9192 93.6989 lineto
+ 87.9672 94.6969 lineto
+ 89.0152 97.8871 lineto
+ 90.0631 96.0021 lineto
+ 91.1111 98.9522 lineto
+ 92.1591 95.4674 lineto
+ 93.2071 98.345 lineto
+ 94.2551 98.7448 lineto
+ 95.303 99.89 lineto
+ 96.351 101.439 lineto
+ 97.399 102.675 lineto
+ 98.447 102.134 lineto
+ 99.4949 102.625 lineto
+ 100.543 106.755 lineto
+ 101.591 108.209 lineto
+ 102.639 110.112 lineto
+ 103.687 112.771 lineto
+ 104.735 112.245 lineto
+ 105.783 115.173 lineto
+ 106.831 116.445 lineto
+ 107.879 116.812 lineto
+ 108.927 118.677 lineto
+ 109.975 118.68 lineto
+ 111.023 113.858 lineto
+ 112.071 109.865 lineto
+ 113.119 109.292 lineto
+ 114.167 109.919 lineto
+ 115.215 113.303 lineto
+ 116.263 113.59 lineto
+ 117.311 113.906 lineto
+ 118.359 112.603 lineto
+ 119.407 115.088 lineto
+ 120.455 112.157 lineto
+ 121.503 113.102 lineto
+ 122.551 113.395 lineto
+ 123.598 114.404 lineto
+ 124.646 113.489 lineto
+ 125.694 115.701 lineto
+ 126.742 115.168 lineto
+ 127.79 116.32 lineto
+ 128.838 115.387 lineto
+ 129.886 115.662 lineto
+ 130.934 113.968 lineto
+ 131.982 113.304 lineto
+ 133.03 113.911 lineto
+ 134.078 111.684 lineto
+ 135.126 108.021 lineto
+ 136.174 108.406 lineto
+ 137.222 106.695 lineto
+ 138.27 107.096 lineto
+ 139.318 104.98 lineto
+ 140.366 105.195 lineto
+ 141.414 103.145 lineto
+ 142.462 103.203 lineto
+ 143.51 101.407 lineto
+ 144.558 100.047 lineto
+ 145.606 100.179 lineto
+ 146.654 97.5334 lineto
+ 147.702 99.8483 lineto
+ 148.75 97.1709 lineto
+ 149.798 96.7922 lineto
+ 150.846 99.0607 lineto
+ 151.894 98.6678 lineto
+ 152.942 99.7153 lineto
+ 153.99 100.631 lineto
+ 155.038 98.9358 lineto
+ 156.086 97.3131 lineto
+ 157.134 98.3756 lineto
+ 158.182 98.2306 lineto
+ 159.23 95.152 lineto
+ 160.278 94.489 lineto
+ 161.326 91.8208 lineto
+ 162.374 90.6932 lineto
+ 163.422 94.9024 lineto
+ 164.47 98.9687 lineto
+ 165.518 96.4612 lineto
+ 166.566 96.7618 lineto
+ 167.614 95.2511 lineto
+ 168.662 95.6502 lineto
+ 169.71 95.9588 lineto
+ 170.758 97.8237 lineto
+ 171.806 97.9646 lineto
+ 172.854 99.3095 lineto
+ 173.902 98.0999 lineto
+ 174.949 94.8643 lineto
+ 175.997 93.9488 lineto
+ 177.045 92.2164 lineto
+ 178.093 92.2859 lineto
+ 179.141 89.8693 lineto
+ 180.189 88.4685 lineto
+ 181.237 89.6606 lineto
+ 182.285 88.6439 lineto
+ 183.333 91.7742 lineto
+ 184.381 93.1893 lineto
+ 185.429 93.8839 lineto
+ 186.477 95.286 lineto
+ 187.525 96.0368 lineto
+ 188.573 93.3762 lineto
+ 189.621 92.9401 lineto
+ 190.669 92.9438 lineto
+ 191.717 94.3631 lineto
+ 192.765 90.8817 lineto
+ 193.813 92.4652 lineto
+ 194.861 91.3471 lineto
+ 195.909 91.4743 lineto
+ 196.957 91.378 lineto
+ 198.005 91.109 lineto
+ 199.053 94.0582 lineto
+ 200.101 94.2145 lineto
+ 201.149 95.9151 lineto
+ 202.197 95.4721 lineto
+ 203.245 91.1262 lineto
+ 204.293 90.2388 lineto
+ 205.341 88.608 lineto
+ 206.389 87.6059 lineto
+ 207.437 87.5933 lineto
+ 208.485 85.1564 lineto
+ 209.533 82.3331 lineto
+ 210.581 81.6506 lineto
+ 211.629 83.1007 lineto
+ 212.677 82.4707 lineto
+ 213.725 84.8143 lineto
+ 214.773 87.912 lineto
+ 215.821 89.371 lineto
+ 216.869 87.354 lineto
+ 217.917 92.3677 lineto
+ 218.965 90.6204 lineto
+ 220.013 89.4292 lineto
+ 221.061 87.8637 lineto
+ 222.109 85.3828 lineto
+ 223.157 83.4145 lineto
+ 224.205 82.4892 lineto
+ 225.253 80.9661 lineto
+ 226.301 76.6733 lineto
+ 227.348 75.7787 lineto
+ 228.396 76.2111 lineto
+ 229.444 79.0614 lineto
+ 230.492 79.0973 lineto
+ 231.54 79.181 lineto
+ 232.588 81.0943 lineto
+ 233.636 81.3315 lineto
+ 234.684 83.7942 lineto
+ 235.732 80.3209 lineto
+ 236.78 81.5649 lineto
+ 237.828 78.4777 lineto
+ 238.876 79.8567 lineto
+ 239.924 88.6518 lineto
+ 240.972 92.5813 lineto
+ 242.02 95.956 lineto
+ 243.068 98.1087 lineto
+ 244.116 101.623 lineto
+ 245.164 101.3 lineto
+ 246.212 103.185 lineto
+ 247.26 108.732 lineto
+ 248.308 109.614 lineto
+ 249.356 109.551 lineto
+ 250.404 105.691 lineto
+ 251.452 103.009 lineto
+ 252.5 100.701 lineto
+ 253.548 99.7868 lineto
+ 254.596 96.9399 lineto
+ 255.644 97.4584 lineto
+ 256.692 97.3371 lineto
+ 257.74 95.8844 lineto
+ 258.788 98.1054 lineto
+ 259.836 95.5491 lineto
+ 260.884 96.48 lineto
+ 261.932 95.8707 lineto
+ 262.98 89.6774 lineto
+ 264.028 90.014 lineto
+ 265.076 90.4147 lineto
+ 266.124 88.2719 lineto
+ 267.172 86.7092 lineto
+ 268.22 84.9176 lineto
+ 269.268 86.3827 lineto
+ 270.316 86.1643 lineto
+ 271.364 85.8209 lineto
+ 272.412 85.8205 lineto
+ 273.46 87.7498 lineto
+ 274.508 90.008 lineto
+ 275.556 94.112 lineto
+ 276.604 93.9577 lineto
+ 277.652 95.6754 lineto
+ 278.699 102.641 lineto
+ 279.747 107.396 lineto
+ 280.795 107.101 lineto
+ 281.843 107.872 lineto
+ 282.891 108.759 lineto
+ 283.939 111.097 lineto
+ 284.987 107.919 lineto
+ 286.035 109.328 lineto
+ 287.083 106.24 lineto
+ 288.131 109.247 lineto
+ 289.179 108.437 lineto
+ 290.227 109.784 lineto
+ 291.275 109.749 lineto
+ 292.323 104.524 lineto
+ 293.371 104.712 lineto
+ 294.419 101.209 lineto
+ 295.467 98.3143 lineto
+ 296.515 95.2378 lineto
+ 297.563 98.335 lineto
+ 298.611 95.306 lineto
+ 299.659 90.7115 lineto
+ 300.707 89.8439 lineto
+ 301.755 90.2367 lineto
+ 302.803 94.4353 lineto
+ 303.851 95.2893 lineto
+ 304.899 95.2052 lineto
+ 305.947 94.1132 lineto
+ 306.995 97.4847 lineto
+ 308.043 100.051 lineto
+ 309.091 98.4336 lineto
+ 310.139 96.1842 lineto
+ 311.187 95.9221 lineto
+ 312.235 98.7009 lineto
+ 313.283 97.9454 lineto
+ 314.331 101.344 lineto
+ 315.379 107.147 lineto
+ 316.427 107.308 lineto
+ 317.475 108.234 lineto
+ 318.523 110.495 lineto
+ 319.571 108.816 lineto
+ 320.619 110.552 lineto
+ 321.667 111.65 lineto
+ 322.715 111.809 lineto
+ 323.763 112.552 lineto
+ 324.811 115.753 lineto
+ 325.859 115.445 lineto
+ 326.907 116.372 lineto
+ 327.955 114.23 lineto
+ 329.003 114.678 lineto
+ 330.051 113.841 lineto
+ 331.098 111.976 lineto
+ 332.146 111.591 lineto
+ 333.194 110.637 lineto
+ 334.242 110.196 lineto
+ 335.29 109.43 lineto
+ 336.338 107.649 lineto
+ 337.386 109.823 lineto
+ 338.434 107.204 lineto
+ 339.482 107.44 lineto
+ 340.53 104.665 lineto
+ 341.578 103.45 lineto
+ 342.626 102.136 lineto
+ 343.674 99.628 lineto
+ 344.722 98.3032 lineto
+ 345.77 96.8542 lineto
+ 346.818 98.9738 lineto
+ 347.866 98.595 lineto
+ 348.914 95.9195 lineto
+ 349.962 95.1737 lineto
+ 351.01 92.0994 lineto
+ 352.058 89.6477 lineto
+ 353.106 90.0684 lineto
+ 354.154 90.5887 lineto
+ 355.202 86.5298 lineto
+ 356.25 85.9309 lineto
+ 357.298 85.7917 lineto
+ 358.346 86.7325 lineto
+ 359.394 87.1639 lineto
+ 360.442 88.3257 lineto
+ 361.49 91.5249 lineto
+ 362.538 96.2234 lineto
+ 363.586 95.1451 lineto
+ 364.634 96.9579 lineto
+ 365.682 100.078 lineto
+ 366.73 99.9772 lineto
+ 367.778 100.238 lineto
+ 368.826 99.4046 lineto
+ 369.874 98.2907 lineto
+ 370.922 97.862 lineto
+ 371.97 99.7213 lineto
+ 373.018 99.0804 lineto
+ 374.066 98.9869 lineto
+ 375.114 98.5637 lineto
+ 376.162 99.9578 lineto
+ 377.21 97.4134 lineto
+ 378.258 96.5435 lineto
+ 379.306 95.8155 lineto
+ 380.354 95.0433 lineto
+ 381.402 95.9088 lineto
+ 382.449 98.0791 lineto
+ 383.497 95.915 lineto
+ 384.545 95.7932 lineto
+ 385.593 97.2481 lineto
+ 386.641 96.1502 lineto
+ 387.689 94.0886 lineto
+ 388.737 91.9101 lineto
+ 389.785 88.5416 lineto
+ 390.833 91.1062 lineto
+ 391.881 90.4358 lineto
+ 392.929 88.8482 lineto
+ 393.977 89.7412 lineto
+ 395.025 86.7455 lineto
+ 396.073 85.6449 lineto
+ 397.121 86.4266 lineto
+ 398.169 83.4275 lineto
+ 399.217 80.3351 lineto
+ 400.265 79.7727 lineto
+ 401.313 79.9059 lineto
+ 402.361 81.7809 lineto
+ 403.409 83.5286 lineto
+ 404.457 84.9183 lineto
+ 405.505 85.6011 lineto
+ 406.553 83.991 lineto
+ 407.601 88.1374 lineto
+ 408.649 88.7803 lineto
+ 409.697 90.1501 lineto
+ 410.745 90.9862 lineto
+ 411.793 89.8678 lineto
+ 412.841 87.1869 lineto
+ 413.889 87.2466 lineto
+ 414.937 85.3206 lineto
+ 415.985 85.0721 lineto
+ 417.033 85.0112 lineto
+ 418.081 83.0687 lineto
+ 419.129 81.1538 lineto
+ 420.177 79.6704 lineto
+ 421.225 79.9342 lineto
+ 422.273 78.8037 lineto
+ 423.321 78.2238 lineto
+ 424.369 77.4393 lineto
+ 425.417 75.9985 lineto
+ 426.465 75.1309 lineto
+ 427.513 72.1416 lineto
+ 428.561 65.653 lineto
+ 429.609 64.534 lineto
+ 430.657 64.3851 lineto
+ 431.705 58 lineto
+DashesProc stroke
+ newpath 431.705 58 moveto
+ 432.753 61.4962 lineto
+DashesProc stroke
+ newpath  432.753 61.4962 moveto
+ 433.801 58.078 lineto
+DashesProc stroke
+
+% Element "pair-spa"
+
+0 setlinejoin
+0 setlinecap
+0 0 0 SetFgColor
+2 setlinewidth
+[ ] 0 setdash
+/DashesProc {} def
+/DashesProc {} def
+ newpath 71.1995 219.637 moveto
+ 72.2475 224.539 lineto
+DashesProc stroke
+ newpath  72.2475 224.539 moveto
+ 73.2955 235.537 lineto
+ 74.3434 241.938 lineto
+ 75.3914 246.869 lineto
+ 76.4394 244.503 lineto
+ 77.4874 247.475 lineto
+ 78.5354 251.635 lineto
+ 79.5833 256.621 lineto
+ 80.6313 255.092 lineto
+ 81.6793 258.564 lineto
+ 82.7273 255.339 lineto
+ 83.7753 254.138 lineto
+ 84.8232 252 lineto
+ 85.8712 250.827 lineto
+ 86.9192 253.463 lineto
+ 87.9672 247.168 lineto
+ 89.0152 239.735 lineto
+ 90.0631 235.367 lineto
+ 91.1111 236.402 lineto
+ 92.1591 236.246 lineto
+ 93.2071 233.829 lineto
+ 94.2551 228.912 lineto
+ 95.303 230.494 lineto
+ 96.351 227.274 lineto
+ 97.399 225.264 lineto
+ 98.447 228.667 lineto
+ 99.4949 222.238 lineto
+ 100.543 220.987 lineto
+ 101.591 225.974 lineto
+ 102.639 227.121 lineto
+ 103.687 224.951 lineto
+ 104.735 223.921 lineto
+ 105.783 226.35 lineto
+ 106.831 225.976 lineto
+ 107.879 229.034 lineto
+ 108.927 224.172 lineto
+ 109.975 221.14 lineto
+ 111.023 215.682 lineto
+ 112.071 217.101 lineto
+ 113.119 214.253 lineto
+ 114.167 211.31 lineto
+ 115.215 207.139 lineto
+ 116.263 206.4 lineto
+ 117.311 204.709 lineto
+ 118.359 202.716 lineto
+ 119.407 201.495 lineto
+ 120.455 206.354 lineto
+ 121.503 201.999 lineto
+ 122.551 194.869 lineto
+ 123.598 191.86 lineto
+ 124.646 192.401 lineto
+ 125.694 183.99 lineto
+ 126.742 178.713 lineto
+ 127.79 174.586 lineto
+ 128.838 176.257 lineto
+ 129.886 176.342 lineto
+ 130.934 178.616 lineto
+ 131.982 180.298 lineto
+ 133.03 179.394 lineto
+ 134.078 188.3 lineto
+ 135.126 200.725 lineto
+ 136.174 201.274 lineto
+ 137.222 204.934 lineto
+ 138.27 212.149 lineto
+ 139.318 215.964 lineto
+ 140.366 221.429 lineto
+ 141.414 223.97 lineto
+ 142.462 225.067 lineto
+ 143.51 224.443 lineto
+ 144.558 228.003 lineto
+ 145.606 229.323 lineto
+ 146.654 232.021 lineto
+ 147.702 234.578 lineto
+ 148.75 235.226 lineto
+ 149.798 237.34 lineto
+ 150.846 232.755 lineto
+ 151.894 240.63 lineto
+ 152.942 244.349 lineto
+ 153.99 238.324 lineto
+ 155.038 232.429 lineto
+ 156.086 231.842 lineto
+ 157.134 230.071 lineto
+ 158.182 225.759 lineto
+ 159.23 226.398 lineto
+ 160.278 225.247 lineto
+ 161.326 223.235 lineto
+ 162.374 227.335 lineto
+ 163.422 227.332 lineto
+ 164.47 223.33 lineto
+ 165.518 226.334 lineto
+ 166.566 226.47 lineto
+ 167.614 229.388 lineto
+ 168.662 223.659 lineto
+ 169.71 228.93 lineto
+ 170.758 228.434 lineto
+ 171.806 227.717 lineto
+ 172.854 225.249 lineto
+ 173.902 227.167 lineto
+ 174.949 233.27 lineto
+ 175.997 235.752 lineto
+ 177.045 235.166 lineto
+ 178.093 234.211 lineto
+ 179.141 238.638 lineto
+ 180.189 240.782 lineto
+ 181.237 241.958 lineto
+ 182.285 239.376 lineto
+ 183.333 234.998 lineto
+ 184.381 234.087 lineto
+ 185.429 233.398 lineto
+ 186.477 229.823 lineto
+ 187.525 221.182 lineto
+ 188.573 225.916 lineto
+ 189.621 225.893 lineto
+ 190.669 218.11 lineto
+ 191.717 213.083 lineto
+ 192.765 214.469 lineto
+ 193.813 211.78 lineto
+ 194.861 214.628 lineto
+ 195.909 210.359 lineto
+ 196.957 205.581 lineto
+ 198.005 199.891 lineto
+ 199.053 200.094 lineto
+ 200.101 192.055 lineto
+ 201.149 196.141 lineto
+ 202.197 199.065 lineto
+ 203.245 200.941 lineto
+ 204.293 201.291 lineto
+ 205.341 200.665 lineto
+ 206.389 203.018 lineto
+ 207.437 207.802 lineto
+ 208.485 207.09 lineto
+ 209.533 210.561 lineto
+ 210.581 217.39 lineto
+ 211.629 220.598 lineto
+ 212.677 223.23 lineto
+ 213.725 228.592 lineto
+ 214.773 227.329 lineto
+ 215.821 229.481 lineto
+ 216.869 236.935 lineto
+ 217.917 237.462 lineto
+ 218.965 236.676 lineto
+ 220.013 242.608 lineto
+ 221.061 251.1 lineto
+ 222.109 248.016 lineto
+ 223.157 257.54 lineto
+ 224.205 259.035 lineto
+ 225.253 262.987 lineto
+ 226.301 272.401 lineto
+ 227.348 275.547 lineto
+ 228.396 274.523 lineto
+ 229.444 271.159 lineto
+ 230.492 264.474 lineto
+ 231.54 265.7 lineto
+ 232.588 263.535 lineto
+ 233.636 264.431 lineto
+ 234.684 262.769 lineto
+ 235.732 262.574 lineto
+ 236.78 257.841 lineto
+ 237.828 259.224 lineto
+ 238.876 251.206 lineto
+ 239.924 243.483 lineto
+ 240.972 237.354 lineto
+ 242.02 231.764 lineto
+ 243.068 230.477 lineto
+ 244.116 227.132 lineto
+ 245.164 220.61 lineto
+ 246.212 220.648 lineto
+ 247.26 212.471 lineto
+ 248.308 215.186 lineto
+ 249.356 216.847 lineto
+ 250.404 219.602 lineto
+ 251.452 222.083 lineto
+ 252.5 229.097 lineto
+ 253.548 225.619 lineto
+ 254.596 225.728 lineto
+ 255.644 231.083 lineto
+ 256.692 229.395 lineto
+ 257.74 235.717 lineto
+ 258.788 239.562 lineto
+ 259.836 240.506 lineto
+ 260.884 246.167 lineto
+ 261.932 248.509 lineto
+ 262.98 248.011 lineto
+ 264.028 245.324 lineto
+ 265.076 246.649 lineto
+ 266.124 245.919 lineto
+ 267.172 243.436 lineto
+ 268.22 242.541 lineto
+ 269.268 242.862 lineto
+ 270.316 243.492 lineto
+ 271.364 241.567 lineto
+ 272.412 236.652 lineto
+ 273.46 236.417 lineto
+ 274.508 233.315 lineto
+ 275.556 225.458 lineto
+ 276.604 225.995 lineto
+ 277.652 218.791 lineto
+ 278.699 212.917 lineto
+ 279.747 205.519 lineto
+ 280.795 204.777 lineto
+ 281.843 203.763 lineto
+ 282.891 210.815 lineto
+ 283.939 204.1 lineto
+ 284.987 204.219 lineto
+ 286.035 203.246 lineto
+ 287.083 207.672 lineto
+ 288.131 203.576 lineto
+ 289.179 205.557 lineto
+ 290.227 208.457 lineto
+ 291.275 209.488 lineto
+ 292.323 215.717 lineto
+ 293.371 211.978 lineto
+ 294.419 212.432 lineto
+ 295.467 215.492 lineto
+ 296.515 219.037 lineto
+ 297.563 223.857 lineto
+ 298.611 225.42 lineto
+ 299.659 231.454 lineto
+ 300.707 232.881 lineto
+ 301.755 237.385 lineto
+ 302.803 244.505 lineto
+ 303.851 244.619 lineto
+ 304.899 239.891 lineto
+ 305.947 246.989 lineto
+ 306.995 250.071 lineto
+ 308.043 245.575 lineto
+ 309.091 251.831 lineto
+ 310.139 251.003 lineto
+ 311.187 244.662 lineto
+ 312.235 243.003 lineto
+ 313.283 242.276 lineto
+ 314.331 237.83 lineto
+ 315.379 234.321 lineto
+ 316.427 235.308 lineto
+ 317.475 232.965 lineto
+ 318.523 235.855 lineto
+ 319.571 241.529 lineto
+ 320.619 239.957 lineto
+ 321.667 231.919 lineto
+ 322.715 227.427 lineto
+ 323.763 235.935 lineto
+ 324.811 229.851 lineto
+ 325.859 224.455 lineto
+ 326.907 225.738 lineto
+ 327.955 233.581 lineto
+ 329.003 230.186 lineto
+ 330.051 233.729 lineto
+ 331.098 237.034 lineto
+ 332.146 236.487 lineto
+ 333.194 237.745 lineto
+ 334.242 244.072 lineto
+ 335.29 246.08 lineto
+ 336.338 252.033 lineto
+ 337.386 256.695 lineto
+ 338.434 263.325 lineto
+ 339.482 260.926 lineto
+ 340.53 269.692 lineto
+ 341.578 276.022 lineto
+ 342.626 279.803 lineto
+ 343.674 287.188 lineto
+ 344.722 291.762 lineto
+ 345.77 294.601 lineto
+ 346.818 299.869 lineto
+ 347.866 303.268 lineto
+ 348.914 309.621 lineto
+ 349.962 314.248 lineto
+ 351.01 320.595 lineto
+ 352.058 326.264 lineto
+ 353.106 331.566 lineto
+ 354.154 330.389 lineto
+ 355.202 332.597 lineto
+ 356.25 334.621 lineto
+ 357.298 340 lineto
+ 358.346 338.004 lineto
+ 359.394 335.571 lineto
+ 360.442 333.189 lineto
+ 361.49 328.966 lineto
+ 362.538 322.076 lineto
+ 363.586 328.471 lineto
+ 364.634 328.06 lineto
+ 365.682 326.171 lineto
+ 366.73 325.051 lineto
+ 367.778 327.124 lineto
+ 368.826 325.817 lineto
+ 369.874 327.761 lineto
+ 370.922 323.397 lineto
+ 371.97 323.208 lineto
+ 373.018 323.767 lineto
+ 374.066 328.122 lineto
+ 375.114 328.909 lineto
+ 376.162 323.592 lineto
+ 377.21 325.625 lineto
+ 378.258 326.754 lineto
+ 379.306 326.65 lineto
+ 380.354 321.143 lineto
+ 381.402 325.096 lineto
+ 382.449 321.292 lineto
+ 383.497 318.565 lineto
+ 384.545 318.739 lineto
+ 385.593 314.205 lineto
+ 386.641 313.376 lineto
+ 387.689 311.117 lineto
+ 388.737 312.003 lineto
+ 389.785 311.206 lineto
+ 390.833 304.832 lineto
+ 391.881 310.234 lineto
+ 392.929 314.032 lineto
+ 393.977 310.417 lineto
+ 395.025 306.196 lineto
+ 396.073 306.014 lineto
+ 397.121 307.153 lineto
+ 398.169 312.178 lineto
+ 399.217 315.349 lineto
+ 400.265 312.075 lineto
+ 401.313 308.249 lineto
+ 402.361 302.318 lineto
+ 403.409 300.383 lineto
+ 404.457 296.575 lineto
+ 405.505 288.967 lineto
+ 406.553 288.422 lineto
+ 407.601 280.261 lineto
+ 408.649 278.494 lineto
+ 409.697 273.973 lineto
+ 410.745 268.35 lineto
+ 411.793 265.036 lineto
+ 412.841 267.343 lineto
+ 413.889 269.541 lineto
+ 414.937 270.706 lineto
+ 415.985 265.963 lineto
+ 417.033 268.38 lineto
+ 418.081 268.228 lineto
+ 419.129 273.867 lineto
+ 420.177 278.097 lineto
+ 421.225 275.271 lineto
+ 422.273 278.422 lineto
+ 423.321 281.728 lineto
+ 424.369 275.274 lineto
+ 425.417 281.337 lineto
+ 426.465 277.264 lineto
+ 427.513 285.511 lineto
+ 428.561 293.111 lineto
+ 429.609 297.85 lineto
+ 430.657 293.501 lineto
+ 431.705 297.058 lineto
+ 432.753 294.362 lineto
+ 433.801 296.365 lineto
+DashesProc stroke
+
+% Element "pair-aat"
+
+0 setlinejoin
+0 setlinecap
+0 0 0 SetFgColor
+1 setlinewidth
+[ ] 0 setdash
+/DashesProc {} def
+/DashesProc {} def
+ newpath 71.1995 170.642 moveto
+ 72.2475 174.949 lineto
+DashesProc stroke
+ newpath  72.2475 174.949 moveto
+ 73.2955 183.705 lineto
+ 74.3434 191.353 lineto
+ 75.3914 196.702 lineto
+ 76.4394 194.807 lineto
+ 77.4874 199.585 lineto
+ 78.5354 205.315 lineto
+ 79.5833 211.496 lineto
+ 80.6313 209.129 lineto
+ 81.6793 214.204 lineto
+ 82.7273 215.665 lineto
+ 83.7753 214.685 lineto
+ 84.8232 217.194 lineto
+ 85.8712 217.764 lineto
+ 86.9192 219.448 lineto
+ 87.9672 214.152 lineto
+ 89.0152 209.909 lineto
+ 90.0631 203.656 lineto
+ 91.1111 207.64 lineto
+ 92.1591 204 lineto
+ 93.2071 204.46 lineto
+ 94.2551 199.943 lineto
+ 95.303 202.671 lineto
+ 96.351 200.999 lineto
+ 97.399 200.225 lineto
+ 98.447 203.088 lineto
+ 99.4949 197.15 lineto
+ 100.543 200.029 lineto
+ 101.591 206.47 lineto
+ 102.639 209.52 lineto
+ 103.687 210.008 lineto
+ 104.735 208.453 lineto
+ 105.783 213.81 lineto
+ 106.831 214.707 lineto
+ 107.879 218.132 lineto
+ 108.927 215.135 lineto
+ 109.975 212.107 lineto
+ 111.023 201.826 lineto
+ 112.071 199.253 lineto
+ 113.119 195.832 lineto
+ 114.167 193.516 lineto
+ 115.215 192.728 lineto
+ 116.263 192.276 lineto
+ 117.311 190.901 lineto
+ 118.359 187.606 lineto
+ 119.407 188.869 lineto
+ 120.455 190.797 lineto
+ 121.503 187.387 lineto
+ 122.551 180.55 lineto
+ 123.598 178.551 lineto
+ 124.646 178.177 lineto
+ 125.694 171.977 lineto
+ 126.742 166.167 lineto
+ 127.79 163.192 lineto
+ 128.838 163.93 lineto
+ 129.886 164.291 lineto
+ 130.934 164.871 lineto
+ 131.982 165.888 lineto
+ 133.03 165.592 lineto
+ 134.078 172.271 lineto
+ 135.126 181.033 lineto
+ 136.174 181.966 lineto
+ 137.222 183.916 lineto
+ 138.27 191.531 lineto
+ 139.318 193.23 lineto
+ 140.366 198.91 lineto
+ 141.414 199.401 lineto
+ 142.462 200.557 lineto
+ 143.51 198.136 lineto
+ 144.558 200.337 lineto
+ 145.606 201.789 lineto
+ 146.654 201.84 lineto
+ 147.702 206.713 lineto
+ 148.75 204.684 lineto
+ 149.798 206.419 lineto
+ 150.846 204.102 lineto
+ 151.894 211.585 lineto
+ 152.942 216.35 lineto
+ 153.99 211.241 lineto
+ 155.038 203.651 lineto
+ 156.086 201.442 lineto
+ 157.134 200.733 lineto
+ 158.182 196.276 lineto
+ 159.23 193.836 lineto
+ 160.278 192.023 lineto
+ 161.326 187.343 lineto
+ 162.374 190.315 lineto
+ 163.422 194.521 lineto
+ 164.47 194.585 lineto
+ 165.518 195.081 lineto
+ 166.566 195.519 lineto
+ 167.614 196.925 lineto
+ 168.662 191.595 lineto
+ 169.71 197.175 lineto
+ 170.758 198.544 lineto
+ 171.806 197.968 lineto
+ 172.854 196.845 lineto
+ 173.902 197.553 lineto
+ 174.949 200.421 lineto
+ 175.997 201.987 lineto
+ 177.045 199.668 lineto
+ 178.093 198.784 lineto
+ 179.141 200.794 lineto
+ 180.189 201.537 lineto
+ 181.237 203.905 lineto
+ 182.285 200.307 lineto
+ 183.333 199.058 lineto
+ 184.381 199.563 lineto
+ 185.429 199.568 lineto
+ 186.477 197.395 lineto
+ 187.525 189.506 lineto
+ 188.573 191.579 lineto
+ 189.621 191.12 lineto
+ 190.669 183.34 lineto
+ 191.717 179.733 lineto
+ 192.765 177.637 lineto
+ 193.813 176.532 lineto
+ 194.861 178.261 lineto
+ 195.909 174.12 lineto
+ 196.957 169.246 lineto
+ 198.005 163.286 lineto
+ 199.053 166.439 lineto
+ 200.101 158.556 lineto
+ 201.149 164.342 lineto
+ 202.197 166.823 lineto
+ 203.245 164.353 lineto
+ 204.293 163.816 lineto
+ 205.341 161.559 lineto
+ 206.389 162.91 lineto
+ 207.437 167.682 lineto
+ 208.485 164.532 lineto
+ 209.533 165.18 lineto
+ 210.581 171.327 lineto
+ 211.629 175.985 lineto
+ 212.677 177.987 lineto
+ 213.725 185.693 lineto
+ 214.773 187.527 lineto
+ 215.821 191.139 lineto
+ 216.869 196.575 lineto
+ 217.917 202.116 lineto
+ 218.965 199.583 lineto
+ 220.013 204.323 lineto
+ 221.061 211.25 lineto
+ 222.109 205.685 lineto
+ 223.157 213.241 lineto
+ 224.205 213.81 lineto
+ 225.253 216.24 lineto
+ 226.301 221.361 lineto
+ 227.348 223.612 lineto
+ 228.396 223.021 lineto
+ 229.444 222.507 lineto
+ 230.492 215.858 lineto
+ 231.54 217.168 lineto
+ 232.588 216.916 lineto
+ 233.636 218.048 lineto
+ 234.684 218.849 lineto
+ 235.732 215.181 lineto
+ 236.78 211.692 lineto
+ 237.828 209.988 lineto
+ 238.876 203.349 lineto
+ 239.924 204.421 lineto
+ 240.972 202.222 lineto
+ 242.02 200.007 lineto
+ 243.068 200.872 lineto
+ 244.116 201.041 lineto
+ 245.164 194.197 lineto
+ 246.212 196.12 lineto
+ 247.26 193.489 lineto
+ 248.308 197.087 lineto
+ 249.356 198.684 lineto
+ 250.404 197.579 lineto
+ 251.452 197.379 lineto
+ 252.5 202.085 lineto
+ 253.548 197.692 lineto
+ 254.596 194.954 lineto
+ 255.644 200.828 lineto
+ 256.692 199.019 lineto
+ 257.74 203.887 lineto
+ 258.788 209.954 lineto
+ 259.836 208.341 lineto
+ 260.884 214.933 lineto
+ 261.932 216.666 lineto
+ 262.98 209.974 lineto
+ 264.028 207.624 lineto
+ 265.076 209.35 lineto
+ 266.124 206.478 lineto
+ 267.172 202.432 lineto
+ 268.22 199.745 lineto
+ 269.268 201.531 lineto
+ 270.316 201.943 lineto
+ 271.364 199.674 lineto
+ 272.412 194.759 lineto
+ 273.46 196.454 lineto
+ 274.508 195.61 lineto
+ 275.556 191.856 lineto
+ 276.604 192.239 lineto
+ 277.652 186.753 lineto
+ 278.699 187.844 lineto
+ 279.747 185.201 lineto
+ 280.795 184.164 lineto
+ 281.843 183.921 lineto
+ 282.891 191.86 lineto
+ 283.939 187.483 lineto
+ 284.987 184.425 lineto
+ 286.035 184.861 lineto
+ 287.083 186.198 lineto
+ 288.131 185.109 lineto
+ 289.179 186.281 lineto
+ 290.227 190.528 lineto
+ 291.275 191.524 lineto
+ 292.323 192.528 lineto
+ 293.371 188.976 lineto
+ 294.419 185.927 lineto
+ 295.467 186.093 lineto
+ 296.515 186.561 lineto
+ 297.563 194.478 lineto
+ 298.611 193.012 lineto
+ 299.659 194.452 lineto
+ 300.707 195.012 lineto
+ 301.755 199.908 lineto
+ 302.803 211.226 lineto
+ 303.851 212.195 lineto
+ 304.899 207.383 lineto
+ 305.947 213.388 lineto
+ 306.995 219.842 lineto
+ 308.043 217.913 lineto
+ 309.091 222.551 lineto
+ 310.139 219.474 lineto
+ 311.187 212.871 lineto
+ 312.235 213.99 lineto
+ 313.283 212.508 lineto
+ 314.331 211.46 lineto
+ 315.379 213.755 lineto
+ 316.427 214.903 lineto
+ 317.475 213.485 lineto
+ 318.523 218.636 lineto
+ 319.571 222.632 lineto
+ 320.619 222.796 lineto
+ 321.667 215.855 lineto
+ 322.715 211.522 lineto
+ 323.763 220.773 lineto
+ 324.811 217.89 lineto
+ 325.859 212.186 lineto
+ 326.907 214.396 lineto
+ 327.955 220.098 lineto
+ 329.003 217.15 lineto
+ 330.051 219.856 lineto
+ 331.098 221.296 lineto
+ 332.146 220.364 lineto
+ 333.194 220.668 lineto
+ 334.242 226.554 lineto
+ 335.29 227.797 lineto
+ 336.338 231.968 lineto
+ 337.386 238.804 lineto
+ 338.434 242.815 lineto
+ 339.482 240.652 lineto
+ 340.53 246.644 lineto
+ 341.578 251.759 lineto
+ 342.626 254.226 lineto
+ 343.674 259.102 lineto
+ 344.722 262.351 lineto
+ 345.77 263.742 lineto
+ 346.818 271.13 lineto
+ 347.866 274.149 lineto
+ 348.914 277.827 lineto
+ 349.962 281.708 lineto
+ 351.01 284.98 lineto
+ 352.058 288.199 lineto
+ 353.106 293.921 lineto
+ 354.154 293.265 lineto
+ 355.202 291.413 lineto
+ 356.25 292.838 lineto
+ 357.298 298.078 lineto
+ 358.346 297.023 lineto
+ 359.394 295.022 lineto
+ 360.442 293.801 lineto
+ 361.49 292.778 lineto
+ 362.538 290.586 lineto
+ 363.586 295.902 lineto
+ 364.634 297.304 lineto
+ 365.682 298.536 lineto
+ 366.73 297.315 lineto
+ 367.778 299.648 lineto
+ 368.826 297.508 lineto
+ 369.874 298.338 lineto
+ 370.922 293.545 lineto
+ 371.97 295.216 lineto
+ 373.018 295.134 lineto
+ 374.066 299.395 lineto
+ 375.114 299.759 lineto
+ 376.162 295.836 lineto
+ 377.21 295.324 lineto
+ 378.258 295.584 lineto
+ 379.306 294.751 lineto
+ 380.354 288.473 lineto
+ 381.402 293.291 lineto
+ 382.449 291.658 lineto
+ 383.497 286.767 lineto
+ 384.545 286.818 lineto
+ 385.593 283.74 lineto
+ 386.641 281.812 lineto
+ 387.689 277.492 lineto
+ 388.737 276.2 lineto
+ 389.785 272.034 lineto
+ 390.833 268.224 lineto
+ 391.881 272.956 lineto
+ 392.929 275.167 lineto
+ 393.977 272.445 lineto
+ 395.025 265.228 lineto
+ 396.073 263.945 lineto
+ 397.121 265.866 lineto
+ 398.169 267.892 lineto
+ 399.217 267.971 lineto
+ 400.265 264.134 lineto
+ 401.313 260.441 lineto
+ 402.361 256.386 lineto
+ 403.409 256.198 lineto
+ 404.457 253.779 lineto
+ 405.505 246.855 lineto
+ 406.553 244.7 lineto
+ 407.601 240.684 lineto
+ 408.649 239.56 lineto
+ 409.697 236.41 lineto
+ 410.745 231.623 lineto
+ 411.793 227.19 lineto
+ 412.841 226.816 lineto
+ 413.889 229.074 lineto
+ 414.937 228.313 lineto
+ 415.985 223.321 lineto
+ 417.033 225.678 lineto
+ 418.081 223.583 lineto
+ 419.129 227.307 lineto
+ 420.177 230.054 lineto
+ 421.225 227.491 lineto
+ 422.273 229.512 lineto
+ 423.321 232.238 lineto
+ 424.369 225 lineto
+ 425.417 229.621 lineto
+ 426.465 224.682 lineto
+ 427.513 229.939 lineto
+ 428.561 231.05 lineto
+ 429.609 234.67 lineto
+ 430.657 230.173 lineto
+ 431.705 227.344 lineto
+ 432.753 228.144 lineto
+ 433.801 226.729 lineto
+DashesProc stroke
+
+% Element ""
+
+0 setlinejoin
+0 setlinecap
+0 0 0 SetFgColor
+1 setlinewidth
+[ ] 0 setdash
+/DashesProc {} def
+/DashesProc {} def
+ newpath 45 127.714 moveto
+ 460 127.714 lineto
+DashesProc stroke
+
+% Unset clipping
+grestore
+
+1 1 1 SetBgColor
+0 0 481 58 Box fill
+
+0 58 45 282 Box fill
+
+460 58 21 282 Box fill
+
+0 340 481 44 Box fill
+
+74 17 0 252 31 BeginText
+12 /Helvetica-Bold SetFont
+0 0 0 SetFgColor
+(aat spa diff ) 74 0 14 DrawAdjText
+EndText
+10 12 0 45 358 BeginText
+12 /Helvetica-Bold SetFont
+0 0 0 SetFgColor
+(0) 6 2 10 DrawAdjText
+EndText
+22 12 0 149.798 358 BeginText
+12 /Helvetica-Bold SetFont
+0 0 0 SetFgColor
+(100) 18 2 10 DrawAdjText
+EndText
+22 12 0 254.596 358 BeginText
+12 /Helvetica-Bold SetFont
+0 0 0 SetFgColor
+(200) 18 2 10 DrawAdjText
+EndText
+22 12 0 359.394 358 BeginText
+12 /Helvetica-Bold SetFont
+0 0 0 SetFgColor
+(300) 18 2 10 DrawAdjText
+EndText
+0 setlinejoin
+0 setlinecap
+0 0 0 SetFgColor
+1 setlinewidth
+[ ] 0 setdash
+/DashesProc {} def
+45 342 moveto
+ 460 342 lineto
+DashesProc stroke
+97.399 342 moveto
+ 97.399 347 lineto
+DashesProc stroke
+45 342 moveto
+ 45 350 lineto
+DashesProc stroke
+202.197 342 moveto
+ 202.197 347 lineto
+DashesProc stroke
+149.798 342 moveto
+ 149.798 350 lineto
+DashesProc stroke
+306.995 342 moveto
+ 306.995 347 lineto
+DashesProc stroke
+254.596 342 moveto
+ 254.596 350 lineto
+DashesProc stroke
+411.793 342 moveto
+ 411.793 347 lineto
+DashesProc stroke
+359.394 342 moveto
+ 359.394 350 lineto
+DashesProc stroke
+13 12 0 26.5 332.952 BeginText
+12 /Helvetica-Bold SetFont
+0 0 0 SetFgColor
+(-4) 9 2 10 DrawAdjText
+EndText
+13 12 0 26.5 230.333 BeginText
+12 /Helvetica-Bold SetFont
+0 0 0 SetFgColor
+(-2) 9 2 10 DrawAdjText
+EndText
+10 12 0 28 127.714 BeginText
+12 /Helvetica-Bold SetFont
+0 0 0 SetFgColor
+(0) 6 2 10 DrawAdjText
+EndText
+0 setlinejoin
+0 setlinecap
+0 0 0 SetFgColor
+1 setlinewidth
+[ ] 0 setdash
+/DashesProc {} def
+43 340 moveto
+ 43 58 lineto
+DashesProc stroke
+43 281.643 moveto
+ 38 281.643 lineto
+DashesProc stroke
+43 332.952 moveto
+ 35 332.952 lineto
+DashesProc stroke
+43 179.023 moveto
+ 38 179.023 lineto
+DashesProc stroke
+43 230.333 moveto
+ 35 230.333 lineto
+DashesProc stroke
+43 76.404 moveto
+ 38 76.404 lineto
+DashesProc stroke
+43 127.714 moveto
+ 35 127.714 lineto
+DashesProc stroke
+0 setlinejoin
+0 setlinecap
+0 0 0 SetFgColor
+1 setlinewidth
+[ ] 0 setdash
+/DashesProc {} def
+45 56 moveto
+ 460 56 lineto
+DashesProc stroke
+0 setlinejoin
+0 setlinecap
+0 0 0 SetFgColor
+1 setlinewidth
+[ ] 0 setdash
+/DashesProc {} def
+462 340 moveto
+ 462 58 lineto
+DashesProc stroke
+showpage
+%Trailer
+grestore
+end
+%EOF

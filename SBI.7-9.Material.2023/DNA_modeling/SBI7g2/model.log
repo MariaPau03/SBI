@@ -1,0 +1,170 @@
+
+                         MODELLER 9.21, 2018/12/06, r11301
+
+     PROTEIN STRUCTURE MODELLING BY SATISFACTION OF SPATIAL RESTRAINTS
+
+
+                     Copyright(c) 1989-2018 Andrej Sali
+                            All Rights Reserved
+
+                             Written by A. Sali
+                               with help from
+              B. Webb, M.S. Madhusudhan, M-Y. Shen, G.Q. Dong,
+          M.A. Marti-Renom, N. Eswar, F. Alber, M. Topf, B. Oliva,
+             A. Fiser, R. Sanchez, B. Yerkovich, A. Badretdinov,
+                     F. Melo, J.P. Overington, E. Feyfant
+                 University of California, San Francisco, USA
+                    Rockefeller University, New York, USA
+                      Harvard University, Cambridge, USA
+                   Imperial Cancer Research Fund, London, UK
+              Birkbeck College, University of London, London, UK
+
+
+Kind, OS, HostName, Kernel, Processor: 4, Linux HM30700-142003U 6.11.0-29-generic x86_64
+Date and time of compilation         : 2018/12/06 09:58:12
+MODELLER executable type             : x86_64-intel8
+Job starting time (YY/MM/DD HH:MM:SS): 2026/02/06 15:35:38
+
+openf___224_> Open           $(LIB)/restyp.lib
+openf___224_> Open           ${MODINSTALL9v21}/modlib/resgrp.lib
+rdresgr_266_> Number of residue groups:        2
+openf___224_> Open           ${MODINSTALL9v21}/modlib/sstruc.lib
+
+Dynamically allocated memory at   amaxlibraries [B,KiB,MiB]:       191566     187.076     0.183
+
+Dynamically allocated memory at   amaxlibraries [B,KiB,MiB]:       192094     187.592     0.183
+openf___224_> Open           ${MODINSTALL9v21}/modlib/resdih.lib
+
+Dynamically allocated memory at   amaxlibraries [B,KiB,MiB]:       240694     235.053     0.230
+rdrdih__263_> Number of dihedral angle types         :        9
+              Maximal number of dihedral angle optima:        3
+              Dihedral angle names                   :  Alph Phi Psi Omeg chi1 chi2 chi3 chi4 chi5
+openf___224_> Open           ${MODINSTALL9v21}/modlib/radii.lib
+
+Dynamically allocated memory at   amaxlibraries [B,KiB,MiB]:       253994     248.041     0.242
+openf___224_> Open           ${MODINSTALL9v21}/modlib/radii14.lib
+openf___224_> Open           ${MODINSTALL9v21}/modlib/af_mnchdef.lib
+rdwilmo_274_> Mainchain residue conformation classes:  APBLE
+openf___224_> Open           ${MODINSTALL9v21}/modlib/mnch.lib
+rdclass_257_> Number of classes:        5
+openf___224_> Open           ${MODINSTALL9v21}/modlib/mnch1.lib
+openf___224_> Open           ${MODINSTALL9v21}/modlib/mnch2.lib
+openf___224_> Open           ${MODINSTALL9v21}/modlib/mnch3.lib
+openf___224_> Open           ${MODINSTALL9v21}/modlib/xs4.mat
+rdrrwgh_268_> Number of residue types:       21
+openf___224_> Open           alignment_het.pir
+
+Dynamically allocated memory at   amaxalignment [B,KiB,MiB]:       265487     259.265     0.253
+
+Dynamically allocated memory at   amaxalignment [B,KiB,MiB]:       266937     260.681     0.255
+
+Dynamically allocated memory at   amaxalignment [B,KiB,MiB]:       269837     263.513     0.257
+
+Dynamically allocated memory at   amaxalignment [B,KiB,MiB]:       275637     269.177     0.263
+
+Dynamically allocated memory at   amaxalignment [B,KiB,MiB]:       392693     383.489     0.375
+
+Dynamically allocated memory at    amaxsequence [B,KiB,MiB]:       392721     383.517     0.375
+
+Dynamically allocated memory at    amaxsequence [B,KiB,MiB]:       392749     383.544     0.375
+
+Dynamically allocated memory at    amaxsequence [B,KiB,MiB]:       392777     383.571     0.375
+
+Dynamically allocated memory at    amaxsequence [B,KiB,MiB]:       394137     384.899     0.376
+
+Dynamically allocated memory at    amaxsequence [B,KiB,MiB]:       395417     386.149     0.377
+read_al_374_> Non-standard residue type,position,sequence:  .      384        1
+read_al_374_> Non-standard residue type,position,sequence:  .      385        1
+read_al_374_> Non-standard residue type,position,sequence:  .      384        2
+read_al_374_> Non-standard residue type,position,sequence:  .      385        2
+
+Read the alignment from file       : alignment_het.pir
+Total number of alignment positions:   385
+
+  #  Code        #_Res #_Segm PDB_code    Name
+-------------------------------------------------------------------------------
+  1       1mee     341      3        1MEE
+  2    P11018h     321      2     P11018h
+check_a_343_> >> BEGINNING OF COMMAND
+openf___224_> Open           ./1MEE.pdb
+
+Dynamically allocated memory at amaxcoordinates [B,KiB,MiB]:       499442     487.736     0.476
+
+Dynamically allocated memory at    amaxsequence [B,KiB,MiB]:       499442     487.736     0.476
+
+Dynamically allocated memory at amaxcoordinates [B,KiB,MiB]:       499613     487.903     0.476
+
+Dynamically allocated memory at amaxcoordinates [B,KiB,MiB]:       500463     488.733     0.477
+
+Dynamically allocated memory at amaxcoordinates [B,KiB,MiB]:       501721     489.962     0.478
+
+Dynamically allocated memory at amaxcoordinates [B,KiB,MiB]:       503625     491.821     0.480
+
+Dynamically allocated memory at    amaxsequence [B,KiB,MiB]:       503625     491.821     0.480
+
+Dynamically allocated memory at amaxcoordinates [B,KiB,MiB]:       503715     491.909     0.480
+
+Dynamically allocated memory at amaxcoordinates [B,KiB,MiB]:       506571     494.698     0.483
+
+Dynamically allocated memory at    amaxsequence [B,KiB,MiB]:       506571     494.698     0.483
+
+Dynamically allocated memory at amaxcoordinates [B,KiB,MiB]:       506706     494.830     0.483
+
+Dynamically allocated memory at amaxcoordinates [B,KiB,MiB]:       510990     499.014     0.487
+
+Dynamically allocated memory at    amaxsequence [B,KiB,MiB]:       510990     499.014     0.487
+
+Dynamically allocated memory at amaxcoordinates [B,KiB,MiB]:       511188     499.207     0.488
+
+Dynamically allocated memory at amaxcoordinates [B,KiB,MiB]:       517614     505.482     0.494
+
+Dynamically allocated memory at    amaxsequence [B,KiB,MiB]:       517614     505.482     0.494
+
+Dynamically allocated memory at amaxcoordinates [B,KiB,MiB]:       517911     505.772     0.494
+
+Dynamically allocated memory at amaxcoordinates [B,KiB,MiB]:       527533     515.169     0.503
+
+Dynamically allocated memory at    amaxsequence [B,KiB,MiB]:       527533     515.169     0.503
+
+Dynamically allocated memory at amaxcoordinates [B,KiB,MiB]:       527983     515.608     0.504
+
+Dynamically allocated memory at amaxcoordinates [B,KiB,MiB]:       542433     529.720     0.517
+
+Dynamically allocated memory at    amaxsequence [B,KiB,MiB]:       542433     529.720     0.517
+
+Dynamically allocated memory at amaxcoordinates [B,KiB,MiB]:       543108     530.379     0.518
+
+Dynamically allocated memory at amaxcoordinates [B,KiB,MiB]:       564766     551.529     0.539
+
+Dynamically allocated memory at    amaxsequence [B,KiB,MiB]:       564766     551.529     0.539
+
+Dynamically allocated memory at amaxcoordinates [B,KiB,MiB]:       565774     552.514     0.540
+
+Dynamically allocated memory at amaxcoordinates [B,KiB,MiB]:       598278     584.256     0.571
+
+Dynamically allocated memory at    amaxsequence [B,KiB,MiB]:       598278     584.256     0.571
+
+Dynamically allocated memory at amaxcoordinates [B,KiB,MiB]:       598278     584.256     0.571
+
+Dynamically allocated memory at    amaxsequence [B,KiB,MiB]:       598278     584.256     0.571
+
+Dynamically allocated memory at amaxcoordinates [B,KiB,MiB]:       599790     585.732     0.572
+
+Dynamically allocated memory at   amaxstructure [B,KiB,MiB]:       598314     584.291     0.571
+read_te_290E> Number of residues in the alignment and  pdb files are different:      341      339
+              For alignment entry:        1  1mee
+                                  x  (mismatch at alignment position    340)
+ Alignment   RVRVFYNPGTNVVNHVPHVG/../                                     
+       PDB   RVRVFYNPGTNVVNHVPHVG/  -                                     
+     Match   *********************
+
+  Please check your alignment file header to be sure you correctly specified
+  the starting and ending residue numbers and chains. The alignment sequence
+  must match that from the atom file exactly.
+
+  Another possibility is that some residues in the atom file are missing,
+  perhaps because they could not be resolved experimentally. (Note that Modeller
+  reads only the ATOM and HETATM records in PDB, NOT the SEQRES records.)
+  In this case, simply replace the section of your alignment corresponding
+  to these missing residues with gaps.
+read_te_288W> Protein not accepted:        1  1mee

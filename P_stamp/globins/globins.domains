@@ -1,0 +1,7 @@
+./pdb2hhb.ent 2hhba {chain A}
+./pdb2hhb.ent 2hhbb {chain B}
+./pdb1lh1.ent 1lh1 {ALL}
+./pdb2lhb.ent 2lhb {ALL}
+./pdb4mbn.ent 4mbn {ALL}
+./pdb1ecd.ent 1ecd {ALL}
+

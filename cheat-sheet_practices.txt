@@ -1,0 +1,59 @@
+# PSIBLAST
+psiblast -query target.fa -num_iterations 5 -out_pssm target_sprot5.pssm -out target_sprot_5.out -db /mnt/NFS_UPF/soft/databases/blastdat/uniprot_sprot
+psiblast -db /mnt/NFS_UPF/soft/databases/blastdat/pdb_seq -in_pssm target_sprot5.pssm -out target_pdb_5.out 
+
+# HMM
+hmmbuild globin4.hmm globins4.sto #create a hmm file from a MSA file
+hmmsearch globins4.hmm /mnt/NFS_UPF/soft/databases/blastdat/pdb_seq > globins4_pdb.out
+
+cat *hmm > minifam
+hmmpress minifam #index 
+hmmscan minifam 7LES_DROME > 7LES_DROME_minifam.out #query against a specific db
+hmmscan /mnt/NFS_UPF/soft/databases/pfam-3/Pfam-A.hmm target.fa > target_Pfam.out #query againts a whole profile db
+hmmfetch /mnt/NFS_UPF/soft/databases/pfam-3/Pfam-A.hmm Globin > Globin.hmm #get a HMM Globin profile from the db
+hmmsearch Globin.hmm /mnt/NFS_UPF/soft/databases/blastdat/pdb_seq > Globin_pdb.out #search the known 3D structures from Globins.hmm
+hmmalign globin4.hmm globins45.fa > globins45.hmmalign # Stockhoml format. Aligns 45 seq against a 4 seq trained database (yield worse results than Globin.hmm)
+aconvertMod2.pl -in h -out c < globins45.hmmalign > globins45.clu #convert the h (hmm format) into c(clustal) format
+hmmalign Globin.hmm globins630.fa > globins630.hmmalign #align 630 globin seq against the whole Globin seq
+aconvertMod2.pl -in c -out f < globins45.clu > globins45.clu.fasta 
+fasta2sto.pl globins45.clu.fasta > globins45.sto
+
+phmmer target.fa /mnt/NFS_UPF/soft/databases/blastdat/pdb_seq > target.pdb.phmmer # doing like a BLAST to see closer homologs of my query against the pdb database
+#but better do this instead:
+jackhmmer -N 5 --chkhmm target.sprot.jackhmmer target.fa /mnt/NFS_UPF/soft/databases/blastdat/uniprot_sprot > target.uniprot.jackhmmer #iterates 5 times and saves each iteration in a file (use the 5th file) to do a kind of PSI-BLAST of my query against uniprot dt to avoid bias
+hmmsearch target.sprot.jackhmmer-5.hmm /mnt/NFS_UPF/soft/databases/blastdat/pdb_seq > target.pdb.jack5.hmmsearch #once have the 5th HMM model, search it aganis the PDB db to find the the same structural folds
+
+
+
+#MODELLING
+## Look for 3D-templates:
+blastp -query P11018.fa -db /mnt/NFS_UPF/soft/databases/blastdat/pdb_seq -out P11018_pdb.out 
+cp /mnt/NFS_UPF/soft/databases/pdb/pdb/data/structures/divided/pdb/me/pdb1mee.ent.gz . #download the PDB of the templates choosen before
+gunzip *gz #uncompress these files
+PDBtoSplitChain.pl -i pdb1scj.ent -o 1scj #split each pdb template into its respective chains
+cat P11018.fa > alignment.fa
+cat *A.fa >> alignment.fa 
+clustalw alignment.fa
+aconvertMod2.pl -in c -out p <alignment.aln > alignment.pir
+#modify the modeling.py file
+modpy.sh python3 modeling.py 
+#open chimera
+
+
+#Macro-complex modeling
+blastp -query NeuroD2.fa -db /mnt/NFS_UPF/soft/databases/blastdat/pdb_seq > NeuroD2.out #or psiblast
+blastp -query NeuroG2.fa -db /mnt/NFS_UPF/soft/databases/blastdat/pdb_seq > NeuroG2.out #we obtain the homologous 3D structures for the templates
+cp /mnt/NFS_UPF/soft/databases/pdb/pdb/data/structures/divided/pdb/md/pdb1mdy.ent.gz .
+gunzip *gz
+PDBtoSplitChain.pl -i pdb1mdy.ent -o 1mdy #split seq in chains
+cat 1mdyA.fa > align_neurod2.fa
+cat NeuroD2.fa >> align_neurod2.fa
+cat 1mdyB.fa > align_neurog2.fa
+cat NeuroG2.fa >> align_neurog2.fa
+clustalw align_neurod2.fa
+clustalw align_neurog2.fa #here we obtain a .aln file in which we will see the alignment. 
+#Now take a look at this .aln files and remove the sequences that do not align in the aling_neuro.fa files having only the sequence that aligns.
+clustalw align_neurod2.fa
+clustalw align_neurog2.fa #Now the result is much better, mostly the alignment is alinged.
+aconvertMod2.pl -in c -out p <align_neurod2.aln > align_neurod2.pir
+aconvertMod2.pl -in c -out p <align_neurog2.aln > align_neurodg2.pir

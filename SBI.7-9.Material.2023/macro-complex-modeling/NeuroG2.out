@@ -1,0 +1,101 @@
+BLASTP 2.17.0+
+
+
+Reference: Stephen F. Altschul, Thomas L. Madden, Alejandro A.
+Schaffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J.
+Lipman (1997), "Gapped BLAST and PSI-BLAST: a new generation of
+protein database search programs", Nucleic Acids Res. 25:3389-3402.
+
+
+Reference for composition-based statistics: Alejandro A. Schaffer,
+L. Aravind, Thomas L. Madden, Sergei Shavirin, John L. Spouge, Yuri
+I. Wolf, Eugene V. Koonin, and Stephen F. Altschul (2001),
+"Improving the accuracy of PSI-BLAST protein database searches with
+composition-based statistics and other refinements", Nucleic Acids
+Res. 29:2994-3005.
+
+
+
+Database: pdb_seq
+           133,266 sequences; 30,839,592 total letters
+
+
+
+Query= P70447
+
+Length=263
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+1mdy_D mol:protein length:62 PROTEIN (MYOD BHLH DOMAIN)               32.3    0.095
+1mdy_C mol:protein length:62 PROTEIN (MYOD BHLH DOMAIN)               32.3    0.095
+1mdy_B mol:protein length:62 PROTEIN (MYOD BHLH DOMAIN)               32.3    0.095
+1mdy_A mol:protein length:68 PROTEIN (MYOD BHLH DOMAIN)               32.0    0.14 
+
+
+>1mdy_D mol:protein length:62  PROTEIN (MYOD BHLH DOMAIN)
+Length=62
+
+ Score = 32.3 bits (72),  Expect = 0.095, Method: Compositional matrix adjust.
+ Identities = 22/57 (39%), Positives = 30/57 (53%), Gaps = 1/57 (2%)
+
+Query  113  RRLKANNRERNRMHNLNAALDALREVLPTFPEDAKLTKIETLRFAHNYIWALTETLR  169
+            RR  A  RER R+  +N A + L+    + P + +L K+E LR A  YI  L   LR
+Sbjct  6    RRKAATMRERRRLSKVNEAFETLKRSTSSNP-NQRLPKVEILRNAIRYIEGLQALLR  61
+
+
+>1mdy_C mol:protein length:62  PROTEIN (MYOD BHLH DOMAIN)
+Length=62
+
+ Score = 32.3 bits (72),  Expect = 0.095, Method: Compositional matrix adjust.
+ Identities = 22/57 (39%), Positives = 30/57 (53%), Gaps = 1/57 (2%)
+
+Query  113  RRLKANNRERNRMHNLNAALDALREVLPTFPEDAKLTKIETLRFAHNYIWALTETLR  169
+            RR  A  RER R+  +N A + L+    + P + +L K+E LR A  YI  L   LR
+Sbjct  6    RRKAATMRERRRLSKVNEAFETLKRSTSSNP-NQRLPKVEILRNAIRYIEGLQALLR  61
+
+
+>1mdy_B mol:protein length:62  PROTEIN (MYOD BHLH DOMAIN)
+Length=62
+
+ Score = 32.3 bits (72),  Expect = 0.095, Method: Compositional matrix adjust.
+ Identities = 22/57 (39%), Positives = 30/57 (53%), Gaps = 1/57 (2%)
+
+Query  113  RRLKANNRERNRMHNLNAALDALREVLPTFPEDAKLTKIETLRFAHNYIWALTETLR  169
+            RR  A  RER R+  +N A + L+    + P + +L K+E LR A  YI  L   LR
+Sbjct  6    RRKAATMRERRRLSKVNEAFETLKRSTSSNP-NQRLPKVEILRNAIRYIEGLQALLR  61
+
+
+>1mdy_A mol:protein length:68  PROTEIN (MYOD BHLH DOMAIN)
+Length=68
+
+ Score = 32.0 bits (71),  Expect = 0.14, Method: Compositional matrix adjust.
+ Identities = 22/57 (39%), Positives = 30/57 (53%), Gaps = 1/57 (2%)
+
+Query  113  RRLKANNRERNRMHNLNAALDALREVLPTFPEDAKLTKIETLRFAHNYIWALTETLR  169
+            RR  A  RER R+  +N A + L+    + P + +L K+E LR A  YI  L   LR
+Sbjct  12   RRKAATMRERRRLSKVNEAFETLKRSTSSNP-NQRLPKVEILRNAIRYIEGLQALLR  67
+
+
+
+Lambda      K        H        a         alpha
+   0.312    0.127    0.375    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0410    0.140     1.90     42.6     43.6 
+
+Effective search space used: 2776680060
+
+
+  Database: pdb_seq
+    Posted date:  Jan 9, 2009 10:34 AM
+  Number of letters in database: 30,839,592
+  Number of sequences in database:  133,266
+
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Neighboring words threshold: 11
+Window for multiple hits: 40
