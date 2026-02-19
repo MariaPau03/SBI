@@ -1,8 +1,8 @@
 CLUSTAL W(1.60) multiple sequence alignment
 
-P11018  mngeirlipyvtneqimdvnelpegikvikapemwakgvkgknikvavldtgcdtshpdl
-1abwA   --------------mlspadktnvkaawgkvgahageygaealermflsfpttktyfphf
-1o1nA   ---------------mlspadktnvkaawgkvgahageygaeawermflsfpttktyfph
+P11018  qimdvnelpegikvikapemwakgvkgknikvavldtgcdtshpdl
+1abwA   mlspadktnvkaawgkvgahageygaealermflsfpttktyfphf
+1o1nA   mlspadktnvkaawgkvgahageygaeawermflsfpttktyfph
 
 P11018  knqiiggknftdddggkedaisdynghgthvagtiaandsnggiagvapeasllivkvlg
 1abwA   dlshgsaqvkghgkkvadaltnavahvddmpnalsalsdlhahklrvdpvnfkllshcll
@@ -24,11 +24,9 @@ P11018  aayneviavgsvsvarelsefsnankeidlvapgenilstlpnkkygkltgtsmaaphvs
 1abwA   ttktyfphfdlshgsaqvkghgkkvadaltnavahvddmpnalsalsdlhahklrvdpvn
 1o1nA   ttktyfphfdlshgsaqvkghgkkvadaltnavahvddmpnalsalsdlhahklrvdpvn
 
-P11018  galaliksyeeesfqrklsesevfaqlirrtlpldiaktlagngflyltapdelaekaeq
-1abwA   fkllshcllvtlaahlpaeftpavhasldkflasvstvltskyr----------------
-1o1nA   fkllshcllvtlaahlpaeftpavhasldkflasvstvltskyr----------------
+P11018  galaliksyeeesfqrklsesevfaqlirrtlpldiaktlagng
+1abwA   fkllshcllvtlaahlpaeftpavhasldkflasvstvltskyr
+1o1nA   fkllshcllvtlaahlpaeftpavhasldkflasvstvltskyr
 
-P11018  shlltl
-1abwA   ------
-1o1nA   ------
+
 
