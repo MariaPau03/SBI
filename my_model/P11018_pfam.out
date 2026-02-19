@@ -1,0 +1,151 @@
+hmmpfam - search one or more sequences against HMM database
+HMMER 2.2g (August 2001)
+Copyright (C) 1992-2001 HHMI/Washington University School of Medicine
+Freely distributed under the GNU General Public License (GPL)
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+HMM file:                 /mnt/NFS_UPF/soft/databases/pfam-2/Pfam_ls
+Sequence file:            P11018.fa
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query sequence: P11018
+Accession:      [none]
+Description:    [none]
+
+Scores for sequence family classification (score includes all domains):
+Model           Description                             Score    E-value  N 
+--------        -----------                             -----    ------- ---
+Peptidase_S8    Subtilase family                        411.9   1.1e-120   1
+LacAB_rpiB      Ribose/Galactose Isomerase              -96.7          1   1
+ETF             Electron transfer flavoprotein domain   -56.0          7   1
+ABC_sub_bind    ABC transporter substrate binding pro  -158.2        9.2   1
+
+Parsed for domains:
+Model           Domain  seq-f seq-t    hmm-f hmm-t      score  E-value
+--------        ------- ----- -----    ----- -----      -----  -------
+Peptidase_S8      1/1      24   297 ..     1   352 []   411.9 1.1e-120
+ABC_sub_bind      1/1      45   315 ..     1   303 []  -158.2      9.2
+LacAB_rpiB        1/1      45   147 ..     1   153 []   -96.7        1
+ETF               1/1     125   249 ..     1   174 []   -56.0        7
+
+Alignments of top-scoring domains:
+Peptidase_S8: domain 1 of 1, from 24 to 297: score 411.9, E = 1.1e-120
+                CS    SCTHHTTHHHHHTTT-SETTEEEEEEESB-HTTSTTTTTTEEEETT.
+                RF    xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+                   *->yggsdinapaaWdrgytGkGvvvaViDTGidtnHpDLkgnyiggkki
+                       g++ i+ap++W++g++Gk+++vaV+DTG+dt+HpDLk+++iggk++
+      P11018    24    EGIKVIKAPEMWAKGVKGKNIKVAVLDTGCDTSHPDLKNQIIGGKNF 70   
+
+                CS ...EEECEEETTTTBSTS........SSTSSSHHHHHHHHHH-HCSSSSS
+                RF xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+                   tsndpegsyDfndndsnpnDPgPryddsddngHGTHVAGtiAAvgnNsig
+                   t++      D+ + d+          +sd+ngHGTHVAGtiAA++ N  g
+      P11018    71 TDD------DGGKEDA----------ISDYNGHGTHVAGTIAANDSN-GG 103  
+
+                CS HHHSTTSSEEEEEEESCTETSCCCHCCHHH....HHHHHHHHHHHHHHTT
+                RF xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+                   vvGVApgAkllavrvLdgpngsgtseleaasywaasaviagiewaandng
+                   ++GVAp+A+ll+v+vL+g+ngsg++e          ++i+gi++a+ +++
+      P11018   104 IAGVAPEASLLIVKVLGGENGSGQYE----------WIINGINYAV-EQK 142  
+
+                CS -SEEEE-ECCC.S-HHHHHHCTCHHHHHHHHHHHHHHHHHHHTT-EEEEE
+                RF xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+                   advinmSlGggfpgdsGstsdgpgdlakkAllegAvnyArvnkGsifVaA
+                   +d+i+mSlGg  p+d+++             l++Av++A v++G+++V+A
+      P11018   143 VDIISMSLGG--PSDVPE-------------LKEAVKNA-VKNGVLVVCA 176  
+
+                CS --SSCSSTTTTCCGBTTT...E......ETTTSTTETCEEEEEECTT   
+                RF xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx   
+                   AGNeGsdasdscgcdgnykfrslvkKvvsPAnsiytnvIaVGAtdqn...
+                   AGNeG+++ ++ ++++             PA+++  +vIaVG+++ +++ 
+      P11018   177 AGNEGDGDERTEELSY-------------PAAYN--EVIAVGSVSVArel 211  
+
+                CS   .EECCSTTCEEEEEB.CCSSEEEE.SGGG.EEEETTTEEEEEBSHHHH
+                RF   xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+                   ..fssnsglavdisAPGdsevnIlSTdlqdsgaliynnggyaslsGTSMA
+                   ++f sn+++++d++APG   +nIlST          +n+ y++l+GTSMA
+      P11018   212 seF-SNANKEIDLVAPG---ENILST---------LPNKKYGKLTGTSMA 248  
+
+                CS HHHHHHHHHHHHHHTTTT..CHHHHHHHHH.HSHHHHHHHHHHCSBGCTT
+                RF xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+                   aPhvAGvaALllsanspnltWrdvqylsvlsesaaelraalentatslgg
+                   aPhv+G++AL++s+        ++++++ l  s++e++a+l+ ++ +l+ 
+      P11018   249 APHVSGALALIKSYE-------EESFQRKL--SESEVFAQLIRRTLPLDI 289  
+
+                CS TTTSTSSSSE   
+                RF xxxxxxxxxx   
+                   agisnlfGyG<-*
+                   a++  l G+G   
+      P11018   290 AKT--LAGNG    297  
+
+ABC_sub_bind: domain 1 of 1, from 45 to 315: score -158.2, E = 9.2
+                   *->kIaIaqfv...eHpsLdaivkGiqeaLkdkGyeeGKnvlikvkNAeg
+                      k+a++  + +++Hp L   + G +    d G +e   + i+  N +g
+      P11018    45    KVAVLDTGcdtSHPDLKNQIIGGKNFTDDDGGKE---DAISDYNGHG 88   
+
+                   dpskaaqiarqLvtdkpdliigIaTPvAQilvsaiktqkiPiVfaAVTDP
+                    +  a +ia+    +++   i++  P+A  l+    +             
+      P11018    89 -THVAGTIAA----NDSNGGIAGVAPEASLLIVKVLG------------- 120  
+
+                   vGakLvksleqPgeNvTGVsNLDlldveqtieLikkllPnvksiGvlYsP
+                    G++   + e     + G +     +veq ++           i +  s 
+      P11018   121 -GENGSGQYEW---IINGIN----YAVEQKVD-----------I-ISMSL 150  
+
+                   sEaNsvslveelkkkAkkaGikVveaavpssndvqsavssmagkvda.iy
+                   + + +v++ +e +k A k+G  Vv aa       +++   +    + +++
+      P11018   151 GGPSDVPELKEAVKNAVKNGVLVVCAAGNEGDGDERTEELSYPAAYNeVI 200  
+
+                   iptdnliasafeaHYvlqeankaKIPvitsdtslVerGAiPAAvgvdykq
+                   +  +  +a + +   ++ +++           +lV  G   +    + k+
+      P11018   201 AVGSVSVARELSE--FSNANKEI---------DLVAPGEN-ILSTLPNKK 238  
+
+                   iGvqtAki........vakILkGkkpkdipvsvaasgldpklt...iNkk
+                    G+ t+     ++ +++++++k  + ++  ++ + s +  +l+++++ ++
+      P11018   239 YGKLTGTSmaaphvsgALALIKSYEEESFQRKLSESEVFAQLIrrtLPLD 288  
+
+                   aake......LGItipeellvsalsvk<-*
+                   +ak   +++ L++t p+el+  a + +   
+      P11018   289 IAKTlagngfLYLTAPDELAEKAEQSH    315  
+
+LacAB_rpiB: domain 1 of 1, from 45 to 147: score -96.7, E = 1
+                CS    EEEE   EE-TTTHHHHHHHHHHHHHT..T-EEEE----SSS...--
+                   *->KIaI...GsDHaGfeLKeeikehLeekreGyeViDfGtyseeedasv
+                      K+a+ ++G+D +  +LK+ i+     k  +++  D G  ++      
+      P11018    45    KVAVldtGCDTSHPDLKNQIIG---GK--NFTDDDGGKEDA----IS 82   
+
+                CS -HHHHHHHHHHHHHTTSSSEEEEEESSSHHHHHHHHTSTT--EEE-SSHH
+                   DYPDyAikVAeaVasGeadrGILiCGTGiGmsIAANKvpGIRAALchDpf
+                   DY   +  VA  +a+++ + GI++                        p+
+      P11018    83 DYNGHGTHVAGTIAANDSNGGIAG----------------------VAPE 110  
+
+                CS HHHHHHHHH---EEEE.....ETTTB-HHHHHHHHHH..HHH----.-TT
+                   sAelaReHNNANVLclfKFGWGaRviGpelAkeIvdaGGFLtteFepGGR
+                      l ++       +l     G++ +G+++ + I+     +++  e    
+      P11018   111 ASLLIVK-------VL-----GGE-NGSGQYEWIING---INYAVE---- 140  
+
+                CS HHHHHHHHH   
+                   HarRvdkIs<-*
+                     ++vd Is   
+      P11018   141 --QKVDIIS    147  
+
+ETF: domain 1 of 1, from 125 to 249: score -56.0, E = 7
+                CS    CCECB-CCCECEEETHHHHHHHHHHHHHCCCTSC..--EEEEEECTT
+                   *->gvLvlaehgvngklnpvdleAleaArqLaealGggagveVtalvvGs
+                      ++     +       ++  + +++A++ +         +++  ++G 
+      P11018   125    SG-----QY------EWIINGINYAVEQKV--------DIISMSLG- 151  
+
+                CS ..GGGGHHHHHHHHHCTTSCEEEEEESCCCTT-HHHHHHHHHHHHHH  C
+                   phpvpaaaeaLreALamGAdkvlvvedpalagydaeayaaaLaalik..d
+                     + p+ +++L+eA    + + ++v  +a    d +  ++ L+  ++ ++
+      P11018   152 --G-PSDVPELKEAVKNAVKNGVLVVCAAGNEGDGDERTEELSYPAAynE 198  
+
+                CS .EEEECSCHCCTT-S-HHHHHHHCCTEEEEEEEE EECTTCE....EEEE
+                   plvLaGatsigkdtgQlaPrlAalLgaglvtdvt.leveggkskktltvt
+                    ++ +G+ s+ ++                    ++++ ++++      + 
+      P11018   199 -VIAVGSVSVARE-------------------LSeFSNANKE------ID 222  
+
+                CS EETTTTEEEEEEETTSSEEEEEETTTSS--   
+                   RpiygGnaiatvklpdppavlTVrpgafep<-*
+                     + g n++ t++     +   ++ +++++   
+      P11018   223 LVAPGENILSTLPNK---KYGKLTGTSMAA    249  
+
+//

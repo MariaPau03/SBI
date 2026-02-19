@@ -6125,8 +6125,8 @@ Passed Vit filter:                       945  (0.00175812); expected 537.5 (0.00
 Passed Fwd filter:                       264  (0.000491158); expected 5.4 (1e-05)
 Initial search space (Z):             537505  [actual number of targets]
 Domain search space  (domZ):             264  [number of targets reported over threshold]
-# CPU time: 5.44u 0.12s 00:00:05.56 Elapsed: 00:00:04.57
-# Mc/sec: 13318.09
+# CPU time: 5.49u 0.37s 00:00:05.86 Elapsed: 00:00:14.43
+# Mc/sec: 4217.86
 
 @@ New targets included:   243
 @@ New alignment includes: 262 subseqs (was 1), including original query
@@ -14866,8 +14866,8 @@ Passed Vit filter:                      1030  (0.00191626); expected 537.5 (0.00
 Passed Fwd filter:                       304  (0.000565576); expected 5.4 (1e-05)
 Initial search space (Z):             537505  [actual number of targets]
 Domain search space  (domZ):             304  [number of targets reported over threshold]
-# CPU time: 5.77u 0.09s 00:00:05.86 Elapsed: 00:00:04.18
-# Mc/sec: 14560.68
+# CPU time: 5.63u 0.10s 00:00:05.73 Elapsed: 00:00:05.09
+# Mc/sec: 11934.05
 
 @@ New targets included:   29
 @@ New alignment includes: 298 subseqs (was 262), including original query
@@ -23933,8 +23933,8 @@ Passed Vit filter:                      1194  (0.00222137); expected 537.5 (0.00
 Passed Fwd filter:                       307  (0.000571157); expected 5.4 (1e-05)
 Initial search space (Z):             537505  [actual number of targets]
 Domain search space  (domZ):             307  [number of targets reported over threshold]
-# CPU time: 5.94u 0.09s 00:00:06.03 Elapsed: 00:00:04.07
-# Mc/sec: 14954.21
+# CPU time: 6.00u 0.09s 00:00:06.09 Elapsed: 00:00:06.73
+# Mc/sec: 9043.63
 
 @@ New targets included:   18
 @@ New alignment includes: 310 subseqs (was 298), including original query
@@ -33588,8 +33588,8 @@ Passed Vit filter:                      1151  (0.00214138); expected 537.5 (0.00
 Passed Fwd filter:                       313  (0.00058232); expected 5.4 (1e-05)
 Initial search space (Z):             537505  [actual number of targets]
 Domain search space  (domZ):             313  [number of targets reported over threshold]
-# CPU time: 5.91u 0.09s 00:00:06.00 Elapsed: 00:00:04.26
-# Mc/sec: 14253.78
+# CPU time: 5.99u 0.10s 00:00:06.09 Elapsed: 00:00:05.14
+# Mc/sec: 11841.18
 
 @@ New targets included:   1
 @@ New alignment includes: 296 subseqs (was 310), including original query
@@ -43659,8 +43659,8 @@ Passed Vit filter:                      1324  (0.00246323); expected 537.5 (0.00
 Passed Fwd filter:                       330  (0.000613948); expected 5.4 (1e-05)
 Initial search space (Z):             537505  [actual number of targets]
 Domain search space  (domZ):             330  [number of targets reported over threshold]
-# CPU time: 6.10u 0.09s 00:00:06.19 Elapsed: 00:00:04.38
-# Mc/sec: 13895.81
+# CPU time: 5.93u 0.11s 00:00:06.04 Elapsed: 00:00:05.97
+# Mc/sec: 10194.92
 
 @@ New targets included:   1
 @@ New alignment includes: 297 subseqs (was 296), including original query

@@ -10,7 +10,7 @@ env.io.atom_files_directory = ['.', '../atom_files']
 
 a = automodel(env,
               alnfile  = 'final_alignment.pir', # alignment filename
-              knowns   = ('1abwA ', '1o1nA '),     # codes of the templates
+              knowns   = ('1sbhA', '1yjaA', '1yjbA'),     # codes of the templates
               sequence = 'P11018')               # code of the target
 a.starting_model= 1                 # index of the first model
 a.ending_model  = 2                 # index of the last model
