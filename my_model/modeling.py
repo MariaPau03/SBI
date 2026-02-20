@@ -5,12 +5,12 @@ from modeller.automodel import *    # Load the automodel class
 log.verbose()    # request verbose output
 env = environ()  # create a new MODELLER environment to build this model in
 
-# directories for input atom files, where are the structures
-env.io.atom_files_directory = ['.', '../atom_files'] #look for pdb structures in the same directory
+# directories for input atom files
+env.io.atom_files_directory = ['.', '../atom_files']
 
 a = automodel(env,
-              alnfile  = 'alignment.pir', # alignment filename, in pir format!!!!
-              knowns   = ('1meeA', '1scjA', '1sbhA'),     # codes of the templates
+              alnfile  = 'final_alignment.pir', # alignment filename
+              knowns   = ('1sbhA', '1yjaA', '1yjbA'),     # codes of the templates
               sequence = 'P11018')               # code of the target
 a.starting_model= 1                 # index of the first model
 a.ending_model  = 2                 # index of the last model
