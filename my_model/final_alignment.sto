@@ -1,24 +1,24 @@
 # STOCKHOLM 1.0
 
-P11018         mngeirlipyvtneqimdvnelpegikvikapemwakgvkgkniKVAVLDTGCDTSHPDLK-NQIIG-----GKNFTDDDgGKEDAISDYNGHGTHVAGTIAAND--SNGGIAGVAPEASLLIVKVLGGENgsGQYEWIINGINYAV-EQKVDIISMSLGG------PSDVPELKEAVKNAVKNGVLVVCAAGNEGDGDE
-#=GR P11018 PP ********************************************69***************.99998.....8899999999**********************6..78888**************888884566667*********.8888*******77......344445777******************999999
-1shbA          ..................aqsvpygvsqikapalhsqgytgsnvKVAVIDSGIDSSHPDLK--------VAGGASFVPSE.--TNPFQDNNSHGTHVAGTVAAL--DNSIGVLGVAPSASLYAVKVLGADG.sGQYSWIINGIEWAI-ANNMDVINMSLGG------PSGSAALKAAVDKAVASGVVVVAAAGNEGTSGS
-#=GR 1shbA  PP ..................**************************69***************........44589999998...889******************..59******************99999.9**************.8888*******88......678999**************************9
-1yjaA          ..................aqsvpygvsqikapalhsqgytgsnvKVAVIDSGIDSSHPDLK--------VAGGASFVPSE.--TNPFQDNNSHGTHVAGTVAAL--DNSIGVLGVAPSASLYAVKVLGADG.sGQYSWIINGIEWAI-ANNMDVINMSLGG------PSGSAALKAAVDKAVASGVVVVAAAGNEGTSGS
-#=GR 1yjaA  PP ..................**************************69***************........44589999998...889******************..59******************99999.9**************.8888*******88......678999**************************9
-1yjbA          ..................aqsvpygvsqikapalhsqgytgsnvKVAVIDSGIDSSHPDLK--------VAGGASFVPSE.--TNPFQDNNSHGTHVAGTVAAL--DNSIGVLGVAPSASLYAVKVLGADG.sGQYSWIINGIEWAI-ANNMDVINMSLGG------PSGSAALKAAVDKAVASGVVVVAAAGNEGTSGS
-#=GR 1yjbA  PP ..................**************************69***************........44589999998...889******************..59******************99999.9**************.8888*******88......678999**************************9
-#=GC PP_cons   ............................................69***************.99998..44588999998.9*899******************6.599999**************99999..99999*********.8888*******88......567788999**********************99
-#=GC RF        ............................................xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx.xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx..xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+P11018         m-NGEIRLIPYVTNEQIMDVNELPEGIKVIKAPEMWAKGVKGKNIKVAVLDTGCDTSHPDLKNQIIGGKNFTDDDGGKEDAISDYNGHGTHVAGTIAANDSNGGIAGVAPEASLLIVKVLGGENGSGQYEWIINGINYAVEQKVDIISMSLGGPSDVPELKEAVKNAVKNGVLVVCAAGNEGDGDERTEELSYPAAYNEV
+#=GR P11018 PP 7.57899*************************************************************************************************************************************************************************************************
+1sbhA          a-------------------QSVPYGVSQIKAPALHSQGYTGSNVKVAVIDSGIDSSHPDLK--VAGGASFVPSE---TNPFQDNNSHGTHVAGTVAALDNSIGVLGVAPSASLYAVKVLGA-DGSGQYSWIINGIEWAIANNMDVINMSLGGPSGSAALKAAVDKAVASGVVVVAAAGNEGTSG-SSSTVGYPAKYPSV
+#=GR 1sbhA  PP 6...................78999************************************9..789******99...9999***************************************9.**************************************************************.8889**********
+1s01A          a-------------------QSVPYGVSQIKAPALHSQGYTGSNVKVAVIDSGIDSSHPDLK--VAGGASFVPSE---TNPFQDNNSHGTHVAGTVAALDNSIGVLGVAPSASLYAVKVLGA-DGSGQYSWIINGIEWAIANNMDVINMSLGGPSGSAALKAAVDKAVASGVVVVAAAGNEGTSG-SSSTVGYPAKYPSV
+#=GR 1s01A  PP 6...................78999************************************9..789******99...9999***************************************9.**************************************************************.8889**********
+1sbiA          a-------------------QSVPYGVSQIKAPALHSQGYTGSNVKVAVIDSGIDSSHPDLK--VAGGASFVPSE---TNPFQDNNSHGTHVAGTVAALDNSIGVLGVAPSASLYAVKVLGA-DGSGQYSWIINGIEWAIANNMDVINMSLGGPSGSAALKAAVDKAVASGVVVVAAAGNEGTSG-SSSTVGYPAKYPSV
+#=GR 1sbiA  PP 6...................78999************************************9..789******99...9999***************************************9.**************************************************************.8889**********
+#=GC PP_cons   ..57899*************7899*************************************9**799***********999****************************************9****************************************************************8899**********
+#=GC RF        .xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 
-P11018         RTeeLSYPAAYNEVIAVGSVSVARELSEFSNANKEI-------DLVAPGENILSTLPNKK---YGKLTGTSMAAPHVSGALALIKSyeeesFQRKLSESEVFAQLIRRTLPLD-----------------------iaktlagngflyltapdelaekaeqshlltl
-#=GR P11018 PP 9999****************************8888.......***************88...888********************554444444488888886666555555.......................55555556667778899**************
-1shbA          SS.tVGYPAKYPSVIAVGAVDSSNQRASFSSVGPEL-------DVMAPGVSI-STLPGNK---YGAYSGTSMASPHVAGAAALILS.....KHPNWTNTQVRSSLENTTTYLG------DSFYYGKGLINVQAA--aq.............................
-#=GR 1shbA  PP 98.9****************************8888.......*********.*****98...777********************.....**********************......56667*******998..57.............................
-1yjaA          SS.tVGYPAKYPSVIAVGAVDSSNQRASFSSVGPEL-------DVMAPGVSI-STLPGNK---YGAYSGTSMASPHVAGAAALILS.....KHPNWTNTQVRSSLENTTTYLG------DSFYYGKGLINVQAA--aq.............................
-#=GR 1yjaA  PP 98.9****************************8888.......*********.*****98...777********************.....**********************......56667*******998..57.............................
-1yjbA          SS.tVGYPAKYPSVIAVGAVDSSNQRASFSSVGPEL-------DVMAPGVSI-STLPGNK---YGAYSGTSMASPHVAGAAALILS.....KHPNWTNTQVRSSLENTTTYLG------DSFYYGKGLINVQAA--aq.............................
-#=GR 1yjbA  PP 98.9****************************8888.......*********.*****98...777********************.....**********************......56667*******998..57.............................
-#=GC PP_cons   98..****************************8888.......***************98...778********************.....88899*******9999999999......56667*******998.................................
-#=GC RF        xx..xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx.....xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx...............................
+P11018         IAVGSVSVARELSEFSNANKEIDLVAPGENILSTLPNKKYGKLTGTSMAAPHVSGALALIKSYEEESFQRKLSESEVFAQLIRRTLPLDIAKTLAGNGFLYLTAPDELAEKAEQSHLLT-l..
+#=GR P11018 PP *******************************************************************************************************************9987.6..
+1sbhA          IAVGAVDSSNQRASFSSVGPELDVMAPGVSI-STLPGNKYGAYSGTSMASPHVAGAAALILSKHPN-----WTNTQVRSSLENTTTYLGDS-FYYGKGLINVQA----------------aaq
+#=GR 1sbhA  PP ******************************7.*********************************9.....*****************976.9********986................568
+1s01A          IAVGAVDSSNQRASFSSVGPELDVMAPGVSICSTLPGNKYGAKSGTSMASPHVAGAAALILSKHPN-----WTNTQVRSSLENTTTKLGDS-FYYGKGLINVQA----------------aaq
+#=GR 1s01A  PP *****************************************************************9.....*****************976.9********986................568
+1sbiA          IAVGAVDSSNQRASFSSVGPELDVMAPGVSI-STLPGNKYGAYSGTSMASPHVAGAAALILSKHPN-----WTNTQVRSSLENTTTKLGDS-FYYGKGLINVQA----------------aaq
+#=GR 1sbiA  PP ******************************7.*********************************9.....*****************976.9********986................568
+#=GC PP_cons   ******************************8**********************************9**********************987*9********987***********9987....
+#=GC RF        xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx...
 //
