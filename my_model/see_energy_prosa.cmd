@@ -1,4 +1,4 @@
-read pdb P11018.BL00040003.pdb mod1_modif
+read pdb P11018.BL00040001.pdb mod1_modif
 read pdb model1.pdb mod1
 read pdb model2.pdb mod2
 read pdb 1sbhA.pdb 1sbh
