@@ -10,13 +10,13 @@ env.io.atom_files_directory = ['.', '../atom_files']
 
 class MyModel(loopmodel):
       def select_loop_atoms(self):
-          return selection(self.residue_range('60:','75:'))
+          return selection(self.residue_range('54:','72:'))
      # def special_restraints(self,aln):
         #  rsr = self.restraints
         #  at  = self.atoms
         #  rsr.add(secondary_structure.alpha(self.residue_range('250:','272:')))
 
-a = loopmodel(env,
+a = MyModel(env,
               alnfile  = 'final_alignment_modificated.pir', # alignment filename
               knowns   = ('1sbhA', '1s01A', '1sbiA'),     # codes of the templates
               sequence = 'P11018',                        # code of the target
@@ -29,7 +29,7 @@ a.starting_model= 1                 # index of the first model
 a.ending_model  = 2                 # index of the last model
                                     # (determines how many models to calculate)
 a.loop.starting_model = 1           # index of the first loop-model
-a.loop.ending_model = 10             # index of the last loop-model                                     
+a.loop.ending_model = 5             # index of the last loop-model                                     
 a.make()                            # do the actual homology modeling
 
 ok_mdl = [x for x in a.outputs if x['failure'] is None]
@@ -42,7 +42,7 @@ ok_mdl = [x for x in a.loop.outputs if x['failure'] is None]
 k='DOPE score'
 ok_mdl.sort(key=lambda a:a[k])
 for m in ok_mdl:
-    print("Model: %s (DOPE score %.3f)"%(m['name'],m[k]))
+    print("Loop: %s (DOPE score %.3f)"%(m['name'],m[k]))
 
 
     
