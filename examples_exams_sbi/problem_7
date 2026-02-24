@@ -1,0 +1,37 @@
+
+PROBLEM 
+
+a) 0.5 pts
+b) 0.5 pts
+c) 0.5 pt 
+d) 0.5 pt
+e) 0.5 pt
+f) 0.5 pt
+g) 0.5 pt
+h) 1 pt
+i) 1 pt
+
+ Obtain the largest sequence modelled of the problem and answer the following questions 
+ (modeling half reduces to half all scores, less than 1/4 modelled is zero)
+
+ a) what's the SCOP fold?
+ b) what's the PFAM domain?
+ c) Obtain the alignment between the sequence and the templates to produce the best model of the whole sequence (with more than 60% residues) and explain how it was obtained (name the alignment p40c.ali)
+ d) Obtain the statistic potential profile of Prosa and compare it with the template (name the image p40d_fig1). Is there any problematic region? identify it and show an image p40d_fig2 (use extension png of jpg) 
+ e) Obtain the alignment between the sequence and the templates to produce the best model of the whole sequence (with more than 60% residues) using a HMM. Name the HMM as p40e.hmm
+ f) Superpose the model with the template and name the file p40f.pdb
+ g) Calculate the secondary structure of your model (file p40g.dssp) and compare it with the predicted secondary structure in an easy to read alignment (figure or text file p40g_fig1) (use extension png, jpeg or txt)
+ h) If there is a problem, modify the model. Name the new model p40h.pdb
+ i) Compare with pseudo-energies to proof that the model is improved (show it in figure p40i_fig1 ) and show the modification of the structure of the new model in figure p40i_fig2 (use extensions png, jpeg or pdf)
+
+
+
+SEQUENCE PROBLEM
+
+
+>problema40 
+SLPILKDFGVNWIVLGHSERRAYYGETNEIVADKVAAAVASGFMVIACIGETLQERESGRTAVVVLTQIAAIAKKLKKAD
+WAKVVIAYEPVWAIGTGKVATPQQAQEAHALAHSSLALIRSWVSSKIGADVAGELRILYGGSVNGKNARTLYQQRDVNGFLVGGASL
+KPEFVDIIKATQSKPQPIAAANWKCNGSQQSLSELIDLFNSTSINHDVQCVVASTFVHLAMTKERLSHPKFVIAAQNA
+
+

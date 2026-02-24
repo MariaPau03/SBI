@@ -1,0 +1,42 @@
+PROBLEM 
+
+ a) 1 pt
+ b) 1 pt
+ c) 1 pt
+ d) 1 pt
+ e) 1 pt
+ f) 1 pt
+ g) 1 pt
+ h) 1 pt
+ i) 1 pt
+ j) 1 pt
+ k) 1 pt
+
+a) Search in the PDB close homologs to the target sequence (see below). What are their names and the corresponding e-values. What are their folds in SCOP?
+
+b) Superpose the structure of three homologs with DIFFERENT sequence and keep the superposition in a file named p9b.pdb.
+
+c) Split the target sequence and the templates by domains and superpose the similar domains. Keep the PDB files named p9c_domain1.pdb, p9c_domain2.pdb, p9c_domain3.pdb, etc.
+
+d) Generate a HMM for the largest sequence with structure using at least three different sequences. Keep the alignment in a text file named  p9d.aln and  p9d.hmm
+
+e) Obtain the PFAM Hidden-Markov profiles of each domain (if there is more than one domain) and name them p9e_domain1.hmm, p9e_domain2.hmm, p9e_domain3.hmm, etc. What are their names according to PFAM?
+
+f) Obtain two sets of alignments of the target sequence with the closest homologs with structure. One for the alignment using the HMM of p9d.hmm (name the alignment p9f_global.aln) and the other with the HMMs of the domains (name them p9f_domain1.aln, p9f_domain2.aln, etc.) 
+
+g) Model built the structure of each domain separately. Name them p9g_domain1.pdb, p9g_domain2.pdb, etc.
+
+h) Model built the structure of the largest sequence of the target. Name it p9h_global.pdb
+
+i) Compare with Prosa2003 the energies of the target domains and the original templates. Keep a single image for the comparison of the profile energies of each domain (name it p9i_prosa.jpg) and describe the colors for this image.
+
+j) Compare with Prosa2003 the energies of the target model with the largest sequence modelled and the original templates. Keep the image of the energy profile as p9j_prosa.jpg.
+
+k) Compare the prediction of the secondary structure of the target and the structure of the model built for this target. Keep the alignment with the comparison in a text file and name it p9k_ss.aln
+
+
+MESVALYSFQATESDELAFNKGDTLKILNMEDDQNWYKAELRGVEGFIPKNYIRVKPHPW
+YSGRISRQLAEEILMKRNHLGAFLIRESESSPGEFSVSVNYGDQVQHFKVLREASGKYFL
+WEEKFNSLNELVDFYRTTTIAKKRQIFLRDEEPLLKSPGACFAQAQFDFSAQDPSQLSFR
+RGDIIEVLERPDPHWWRGRSCGRVGFFPRSYVQPVHL
+
