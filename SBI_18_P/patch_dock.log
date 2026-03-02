@@ -1,0 +1,69 @@
+00:00:00.00| INFO: START DOCKING savinase.pdb with BASI.pdb
+00:00:00.00| INFO: Start reading PDB for receptor molecule
+00:00:00.00| INFO: Chem molecule: 1880 atoms were read
+00:00:00.00| INFO: Hydrogen molecule: 1880 atoms were read
+00:00:00.00| INFO: 3 residues were read from site file: s1.txt
+00:00:00.00| INFO: Start reading PDB for ligand molecule
+00:00:00.01| INFO: Chem molecule: 1404 atoms were read
+00:00:00.01| INFO: Hydrogen molecule: 1404 atoms were read
+00:00:00.01| INFO: 12 residues were read from site file: s2.txt
+00:00:00.01| INFO: Start building docking surface for receptor molecule
+00:00:00.01| INFO: Start building surface, molecule grid and distance function
+00:00:01.11| INFO: Start calculating Volume function and Normals for surface points
+00:00:01.13| INFO: Shuo surface size = 3708
+00:00:01.17| INFO: 3000sp processed
+00:00:01.24| INFO: Start calculating Active Site patches
+00:00:01.24| INFO: Running segmentation for KNB
+00:00:01.25| INFO: Running segmentation for FLT
+00:00:01.26| INFO: Running segmentation for HLE
+00:00:01.47| INFO: Final # of patches: 3
+00:00:01.48| INFO: Start calculating Geodesical distances
+00:00:01.48| INFO: Start building docking surface for ligand molecule
+00:00:01.48| INFO: Start building surface, molecule grid and distance function
+00:00:02.33| INFO: Start calculating Volume function and Normals for surface points
+00:00:02.36| INFO: Shuo surface size = 3429
+00:00:02.42| INFO: 3000sp processed
+00:00:02.46| INFO: Start calculating Active Site patches
+00:00:02.46| INFO: Running segmentation for KNB
+00:00:02.48| INFO: Running segmentation for FLT
+00:00:02.49| INFO: Running segmentation for HLE
+00:00:02.56| INFO: Final # of patches: 6
+00:00:02.56| INFO: Start calculating Geodesical distances
+00:00:02.56| INFO: Start docking
+00:00:02.56| INFO: Initializing cluster parameters
+00:00:02.56| INFO: Building scoring trees
+00:00:02.61| INFO: Pose Clustering matching algorithm (default)
+00:00:02.61| INFO: Initializing Matching Data Structure
+00:00:02.61| INFO: Initializing cluster parameters
+00:00:02.61| INFO: Start Preprocessing
+00:00:02.61| INFO: Start Docking hole-knob patches
+00:00:02.63| INFO: Start clustering 125465 transforms
+00:00:02.79| INFO: Clustered transforms size: 1730
+00:00:02.82| INFO: Filtered transforms size: 435
+00:00:02.82| INFO: Backbone filtered transforms size: 386
+00:00:02.82| INFO: RMSD Clustered transforms size: 347
+00:00:03.01| INFO: Scored transforms size: 155
+00:00:03.01| INFO: Done processing patch # 1 out of 3
+00:00:03.03| INFO: Start clustering 205053 transforms
+00:00:03.31| INFO: Clustered transforms size: 3633
+00:00:03.38| INFO: Filtered transforms size: 1082
+00:00:03.38| INFO: Backbone filtered transforms size: 973
+00:00:03.39| INFO: RMSD Clustered transforms size: 757
+00:00:03.78| INFO: Scored transforms size: 338
+00:00:03.78| INFO: Done processing patch # 2 out of 3
+00:00:03.79| INFO: Start clustering 91289 transforms
+00:00:03.92| INFO: Clustered transforms size: 835
+00:00:03.94| INFO: Filtered transforms size: 372
+00:00:03.94| INFO: Backbone filtered transforms size: 339
+00:00:03.94| INFO: RMSD Clustered transforms size: 292
+00:00:04.07| INFO: Scored transforms size: 151
+00:00:04.07| INFO: Done processing patch # 3 out of 3
+00:00:04.07| INFO: Start Docking flat-flat patches
+00:00:04.07| INFO: Start Docking knob-hole patches
+00:00:04.07| INFO: ProgTime: prog_time: 00:00:01.46
+00:00:04.07| INFO: Initial results size: 572
+00:00:04.07| INFO: After removal of low scoring: 554
+00:00:04.09| INFO: Results size after final clustering: 114
+00:00:04.30| INFO: Full scored transforms size: 114
+00:00:04.30| INFO: After full scoring: 114
+00:00:04.30| INFO: Finish docking
