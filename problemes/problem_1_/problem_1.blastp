@@ -1,0 +1,1122 @@
+BLASTP 2.17.0+
+
+
+Reference: Stephen F. Altschul, Thomas L. Madden, Alejandro A.
+Schaffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J.
+Lipman (1997), "Gapped BLAST and PSI-BLAST: a new generation of
+protein database search programs", Nucleic Acids Res. 25:3389-3402.
+
+
+Reference for composition-based statistics: Alejandro A. Schaffer,
+L. Aravind, Thomas L. Madden, Sergei Shavirin, John L. Spouge, Yuri
+I. Wolf, Eugene V. Koonin, and Stephen F. Altschul (2001),
+"Improving the accuracy of PSI-BLAST protein database searches with
+composition-based statistics and other refinements", Nucleic Acids
+Res. 29:2994-3005.
+
+
+
+Database: pdb_seq
+           133,266 sequences; 30,839,592 total letters
+
+
+
+Query= problem_1_A
+
+Length=21
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+1gua_A mol:protein length:167 RAP1A                                   28.1    0.098
+1c1y_A mol:protein length:167 RAS-RELATED PROTEIN RAP-1A              28.1    0.10 
+3cf6_R mol:protein length:167 Ras-related protein Rap-1b              27.7    0.12 
+3brw_D mol:protein length:167 Ras-related protein Rap-1b              27.7    0.12 
+2bov_A mol:protein length:206 RAS-RELATED PROTEIN RAL-A               26.9    0.24 
+2a9k_A mol:protein length:187 Ras-related protein Ral-A               26.9    0.24 
+2a78_A mol:protein length:187 Ras-related protein Ral-A               26.9    0.24 
+1u90_B mol:protein length:168 Ras-related protein Ral-A               26.9    0.24 
+1u90_A mol:protein length:168 Ras-related protein Ral-A               26.9    0.24 
+1u8z_B mol:protein length:168 Ras-related protein Ral-A               26.9    0.24 
+1u8z_A mol:protein length:168 Ras-related protein Ral-A               26.9    0.24 
+1u8y_B mol:protein length:168 Ras-related protein Ral-A               26.9    0.24 
+1u8y_A mol:protein length:168 Ras-related protein Ral-A               26.9    0.24 
+1uad_B mol:protein length:175 Ras-related protein Ral-A               26.9    0.24 
+1uad_A mol:protein length:175 Ras-related protein Ral-A               26.9    0.24 
+1zc4_C mol:protein length:175 Ras-related protein Ral-A               26.9    0.25 
+1zc4_A mol:protein length:175 Ras-related protein Ral-A               26.9    0.25 
+1zc3_C mol:protein length:175 Ras-related protein Ral-A               26.9    0.25 
+1zc3_A mol:protein length:175 Ras-related protein Ral-A               26.9    0.25 
+1yzl_A mol:protein length:179 Ras-related protein Rab-9A              24.6    1.8  
+2erx_B mol:protein length:172 GTP-binding protein Di-Ras2             24.3    2.1  
+2erx_A mol:protein length:172 GTP-binding protein Di-Ras2             24.3    2.1  
+1agp_A mol:protein length:166 C-H-RAS P21 PROTEIN                     24.3    2.2  
+3clv_A mol:protein length:208 Rab5 protein, putative                  24.3    2.5  
+1cp2_B mol:protein length:269 NITROGENASE IRON PROTEIN                23.9    2.6  
+1cp2_A mol:protein length:269 NITROGENASE IRON PROTEIN                23.9    2.6  
+2ocb_A mol:protein length:180 Ras-related protein Rab-9B              23.9    2.9  
+1wms_B mol:protein length:177 Ras-related protein Rab-9A              23.9    2.9  
+1wms_A mol:protein length:177 Ras-related protein Rab-9A              23.9    2.9  
+1s8f_B mol:protein length:177 Ras-related protein Rab-9A              23.9    2.9  
+1s8f_A mol:protein length:177 Ras-related protein Rab-9A              23.9    2.9  
+821p_A mol:protein length:166 C-H-RAS P21 PROTEIN                     23.9    3.0  
+1pll_A mol:protein length:166 C-H-RAS P21 PROTEIN                     23.9    3.0  
+1plk_A mol:protein length:166 C-H-RAS P21 PROTEIN                     23.9    3.0  
+1plj_A mol:protein length:166 C-H-RAS P21 PROTEIN                     23.9    3.0  
+1jai_A mol:protein length:166 C-HA-RAS                                23.9    3.0  
+1jah_A mol:protein length:166 C-HA-RAS                                23.9    3.0  
+1clu_A mol:protein length:166 TRANSFORMING PROTEIN P21/H-RAS-1        23.9    3.0  
+421p_A mol:protein length:166 H-RAS P21 PROTEIN                       23.9    3.1  
+2atv_A mol:protein length:196 RAS-like estrogen-regulated growth ...  23.1    5.0  
+3c5c_D mol:protein length:187 RAS-like protein 12                     23.1    5.3  
+3c5c_C mol:protein length:187 RAS-like protein 12                     23.1    5.3  
+3c5c_B mol:protein length:187 RAS-like protein 12                     23.1    5.3  
+3c5c_A mol:protein length:187 RAS-like protein 12                     23.1    5.3  
+2vz9_B mol:protein length:2512 FATTY ACID SYNTHASE                    23.1    5.5  
+2vz9_A mol:protein length:2512 FATTY ACID SYNTHASE                    23.1    5.5  
+2vz8_B mol:protein length:2512 FATTY ACID SYNTHASE                    23.1    5.5  
+2vz8_A mol:protein length:2512 FATTY ACID SYNTHASE                    23.1    5.5  
+1x3s_A mol:protein length:195 Ras-related protein Rab-18              22.7    8.6  
+2r0u_A mol:protein length:323 Serine/threonine-protein kinase Chk1    22.3    9.1  
+2qhn_A mol:protein length:323 Serine/threonine-protein kinase Chk1    22.3    9.1  
+2qhm_A mol:protein length:323 Serine/threonine-protein kinase Chk1    22.3    9.1  
+2hy0_A mol:protein length:322 Serine/threonine-protein kinase Chk1    22.3    9.1  
+2hxq_A mol:protein length:322 Serine/threonine-protein kinase Chk1    22.3    9.1  
+2hxl_A mol:protein length:322 Serine/threonine-protein kinase Chk1    22.3    9.1  
+2hog_A mol:protein length:322 Serine/threonine-protein kinase Chk1    22.3    9.1  
+2cgx_A mol:protein length:297 SERINE/THREONINE-PROTEIN KINASE CHK1    22.3    9.1  
+2cgw_A mol:protein length:297 SERINE/THREONINE-PROTEIN KINASE CHK1    22.3    9.1  
+2cgv_A mol:protein length:297 SERINE/THREONINE-PROTEIN KINASE CHK1    22.3    9.1  
+2cgu_A mol:protein length:297 SERINE/THREONINE-PROTEIN KINASE CHK1    22.3    9.1  
+2c3l_A mol:protein length:297 SERINE/THREONINE-PROTEIN KINASE CHK1    22.3    9.1  
+2c3k_A mol:protein length:297 SERINE/THREONINE-PROTEIN KINASE CHK1    22.3    9.1  
+2c3j_A mol:protein length:297 SERINE/THREONINE-PROTEIN KINASE CHK1    22.3    9.1  
+2bro_A mol:protein length:297 SERINE/THREONINE-PROTEIN KINASE CHK1    22.3    9.1  
+2brn_A mol:protein length:297 SERINE/THREONINE-PROTEIN KINASE CHK1    22.3    9.1  
+2brm_A mol:protein length:297 SERINE/THREONINE-PROTEIN KINASE CHK1    22.3    9.1  
+2brh_A mol:protein length:297 SERINE/THREONINE-PROTEIN KINASE CHK1    22.3    9.1  
+2brg_A mol:protein length:297 SERINE/THREONINE-PROTEIN KINASE CHK1    22.3    9.1  
+2brb_A mol:protein length:297 SERINE/THREONINE-PROTEIN KINASE CHK1    22.3    9.1  
+2br1_A mol:protein length:297 SERINE/THREONINE-PROTEIN KINASE CHK1    22.3    9.1  
+2gdo_A mol:protein length:295 Serine/threonine-protein kinase Chk1    22.3    9.1  
+1zlt_A mol:protein length:295 Serine/threonine-protein kinase Chk1    22.3    9.1  
+1nvs_A mol:protein length:289 Serine/threonine-protein kinase Chk1    22.3    9.1  
+1nvr_A mol:protein length:289 Serine/threonine-protein kinase Chk1    22.3    9.1  
+1nvq_A mol:protein length:289 Serine/threonine-protein kinase Chk1    22.3    9.1  
+1ia8_A mol:protein length:289 CHK1 CHECKPOINT KINASE                  22.3    9.1  
+1zys_A mol:protein length:273 Serine/threonine-protein kinase Chk1    22.3    9.1  
+2ywp_A mol:protein length:269 Serine/threonine-protein kinase Chk1    22.3    9.1  
+2ghg_A mol:protein length:269 Serine/threonine-protein kinase Chk1    22.3    9.1  
+2e9u_A mol:protein length:269 Serine/threonine-protein kinase Chk1    22.3    9.1  
+2e9p_A mol:protein length:269 Serine/threonine-protein kinase Chk1    22.3    9.1  
+2e9o_A mol:protein length:269 Serine/threonine-protein kinase Chk1    22.3    9.1  
+2e9n_A mol:protein length:269 Serine/threonine-protein kinase Chk1    22.3    9.1  
+2ayp_A mol:protein length:269 Serine/threonine-protein kinase Chk1    22.3    9.1  
+2e9v_B mol:protein length:268 Serine/threonine-protein kinase Chk1    22.3    9.1  
+2e9v_A mol:protein length:268 Serine/threonine-protein kinase Chk1    22.3    9.1  
+
+
+>1gua_A mol:protein length:167  RAP1A
+Length=167
+
+ Score = 28.1 bits (61),  Expect = 0.098, Method: Composition-based stats.
+ Identities = 11/21 (52%), Positives = 16/21 (76%), Gaps = 0/21 (0%)
+
+Query  1   KIAMLGEGGVGEAALTVNLTK  21
+           K+ +LG GGVG++ALTV   +
+Sbjct  5   KLVVLGSGGVGKSALTVQFVQ  25
+
+
+>1c1y_A mol:protein length:167  RAS-RELATED PROTEIN RAP-1A
+Length=167
+
+ Score = 28.1 bits (61),  Expect = 0.10, Method: Composition-based stats.
+ Identities = 11/21 (52%), Positives = 16/21 (76%), Gaps = 0/21 (0%)
+
+Query  1   KIAMLGEGGVGEAALTVNLTK  21
+           K+ +LG GGVG++ALTV   +
+Sbjct  5   KLVVLGSGGVGKSALTVQFVQ  25
+
+
+>3cf6_R mol:protein length:167  Ras-related protein Rap-1b
+Length=167
+
+ Score = 27.7 bits (60),  Expect = 0.12, Method: Composition-based stats.
+ Identities = 11/21 (52%), Positives = 16/21 (76%), Gaps = 0/21 (0%)
+
+Query  1   KIAMLGEGGVGEAALTVNLTK  21
+           K+ +LG GGVG++ALTV   +
+Sbjct  5   KLVVLGSGGVGKSALTVQFVQ  25
+
+
+>3brw_D mol:protein length:167  Ras-related protein Rap-1b
+Length=167
+
+ Score = 27.7 bits (60),  Expect = 0.12, Method: Composition-based stats.
+ Identities = 11/21 (52%), Positives = 16/21 (76%), Gaps = 0/21 (0%)
+
+Query  1   KIAMLGEGGVGEAALTVNLTK  21
+           K+ +LG GGVG++ALTV   +
+Sbjct  5   KLVVLGSGGVGKSALTVQFVQ  25
+
+
+>2bov_A mol:protein length:206  RAS-RELATED PROTEIN RAL-A
+Length=206
+
+ Score = 26.9 bits (58),  Expect = 0.24, Method: Composition-based stats.
+ Identities = 10/19 (53%), Positives = 15/19 (79%), Gaps = 0/19 (0%)
+
+Query  1   KIAMLGEGGVGEAALTVNL  19
+           K+ M+G GGVG++ALT+  
+Sbjct  16  KVIMVGSGGVGKSALTLQF  34
+
+
+>2a9k_A mol:protein length:187  Ras-related protein Ral-A
+Length=187
+
+ Score = 26.9 bits (58),  Expect = 0.24, Method: Composition-based stats.
+ Identities = 10/19 (53%), Positives = 15/19 (79%), Gaps = 0/19 (0%)
+
+Query  1   KIAMLGEGGVGEAALTVNL  19
+           K+ M+G GGVG++ALT+  
+Sbjct  20  KVIMVGSGGVGKSALTLQF  38
+
+
+>2a78_A mol:protein length:187  Ras-related protein Ral-A
+Length=187
+
+ Score = 26.9 bits (58),  Expect = 0.24, Method: Composition-based stats.
+ Identities = 10/19 (53%), Positives = 15/19 (79%), Gaps = 0/19 (0%)
+
+Query  1   KIAMLGEGGVGEAALTVNL  19
+           K+ M+G GGVG++ALT+  
+Sbjct  20  KVIMVGSGGVGKSALTLQF  38
+
+
+>1u90_B mol:protein length:168  Ras-related protein Ral-A
+Length=168
+
+ Score = 26.9 bits (58),  Expect = 0.24, Method: Composition-based stats.
+ Identities = 10/19 (53%), Positives = 15/19 (79%), Gaps = 0/19 (0%)
+
+Query  1   KIAMLGEGGVGEAALTVNL  19
+           K+ M+G GGVG++ALT+  
+Sbjct  6   KVIMVGSGGVGKSALTLQF  24
+
+
+>1u90_A mol:protein length:168  Ras-related protein Ral-A
+Length=168
+
+ Score = 26.9 bits (58),  Expect = 0.24, Method: Composition-based stats.
+ Identities = 10/19 (53%), Positives = 15/19 (79%), Gaps = 0/19 (0%)
+
+Query  1   KIAMLGEGGVGEAALTVNL  19
+           K+ M+G GGVG++ALT+  
+Sbjct  6   KVIMVGSGGVGKSALTLQF  24
+
+
+>1u8z_B mol:protein length:168  Ras-related protein Ral-A
+Length=168
+
+ Score = 26.9 bits (58),  Expect = 0.24, Method: Composition-based stats.
+ Identities = 10/19 (53%), Positives = 15/19 (79%), Gaps = 0/19 (0%)
+
+Query  1   KIAMLGEGGVGEAALTVNL  19
+           K+ M+G GGVG++ALT+  
+Sbjct  6   KVIMVGSGGVGKSALTLQF  24
+
+
+>1u8z_A mol:protein length:168  Ras-related protein Ral-A
+Length=168
+
+ Score = 26.9 bits (58),  Expect = 0.24, Method: Composition-based stats.
+ Identities = 10/19 (53%), Positives = 15/19 (79%), Gaps = 0/19 (0%)
+
+Query  1   KIAMLGEGGVGEAALTVNL  19
+           K+ M+G GGVG++ALT+  
+Sbjct  6   KVIMVGSGGVGKSALTLQF  24
+
+
+>1u8y_B mol:protein length:168  Ras-related protein Ral-A
+Length=168
+
+ Score = 26.9 bits (58),  Expect = 0.24, Method: Composition-based stats.
+ Identities = 10/19 (53%), Positives = 15/19 (79%), Gaps = 0/19 (0%)
+
+Query  1   KIAMLGEGGVGEAALTVNL  19
+           K+ M+G GGVG++ALT+  
+Sbjct  6   KVIMVGSGGVGKSALTLQF  24
+
+
+>1u8y_A mol:protein length:168  Ras-related protein Ral-A
+Length=168
+
+ Score = 26.9 bits (58),  Expect = 0.24, Method: Composition-based stats.
+ Identities = 10/19 (53%), Positives = 15/19 (79%), Gaps = 0/19 (0%)
+
+Query  1   KIAMLGEGGVGEAALTVNL  19
+           K+ M+G GGVG++ALT+  
+Sbjct  6   KVIMVGSGGVGKSALTLQF  24
+
+
+>1uad_B mol:protein length:175  Ras-related protein Ral-A
+Length=175
+
+ Score = 26.9 bits (58),  Expect = 0.24, Method: Composition-based stats.
+ Identities = 10/19 (53%), Positives = 15/19 (79%), Gaps = 0/19 (0%)
+
+Query  1   KIAMLGEGGVGEAALTVNL  19
+           K+ M+G GGVG++ALT+  
+Sbjct  8   KVIMVGSGGVGKSALTLQF  26
+
+
+>1uad_A mol:protein length:175  Ras-related protein Ral-A
+Length=175
+
+ Score = 26.9 bits (58),  Expect = 0.24, Method: Composition-based stats.
+ Identities = 10/19 (53%), Positives = 15/19 (79%), Gaps = 0/19 (0%)
+
+Query  1   KIAMLGEGGVGEAALTVNL  19
+           K+ M+G GGVG++ALT+  
+Sbjct  8   KVIMVGSGGVGKSALTLQF  26
+
+
+>1zc4_C mol:protein length:175  Ras-related protein Ral-A
+Length=175
+
+ Score = 26.9 bits (58),  Expect = 0.25, Method: Composition-based stats.
+ Identities = 10/19 (53%), Positives = 15/19 (79%), Gaps = 0/19 (0%)
+
+Query  1   KIAMLGEGGVGEAALTVNL  19
+           K+ M+G GGVG++ALT+  
+Sbjct  8   KVIMVGSGGVGKSALTLQF  26
+
+
+>1zc4_A mol:protein length:175  Ras-related protein Ral-A
+Length=175
+
+ Score = 26.9 bits (58),  Expect = 0.25, Method: Composition-based stats.
+ Identities = 10/19 (53%), Positives = 15/19 (79%), Gaps = 0/19 (0%)
+
+Query  1   KIAMLGEGGVGEAALTVNL  19
+           K+ M+G GGVG++ALT+  
+Sbjct  8   KVIMVGSGGVGKSALTLQF  26
+
+
+>1zc3_C mol:protein length:175  Ras-related protein Ral-A
+Length=175
+
+ Score = 26.9 bits (58),  Expect = 0.25, Method: Composition-based stats.
+ Identities = 10/19 (53%), Positives = 15/19 (79%), Gaps = 0/19 (0%)
+
+Query  1   KIAMLGEGGVGEAALTVNL  19
+           K+ M+G GGVG++ALT+  
+Sbjct  8   KVIMVGSGGVGKSALTLQF  26
+
+
+>1zc3_A mol:protein length:175  Ras-related protein Ral-A
+Length=175
+
+ Score = 26.9 bits (58),  Expect = 0.25, Method: Composition-based stats.
+ Identities = 10/19 (53%), Positives = 15/19 (79%), Gaps = 0/19 (0%)
+
+Query  1   KIAMLGEGGVGEAALTVNL  19
+           K+ M+G GGVG++ALT+  
+Sbjct  8   KVIMVGSGGVGKSALTLQF  26
+
+
+>1yzl_A mol:protein length:179  Ras-related protein Rab-9A
+Length=179
+
+ Score = 24.6 bits (52),  Expect = 1.8, Method: Composition-based stats.
+ Identities = 9/15 (60%), Positives = 14/15 (93%), Gaps = 0/15 (0%)
+
+Query  1   KIAMLGEGGVGEAAL  15
+           KI +LG+GGVG+++L
+Sbjct  13  KIILLGDGGVGKSSL  27
+
+
+>2erx_B mol:protein length:172  GTP-binding protein Di-Ras2
+Length=172
+
+ Score = 24.3 bits (51),  Expect = 2.1, Method: Composition-based stats.
+ Identities = 8/21 (38%), Positives = 15/21 (71%), Gaps = 0/21 (0%)
+
+Query  1   KIAMLGEGGVGEAALTVNLTK  21
+           ++A+ G GGVG+++L +   K
+Sbjct  5   RVAVFGAGGVGKSSLVLRFVK  25
+
+
+>2erx_A mol:protein length:172  GTP-binding protein Di-Ras2
+Length=172
+
+ Score = 24.3 bits (51),  Expect = 2.1, Method: Composition-based stats.
+ Identities = 8/21 (38%), Positives = 15/21 (71%), Gaps = 0/21 (0%)
+
+Query  1   KIAMLGEGGVGEAALTVNLTK  21
+           ++A+ G GGVG+++L +   K
+Sbjct  5   RVAVFGAGGVGKSSLVLRFVK  25
+
+
+>1agp_A mol:protein length:166  C-H-RAS P21 PROTEIN
+Length=166
+
+ Score = 24.3 bits (51),  Expect = 2.2, Method: Composition-based stats.
+ Identities = 9/21 (43%), Positives = 16/21 (76%), Gaps = 0/21 (0%)
+
+Query  1   KIAMLGEGGVGEAALTVNLTK  21
+           K+ ++G  GVG++ALT+ L +
+Sbjct  5   KLVVVGADGVGKSALTIQLIQ  25
+
+
+>3clv_A mol:protein length:208  Rab5 protein, putative
+Length=208
+
+ Score = 24.3 bits (51),  Expect = 2.5, Method: Composition-based stats.
+ Identities = 9/21 (43%), Positives = 15/21 (71%), Gaps = 0/21 (0%)
+
+Query  1   KIAMLGEGGVGEAALTVNLTK  21
+           K  +LGE  VG++++ + LTK
+Sbjct  9   KTVLLGESSVGKSSIVLRLTK  29
+
+
+>1cp2_B mol:protein length:269  NITROGENASE IRON PROTEIN
+Length=269
+
+ Score = 23.9 bits (50),  Expect = 2.6, Method: Compositional matrix adjust.
+ Identities = 9/20 (45%), Positives = 16/20 (80%), Gaps = 0/20 (0%)
+
+Query  1   KIAMLGEGGVGEAALTVNLT  20
+           ++A+ G+GG+G++  T NLT
+Sbjct  3   QVAIYGKGGIGKSTTTQNLT  22
+
+
+>1cp2_A mol:protein length:269  NITROGENASE IRON PROTEIN
+Length=269
+
+ Score = 23.9 bits (50),  Expect = 2.6, Method: Compositional matrix adjust.
+ Identities = 9/20 (45%), Positives = 16/20 (80%), Gaps = 0/20 (0%)
+
+Query  1   KIAMLGEGGVGEAALTVNLT  20
+           ++A+ G+GG+G++  T NLT
+Sbjct  3   QVAIYGKGGIGKSTTTQNLT  22
+
+
+>2ocb_A mol:protein length:180  Ras-related protein Rab-9B
+Length=180
+
+ Score = 23.9 bits (50),  Expect = 2.9, Method: Composition-based stats.
+ Identities = 8/15 (53%), Positives = 14/15 (93%), Gaps = 0/15 (0%)
+
+Query  1   KIAMLGEGGVGEAAL  15
+           K+ +LG+GGVG+++L
+Sbjct  9   KVILLGDGGVGKSSL  23
+
+
+>1wms_B mol:protein length:177  Ras-related protein Rab-9A
+Length=177
+
+ Score = 23.9 bits (50),  Expect = 2.9, Method: Composition-based stats.
+ Identities = 8/15 (53%), Positives = 14/15 (93%), Gaps = 0/15 (0%)
+
+Query  1   KIAMLGEGGVGEAAL  15
+           K+ +LG+GGVG+++L
+Sbjct  9   KVILLGDGGVGKSSL  23
+
+
+>1wms_A mol:protein length:177  Ras-related protein Rab-9A
+Length=177
+
+ Score = 23.9 bits (50),  Expect = 2.9, Method: Composition-based stats.
+ Identities = 8/15 (53%), Positives = 14/15 (93%), Gaps = 0/15 (0%)
+
+Query  1   KIAMLGEGGVGEAAL  15
+           K+ +LG+GGVG+++L
+Sbjct  9   KVILLGDGGVGKSSL  23
+
+
+>1s8f_B mol:protein length:177  Ras-related protein Rab-9A
+Length=177
+
+ Score = 23.9 bits (50),  Expect = 2.9, Method: Composition-based stats.
+ Identities = 8/15 (53%), Positives = 14/15 (93%), Gaps = 0/15 (0%)
+
+Query  1   KIAMLGEGGVGEAAL  15
+           K+ +LG+GGVG+++L
+Sbjct  11  KVILLGDGGVGKSSL  25
+
+
+>1s8f_A mol:protein length:177  Ras-related protein Rab-9A
+Length=177
+
+ Score = 23.9 bits (50),  Expect = 2.9, Method: Composition-based stats.
+ Identities = 8/15 (53%), Positives = 14/15 (93%), Gaps = 0/15 (0%)
+
+Query  1   KIAMLGEGGVGEAAL  15
+           K+ +LG+GGVG+++L
+Sbjct  11  KVILLGDGGVGKSSL  25
+
+
+>821p_A mol:protein length:166  C-H-RAS P21 PROTEIN
+Length=166
+
+ Score = 23.9 bits (50),  Expect = 3.0, Method: Composition-based stats.
+ Identities = 9/21 (43%), Positives = 16/21 (76%), Gaps = 0/21 (0%)
+
+Query  1   KIAMLGEGGVGEAALTVNLTK  21
+           K+ ++G  GVG++ALT+ L +
+Sbjct  5   KLVVVGAPGVGKSALTIQLIQ  25
+
+
+>1pll_A mol:protein length:166  C-H-RAS P21 PROTEIN
+Length=166
+
+ Score = 23.9 bits (50),  Expect = 3.0, Method: Composition-based stats.
+ Identities = 9/21 (43%), Positives = 16/21 (76%), Gaps = 0/21 (0%)
+
+Query  1   KIAMLGEGGVGEAALTVNLTK  21
+           K+ ++G  GVG++ALT+ L +
+Sbjct  5   KLVVVGAPGVGKSALTIQLIQ  25
+
+
+>1plk_A mol:protein length:166  C-H-RAS P21 PROTEIN
+Length=166
+
+ Score = 23.9 bits (50),  Expect = 3.0, Method: Composition-based stats.
+ Identities = 9/21 (43%), Positives = 16/21 (76%), Gaps = 0/21 (0%)
+
+Query  1   KIAMLGEGGVGEAALTVNLTK  21
+           K+ ++G  GVG++ALT+ L +
+Sbjct  5   KLVVVGAPGVGKSALTIQLIQ  25
+
+
+>1plj_A mol:protein length:166  C-H-RAS P21 PROTEIN
+Length=166
+
+ Score = 23.9 bits (50),  Expect = 3.0, Method: Composition-based stats.
+ Identities = 9/21 (43%), Positives = 16/21 (76%), Gaps = 0/21 (0%)
+
+Query  1   KIAMLGEGGVGEAALTVNLTK  21
+           K+ ++G  GVG++ALT+ L +
+Sbjct  5   KLVVVGAPGVGKSALTIQLIQ  25
+
+
+>1jai_A mol:protein length:166  C-HA-RAS
+Length=166
+
+ Score = 23.9 bits (50),  Expect = 3.0, Method: Composition-based stats.
+ Identities = 9/21 (43%), Positives = 16/21 (76%), Gaps = 0/21 (0%)
+
+Query  1   KIAMLGEGGVGEAALTVNLTK  21
+           K+ ++G  GVG++ALT+ L +
+Sbjct  5   KLVVVGAPGVGKSALTIQLIQ  25
+
+
+>1jah_A mol:protein length:166  C-HA-RAS
+Length=166
+
+ Score = 23.9 bits (50),  Expect = 3.0, Method: Composition-based stats.
+ Identities = 9/21 (43%), Positives = 16/21 (76%), Gaps = 0/21 (0%)
+
+Query  1   KIAMLGEGGVGEAALTVNLTK  21
+           K+ ++G  GVG++ALT+ L +
+Sbjct  5   KLVVVGAPGVGKSALTIQLIQ  25
+
+
+>1clu_A mol:protein length:166  TRANSFORMING PROTEIN P21/H-RAS-1
+Length=166
+
+ Score = 23.9 bits (50),  Expect = 3.0, Method: Composition-based stats.
+ Identities = 9/21 (43%), Positives = 16/21 (76%), Gaps = 0/21 (0%)
+
+Query  1   KIAMLGEGGVGEAALTVNLTK  21
+           K+ ++G  GVG++ALT+ L +
+Sbjct  5   KLVVVGAPGVGKSALTIQLIQ  25
+
+
+>421p_A mol:protein length:166  H-RAS P21 PROTEIN
+Length=166
+
+ Score = 23.9 bits (50),  Expect = 3.1, Method: Composition-based stats.
+ Identities = 9/21 (43%), Positives = 16/21 (76%), Gaps = 0/21 (0%)
+
+Query  1   KIAMLGEGGVGEAALTVNLTK  21
+           K+ ++G  GVG++ALT+ L +
+Sbjct  5   KLVVVGARGVGKSALTIQLIQ  25
+
+
+>2atv_A mol:protein length:196  RAS-like estrogen-regulated growth 
+inhibitor
+Length=196
+
+ Score = 23.1 bits (48),  Expect = 5.0, Method: Composition-based stats.
+ Identities = 12/22 (55%), Positives = 16/22 (73%), Gaps = 1/22 (5%)
+
+Query  1   KIAMLGEGGVGEAALTVN-LTK  21
+           K+A+ G  GVG++AL V  LTK
+Sbjct  30  KLAIFGRAGVGKSALVVRFLTK  51
+
+
+>3c5c_D mol:protein length:187  RAS-like protein 12
+Length=187
+
+ Score = 23.1 bits (48),  Expect = 5.3, Method: Composition-based stats.
+ Identities = 12/21 (57%), Positives = 16/21 (76%), Gaps = 1/21 (5%)
+
+Query  2   IAMLGEGGVGEAALTVN-LTK  21
+           +A+LG  G G++ALTV  LTK
+Sbjct  24  LAILGRRGAGKSALTVKFLTK  44
+
+
+>3c5c_C mol:protein length:187  RAS-like protein 12
+Length=187
+
+ Score = 23.1 bits (48),  Expect = 5.3, Method: Composition-based stats.
+ Identities = 12/21 (57%), Positives = 16/21 (76%), Gaps = 1/21 (5%)
+
+Query  2   IAMLGEGGVGEAALTVN-LTK  21
+           +A+LG  G G++ALTV  LTK
+Sbjct  24  LAILGRRGAGKSALTVKFLTK  44
+
+
+>3c5c_B mol:protein length:187  RAS-like protein 12
+Length=187
+
+ Score = 23.1 bits (48),  Expect = 5.3, Method: Composition-based stats.
+ Identities = 12/21 (57%), Positives = 16/21 (76%), Gaps = 1/21 (5%)
+
+Query  2   IAMLGEGGVGEAALTVN-LTK  21
+           +A+LG  G G++ALTV  LTK
+Sbjct  24  LAILGRRGAGKSALTVKFLTK  44
+
+
+>3c5c_A mol:protein length:187  RAS-like protein 12
+Length=187
+
+ Score = 23.1 bits (48),  Expect = 5.3, Method: Composition-based stats.
+ Identities = 12/21 (57%), Positives = 16/21 (76%), Gaps = 1/21 (5%)
+
+Query  2   IAMLGEGGVGEAALTVN-LTK  21
+           +A+LG  G G++ALTV  LTK
+Sbjct  24  LAILGRRGAGKSALTVKFLTK  44
+
+
+>2vz9_B mol:protein length:2512  FATTY ACID SYNTHASE
+Length=2512
+
+ Score = 23.1 bits (48),  Expect = 5.5, Method: Composition-based stats.
+ Identities = 8/16 (50%), Positives = 13/16 (81%), Gaps = 0/16 (0%)
+
+Query  6     GEGGVGEAALTVNLTK  21
+             G GGVG+AA+ + L++
+Sbjct  1676  GSGGVGQAAIAIALSR  1691
+
+
+>2vz9_A mol:protein length:2512  FATTY ACID SYNTHASE
+Length=2512
+
+ Score = 23.1 bits (48),  Expect = 5.5, Method: Composition-based stats.
+ Identities = 8/16 (50%), Positives = 13/16 (81%), Gaps = 0/16 (0%)
+
+Query  6     GEGGVGEAALTVNLTK  21
+             G GGVG+AA+ + L++
+Sbjct  1676  GSGGVGQAAIAIALSR  1691
+
+
+>2vz8_B mol:protein length:2512  FATTY ACID SYNTHASE
+Length=2512
+
+ Score = 23.1 bits (48),  Expect = 5.5, Method: Composition-based stats.
+ Identities = 8/16 (50%), Positives = 13/16 (81%), Gaps = 0/16 (0%)
+
+Query  6     GEGGVGEAALTVNLTK  21
+             G GGVG+AA+ + L++
+Sbjct  1676  GSGGVGQAAIAIALSR  1691
+
+
+>2vz8_A mol:protein length:2512  FATTY ACID SYNTHASE
+Length=2512
+
+ Score = 23.1 bits (48),  Expect = 5.5, Method: Composition-based stats.
+ Identities = 8/16 (50%), Positives = 13/16 (81%), Gaps = 0/16 (0%)
+
+Query  6     GEGGVGEAALTVNLTK  21
+             G GGVG+AA+ + L++
+Sbjct  1676  GSGGVGQAAIAIALSR  1691
+
+
+>1x3s_A mol:protein length:195  Ras-related protein Rab-18
+Length=195
+
+ Score = 22.7 bits (47),  Expect = 8.6, Method: Composition-based stats.
+ Identities = 9/20 (45%), Positives = 15/20 (75%), Gaps = 0/20 (0%)
+
+Query  1   KIAMLGEGGVGEAALTVNLT  20
+           KI ++GE GVG+++L +  T
+Sbjct  17  KILIIGESGVGKSSLLLRFT  36
+
+
+>2r0u_A mol:protein length:323  Serine/threonine-protein kinase 
+Chk1
+Length=323
+
+ Score = 22.3 bits (46),  Expect = 9.1, Method: Composition-based stats.
+ Identities = 9/17 (53%), Positives = 10/17 (59%), Gaps = 0/17 (0%)
+
+Query  2   IAMLGEGGVGEAALTVN  18
+           +  LGEG  GE  L VN
+Sbjct  12  VQTLGEGAYGEVQLAVN  28
+
+
+>2qhn_A mol:protein length:323  Serine/threonine-protein kinase 
+Chk1
+Length=323
+
+ Score = 22.3 bits (46),  Expect = 9.1, Method: Composition-based stats.
+ Identities = 9/17 (53%), Positives = 10/17 (59%), Gaps = 0/17 (0%)
+
+Query  2   IAMLGEGGVGEAALTVN  18
+           +  LGEG  GE  L VN
+Sbjct  12  VQTLGEGAYGEVQLAVN  28
+
+
+>2qhm_A mol:protein length:323  Serine/threonine-protein kinase 
+Chk1
+Length=323
+
+ Score = 22.3 bits (46),  Expect = 9.1, Method: Composition-based stats.
+ Identities = 9/17 (53%), Positives = 10/17 (59%), Gaps = 0/17 (0%)
+
+Query  2   IAMLGEGGVGEAALTVN  18
+           +  LGEG  GE  L VN
+Sbjct  12  VQTLGEGAYGEVQLAVN  28
+
+
+>2hy0_A mol:protein length:322  Serine/threonine-protein kinase 
+Chk1
+Length=322
+
+ Score = 22.3 bits (46),  Expect = 9.1, Method: Composition-based stats.
+ Identities = 9/17 (53%), Positives = 10/17 (59%), Gaps = 0/17 (0%)
+
+Query  2   IAMLGEGGVGEAALTVN  18
+           +  LGEG  GE  L VN
+Sbjct  11  VQTLGEGAYGEVQLAVN  27
+
+
+>2hxq_A mol:protein length:322  Serine/threonine-protein kinase 
+Chk1
+Length=322
+
+ Score = 22.3 bits (46),  Expect = 9.1, Method: Composition-based stats.
+ Identities = 9/17 (53%), Positives = 10/17 (59%), Gaps = 0/17 (0%)
+
+Query  2   IAMLGEGGVGEAALTVN  18
+           +  LGEG  GE  L VN
+Sbjct  11  VQTLGEGAYGEVQLAVN  27
+
+
+>2hxl_A mol:protein length:322  Serine/threonine-protein kinase 
+Chk1
+Length=322
+
+ Score = 22.3 bits (46),  Expect = 9.1, Method: Composition-based stats.
+ Identities = 9/17 (53%), Positives = 10/17 (59%), Gaps = 0/17 (0%)
+
+Query  2   IAMLGEGGVGEAALTVN  18
+           +  LGEG  GE  L VN
+Sbjct  11  VQTLGEGAYGEVQLAVN  27
+
+
+>2hog_A mol:protein length:322  Serine/threonine-protein kinase 
+Chk1
+Length=322
+
+ Score = 22.3 bits (46),  Expect = 9.1, Method: Composition-based stats.
+ Identities = 9/17 (53%), Positives = 10/17 (59%), Gaps = 0/17 (0%)
+
+Query  2   IAMLGEGGVGEAALTVN  18
+           +  LGEG  GE  L VN
+Sbjct  11  VQTLGEGAYGEVQLAVN  27
+
+
+>2cgx_A mol:protein length:297  SERINE/THREONINE-PROTEIN KINASE 
+CHK1
+Length=297
+
+ Score = 22.3 bits (46),  Expect = 9.1, Method: Composition-based stats.
+ Identities = 9/17 (53%), Positives = 10/17 (59%), Gaps = 0/17 (0%)
+
+Query  2   IAMLGEGGVGEAALTVN  18
+           +  LGEG  GE  L VN
+Sbjct  12  VQTLGEGAYGEVQLAVN  28
+
+
+>2cgw_A mol:protein length:297  SERINE/THREONINE-PROTEIN KINASE 
+CHK1
+Length=297
+
+ Score = 22.3 bits (46),  Expect = 9.1, Method: Composition-based stats.
+ Identities = 9/17 (53%), Positives = 10/17 (59%), Gaps = 0/17 (0%)
+
+Query  2   IAMLGEGGVGEAALTVN  18
+           +  LGEG  GE  L VN
+Sbjct  12  VQTLGEGAYGEVQLAVN  28
+
+
+>2cgv_A mol:protein length:297  SERINE/THREONINE-PROTEIN KINASE 
+CHK1
+Length=297
+
+ Score = 22.3 bits (46),  Expect = 9.1, Method: Composition-based stats.
+ Identities = 9/17 (53%), Positives = 10/17 (59%), Gaps = 0/17 (0%)
+
+Query  2   IAMLGEGGVGEAALTVN  18
+           +  LGEG  GE  L VN
+Sbjct  12  VQTLGEGAYGEVQLAVN  28
+
+
+>2cgu_A mol:protein length:297  SERINE/THREONINE-PROTEIN KINASE 
+CHK1
+Length=297
+
+ Score = 22.3 bits (46),  Expect = 9.1, Method: Composition-based stats.
+ Identities = 9/17 (53%), Positives = 10/17 (59%), Gaps = 0/17 (0%)
+
+Query  2   IAMLGEGGVGEAALTVN  18
+           +  LGEG  GE  L VN
+Sbjct  12  VQTLGEGAYGEVQLAVN  28
+
+
+>2c3l_A mol:protein length:297  SERINE/THREONINE-PROTEIN KINASE 
+CHK1
+Length=297
+
+ Score = 22.3 bits (46),  Expect = 9.1, Method: Composition-based stats.
+ Identities = 9/17 (53%), Positives = 10/17 (59%), Gaps = 0/17 (0%)
+
+Query  2   IAMLGEGGVGEAALTVN  18
+           +  LGEG  GE  L VN
+Sbjct  12  VQTLGEGAYGEVQLAVN  28
+
+
+>2c3k_A mol:protein length:297  SERINE/THREONINE-PROTEIN KINASE 
+CHK1
+Length=297
+
+ Score = 22.3 bits (46),  Expect = 9.1, Method: Composition-based stats.
+ Identities = 9/17 (53%), Positives = 10/17 (59%), Gaps = 0/17 (0%)
+
+Query  2   IAMLGEGGVGEAALTVN  18
+           +  LGEG  GE  L VN
+Sbjct  12  VQTLGEGAYGEVQLAVN  28
+
+
+>2c3j_A mol:protein length:297  SERINE/THREONINE-PROTEIN KINASE 
+CHK1
+Length=297
+
+ Score = 22.3 bits (46),  Expect = 9.1, Method: Composition-based stats.
+ Identities = 9/17 (53%), Positives = 10/17 (59%), Gaps = 0/17 (0%)
+
+Query  2   IAMLGEGGVGEAALTVN  18
+           +  LGEG  GE  L VN
+Sbjct  12  VQTLGEGAYGEVQLAVN  28
+
+
+>2bro_A mol:protein length:297  SERINE/THREONINE-PROTEIN KINASE 
+CHK1
+Length=297
+
+ Score = 22.3 bits (46),  Expect = 9.1, Method: Composition-based stats.
+ Identities = 9/17 (53%), Positives = 10/17 (59%), Gaps = 0/17 (0%)
+
+Query  2   IAMLGEGGVGEAALTVN  18
+           +  LGEG  GE  L VN
+Sbjct  12  VQTLGEGAYGEVQLAVN  28
+
+
+>2brn_A mol:protein length:297  SERINE/THREONINE-PROTEIN KINASE 
+CHK1
+Length=297
+
+ Score = 22.3 bits (46),  Expect = 9.1, Method: Composition-based stats.
+ Identities = 9/17 (53%), Positives = 10/17 (59%), Gaps = 0/17 (0%)
+
+Query  2   IAMLGEGGVGEAALTVN  18
+           +  LGEG  GE  L VN
+Sbjct  12  VQTLGEGAYGEVQLAVN  28
+
+
+>2brm_A mol:protein length:297  SERINE/THREONINE-PROTEIN KINASE 
+CHK1
+Length=297
+
+ Score = 22.3 bits (46),  Expect = 9.1, Method: Composition-based stats.
+ Identities = 9/17 (53%), Positives = 10/17 (59%), Gaps = 0/17 (0%)
+
+Query  2   IAMLGEGGVGEAALTVN  18
+           +  LGEG  GE  L VN
+Sbjct  12  VQTLGEGAYGEVQLAVN  28
+
+
+>2brh_A mol:protein length:297  SERINE/THREONINE-PROTEIN KINASE 
+CHK1
+Length=297
+
+ Score = 22.3 bits (46),  Expect = 9.1, Method: Composition-based stats.
+ Identities = 9/17 (53%), Positives = 10/17 (59%), Gaps = 0/17 (0%)
+
+Query  2   IAMLGEGGVGEAALTVN  18
+           +  LGEG  GE  L VN
+Sbjct  12  VQTLGEGAYGEVQLAVN  28
+
+
+>2brg_A mol:protein length:297  SERINE/THREONINE-PROTEIN KINASE 
+CHK1
+Length=297
+
+ Score = 22.3 bits (46),  Expect = 9.1, Method: Composition-based stats.
+ Identities = 9/17 (53%), Positives = 10/17 (59%), Gaps = 0/17 (0%)
+
+Query  2   IAMLGEGGVGEAALTVN  18
+           +  LGEG  GE  L VN
+Sbjct  12  VQTLGEGAYGEVQLAVN  28
+
+
+>2brb_A mol:protein length:297  SERINE/THREONINE-PROTEIN KINASE 
+CHK1
+Length=297
+
+ Score = 22.3 bits (46),  Expect = 9.1, Method: Composition-based stats.
+ Identities = 9/17 (53%), Positives = 10/17 (59%), Gaps = 0/17 (0%)
+
+Query  2   IAMLGEGGVGEAALTVN  18
+           +  LGEG  GE  L VN
+Sbjct  12  VQTLGEGAYGEVQLAVN  28
+
+
+>2br1_A mol:protein length:297  SERINE/THREONINE-PROTEIN KINASE 
+CHK1
+Length=297
+
+ Score = 22.3 bits (46),  Expect = 9.1, Method: Composition-based stats.
+ Identities = 9/17 (53%), Positives = 10/17 (59%), Gaps = 0/17 (0%)
+
+Query  2   IAMLGEGGVGEAALTVN  18
+           +  LGEG  GE  L VN
+Sbjct  12  VQTLGEGAYGEVQLAVN  28
+
+
+>2gdo_A mol:protein length:295  Serine/threonine-protein kinase 
+Chk1
+Length=295
+
+ Score = 22.3 bits (46),  Expect = 9.1, Method: Composition-based stats.
+ Identities = 9/17 (53%), Positives = 10/17 (59%), Gaps = 0/17 (0%)
+
+Query  2   IAMLGEGGVGEAALTVN  18
+           +  LGEG  GE  L VN
+Sbjct  12  VQTLGEGAYGEVQLAVN  28
+
+
+>1zlt_A mol:protein length:295  Serine/threonine-protein kinase 
+Chk1
+Length=295
+
+ Score = 22.3 bits (46),  Expect = 9.1, Method: Composition-based stats.
+ Identities = 9/17 (53%), Positives = 10/17 (59%), Gaps = 0/17 (0%)
+
+Query  2   IAMLGEGGVGEAALTVN  18
+           +  LGEG  GE  L VN
+Sbjct  12  VQTLGEGAYGEVQLAVN  28
+
+
+>1nvs_A mol:protein length:289  Serine/threonine-protein kinase 
+Chk1
+Length=289
+
+ Score = 22.3 bits (46),  Expect = 9.1, Method: Composition-based stats.
+ Identities = 9/17 (53%), Positives = 10/17 (59%), Gaps = 0/17 (0%)
+
+Query  2   IAMLGEGGVGEAALTVN  18
+           +  LGEG  GE  L VN
+Sbjct  12  VQTLGEGAYGEVQLAVN  28
+
+
+>1nvr_A mol:protein length:289  Serine/threonine-protein kinase 
+Chk1
+Length=289
+
+ Score = 22.3 bits (46),  Expect = 9.1, Method: Composition-based stats.
+ Identities = 9/17 (53%), Positives = 10/17 (59%), Gaps = 0/17 (0%)
+
+Query  2   IAMLGEGGVGEAALTVN  18
+           +  LGEG  GE  L VN
+Sbjct  12  VQTLGEGAYGEVQLAVN  28
+
+
+>1nvq_A mol:protein length:289  Serine/threonine-protein kinase 
+Chk1
+Length=289
+
+ Score = 22.3 bits (46),  Expect = 9.1, Method: Composition-based stats.
+ Identities = 9/17 (53%), Positives = 10/17 (59%), Gaps = 0/17 (0%)
+
+Query  2   IAMLGEGGVGEAALTVN  18
+           +  LGEG  GE  L VN
+Sbjct  12  VQTLGEGAYGEVQLAVN  28
+
+
+>1ia8_A mol:protein length:289  CHK1 CHECKPOINT KINASE
+Length=289
+
+ Score = 22.3 bits (46),  Expect = 9.1, Method: Composition-based stats.
+ Identities = 9/17 (53%), Positives = 10/17 (59%), Gaps = 0/17 (0%)
+
+Query  2   IAMLGEGGVGEAALTVN  18
+           +  LGEG  GE  L VN
+Sbjct  12  VQTLGEGAYGEVQLAVN  28
+
+
+>1zys_A mol:protein length:273  Serine/threonine-protein kinase 
+Chk1
+Length=273
+
+ Score = 22.3 bits (46),  Expect = 9.1, Method: Composition-based stats.
+ Identities = 9/17 (53%), Positives = 10/17 (59%), Gaps = 0/17 (0%)
+
+Query  2   IAMLGEGGVGEAALTVN  18
+           +  LGEG  GE  L VN
+Sbjct  12  VQTLGEGAYGEVQLAVN  28
+
+
+>2ywp_A mol:protein length:269  Serine/threonine-protein kinase 
+Chk1
+Length=269
+
+ Score = 22.3 bits (46),  Expect = 9.1, Method: Composition-based stats.
+ Identities = 9/17 (53%), Positives = 10/17 (59%), Gaps = 0/17 (0%)
+
+Query  2   IAMLGEGGVGEAALTVN  18
+           +  LGEG  GE  L VN
+Sbjct  11  VQTLGEGAYGEVQLAVN  27
+
+
+>2ghg_A mol:protein length:269  Serine/threonine-protein kinase 
+Chk1
+Length=269
+
+ Score = 22.3 bits (46),  Expect = 9.1, Method: Composition-based stats.
+ Identities = 9/17 (53%), Positives = 10/17 (59%), Gaps = 0/17 (0%)
+
+Query  2   IAMLGEGGVGEAALTVN  18
+           +  LGEG  GE  L VN
+Sbjct  11  VQTLGEGAYGEVQLAVN  27
+
+
+>2e9u_A mol:protein length:269  Serine/threonine-protein kinase 
+Chk1
+Length=269
+
+ Score = 22.3 bits (46),  Expect = 9.1, Method: Composition-based stats.
+ Identities = 9/17 (53%), Positives = 10/17 (59%), Gaps = 0/17 (0%)
+
+Query  2   IAMLGEGGVGEAALTVN  18
+           +  LGEG  GE  L VN
+Sbjct  11  VQTLGEGAYGEVQLAVN  27
+
+
+>2e9p_A mol:protein length:269  Serine/threonine-protein kinase 
+Chk1
+Length=269
+
+ Score = 22.3 bits (46),  Expect = 9.1, Method: Composition-based stats.
+ Identities = 9/17 (53%), Positives = 10/17 (59%), Gaps = 0/17 (0%)
+
+Query  2   IAMLGEGGVGEAALTVN  18
+           +  LGEG  GE  L VN
+Sbjct  11  VQTLGEGAYGEVQLAVN  27
+
+
+>2e9o_A mol:protein length:269  Serine/threonine-protein kinase 
+Chk1
+Length=269
+
+ Score = 22.3 bits (46),  Expect = 9.1, Method: Composition-based stats.
+ Identities = 9/17 (53%), Positives = 10/17 (59%), Gaps = 0/17 (0%)
+
+Query  2   IAMLGEGGVGEAALTVN  18
+           +  LGEG  GE  L VN
+Sbjct  11  VQTLGEGAYGEVQLAVN  27
+
+
+>2e9n_A mol:protein length:269  Serine/threonine-protein kinase 
+Chk1
+Length=269
+
+ Score = 22.3 bits (46),  Expect = 9.1, Method: Composition-based stats.
+ Identities = 9/17 (53%), Positives = 10/17 (59%), Gaps = 0/17 (0%)
+
+Query  2   IAMLGEGGVGEAALTVN  18
+           +  LGEG  GE  L VN
+Sbjct  11  VQTLGEGAYGEVQLAVN  27
+
+
+>2ayp_A mol:protein length:269  Serine/threonine-protein kinase 
+Chk1
+Length=269
+
+ Score = 22.3 bits (46),  Expect = 9.1, Method: Composition-based stats.
+ Identities = 9/17 (53%), Positives = 10/17 (59%), Gaps = 0/17 (0%)
+
+Query  2   IAMLGEGGVGEAALTVN  18
+           +  LGEG  GE  L VN
+Sbjct  12  VQTLGEGAYGEVQLAVN  28
+
+
+>2e9v_B mol:protein length:268  Serine/threonine-protein kinase 
+Chk1
+Length=268
+
+ Score = 22.3 bits (46),  Expect = 9.1, Method: Composition-based stats.
+ Identities = 9/17 (53%), Positives = 10/17 (59%), Gaps = 0/17 (0%)
+
+Query  2   IAMLGEGGVGEAALTVN  18
+           +  LGEG  GE  L VN
+Sbjct  11  VQTLGEGAYGEVQLAVN  27
+
+
+>2e9v_A mol:protein length:268  Serine/threonine-protein kinase 
+Chk1
+Length=268
+
+ Score = 22.3 bits (46),  Expect = 9.1, Method: Composition-based stats.
+ Identities = 9/17 (53%), Positives = 10/17 (59%), Gaps = 0/17 (0%)
+
+Query  2   IAMLGEGGVGEAALTVN  18
+           +  LGEG  GE  L VN
+Sbjct  11  VQTLGEGAYGEVQLAVN  27
+
+
+
+Lambda      K        H        a         alpha
+   0.310    0.132    0.346    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0410    0.140     1.90     42.6     43.6 
+
+Effective search space used: 647631432
+
+
+  Database: pdb_seq
+    Posted date:  Jan 9, 2009 10:34 AM
+  Number of letters in database: 30,839,592
+  Number of sequences in database:  133,266
+
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Neighboring words threshold: 11
+Window for multiple hits: 40

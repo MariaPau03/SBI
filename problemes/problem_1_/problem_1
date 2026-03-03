@@ -11,74 +11,7 @@ Try to answer:
 
 a) Place the side-chains of this structure and name the model p11a.pdb
 
-
-TEACHER WAY:
-- PDBtoSPlitChain.pl -i problem1 -o problem_1_ --> will obtain the fasta seq of the motif, like the ones I had obtained
-- cat problem 1_A.FA > alignment.fa
-- cat problem_1_A.fa >> alignemtn.fa
-- clustalw problem_1_A.fa
-- aconvertMod.pl -in c -out p < alignemtn.al > alignemnt.pir
-cp /mn ..../soft/modeller/examples/aotmodel/model-default.py .
-modify the script and put alignment_pir, the structura is problem_1_A.pdb and in sequence = model 
-obtain a model that will be visualized on chimera compared to the problem_1_A.pdb, superimpose them. 
-
-
-Column,Label,Meaning
-1,ATOM,Type of record.
-2,1...144,Serial number (every single atom now has its own ID).
-3,"CA, CB, NZ...",The specific atom name within the amino acid.
-4,"LYS, ILE...",The Residue name.
-5,A,The Chain ID (Chain A).
-6,1...21,Residue sequence number.
-"7, 8, 9",Coordinates,"The X,Y,Z positions in Angstroms (A˚)."
-10,1.00,Occupancy: How likely the atom is to be in that spot (default 1.0).
-11,"8.46, 0.00","B-factor (Temperature factor): Notice that your Cα atoms kept their original values (e.g., 8.46), but the new atoms have 0.00. This indicates they are mathematically placed."
-
-
-
 b) Find the protein(s) with this motif and hypothesize what's the function of the motif. Please demonstrate your hypothesis with a sequence alignment or p-values.
-
-BUsco el perfil .hmm i després hmmsearch sobre una seq db per trobar homòlegs
-
-```
-jackhmmer --chkhmm p11a_profile p11a.fa /mnt/NFS_UPF/soft/databases/blastdat/uniprot_sprot.fasta
-hmmsearch p11a_profile-1.hmm /mnt/NFS_UPF/soft/databases/blastdat/pdb_seq > p11a_pdb.out
-```
-Even though the E-values are slightly above the standard "highly significant" threshold (0.1 instead of < 0.001), the results are very consistent, which makes them highly reliable for a short motif of only 21 residues.
-The top hits are all related to the Ras superfamily of small GTPases, specifically:
-
-- RAP2A / RAP1A / Rap-1b: These are "Ras-related" proteins.
-
-- GTPase HRas / Transforming protein P21/H-Ras: This is the classic Ras protein.
-
-Domain annotation for each sequence (and alignments):
->> 1kao_A  mol:protein length:167  RAP2A
-   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
- ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
-   1 ?   13.6   0.1   0.00021      0.29       1      19 [.       5      23 ..       5      25 .. 0.90
-
-  Alignments for each domain:
-  == domain 1  score: 13.6 bits;  conditional E-value: 0.00021
-  P1;p11a  1 kiamlgeggvgeaaltvnl 19
-             k+ +lg ggvg++altv +
-   1kao_A  5 KVVVLGSGGVGKSALTVQF 23
-             7899************975 PP
-
->> 2rap_A  mol:protein length:167  RAP2A
-   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
- ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
-   1 ?   13.6   0.1   0.00021      0.29       1      19 [.       5      23 ..       5      25 .. 0.90
-
-  Alignments for each domain:
-  == domain 1  score: 13.6 bits;  conditional E-value: 0.00021
-  P1;p11a  1 kiamlgeggvgeaaltvnl 19
-             k+ +lg ggvg++altv +
-   2rap_A  5 KVVVLGSGGVGKSALTVQF 23
-             7899************975 PP
-
-
-Notice the ***** underneath the GGVG stretch in the alignment. This indicates very high conservation. These glycines allow the protein backbone to wrap tightly around the phosphates of GTP.
-In your query, you have an E (Glutamate) where the template has a K (Lysine). However, the match is close enough that HMMER identified it. In a functional Ras protein, that Lysine is what anchors the phosphate groups
 
 c) Do you think this motif can still be functional
    To answer this question, show:
@@ -88,18 +21,7 @@ c) Do you think this motif can still be functional
    3. Calculate the statistic potential of the motif and align the profile with the profile of any homolog
       with known structure, as found in question "b"
 
-d) Can you add the ATP or GDP (FER UN BLAST AMB LA SEQ DE ATP I VEUREM QUINES REGIONS INTERACTIUEN AMB AQUST P-LOOP)
 
-blastp -query problem_1_A.fa -db /mnt/NFS_UPF/soft/databases/blastdat/pdb_seq -out problem_1.blastp 
-gedit problem_1.blast (the e-values are really bad, )
-....
-open on chimera the superimposition and save the supeimposition with GDP in a pdb file. Unselect the whole structure, until you get the motif with the 
-
-
-to know the residues of a function, we go to `database of active sites`on google, and in EMBL-BI there's a dataase of the catalityic sites, and just put the pdb and will know the relevant residues --> that's one way. If this residues have been substiuted, they won' work. The function has changed a lot? 
-
-
-----------
 
 MOTIF STRUCTURE
 
