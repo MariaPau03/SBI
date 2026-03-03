@@ -12,6 +12,17 @@ Try to answer:
 a) Place the side-chains of this structure and name the model p11a.pdb
 
 
+TEACHER WAY:
+- PDBtoSPlitChain.pl -i problem1 -o problem_1_ --> will obtain the fasta seq of the motif, like the ones I had obtained
+- cat problem 1_A.FA > alignment.fa
+- cat problem_1_A.fa >> alignemtn.fa
+- clustalw problem_1_A.fa
+- aconvertMod.pl -in c -out p < alignemtn.al > alignemnt.pir
+cp /mn ..../soft/modeller/examples/aotmodel/model-default.py .
+modify the script and put alignment_pir, the structura is problem_1_A.pdb and in sequence = model 
+obtain a model that will be visualized on chimera compared to the problem_1_A.pdb, superimpose them. 
+
+
 Column,Label,Meaning
 1,ATOM,Type of record.
 2,1...144,Serial number (every single atom now has its own ID).
@@ -25,8 +36,7 @@ Column,Label,Meaning
 
 
 
-b) Find the protein(s) with this motif and hypothesize what's the function of the motif
-   Please demonstrate your hypothesis with a sequence alignment or p-values.
+b) Find the protein(s) with this motif and hypothesize what's the function of the motif. Please demonstrate your hypothesis with a sequence alignment or p-values.
 
 BUsco el perfil .hmm i després hmmsearch sobre una seq db per trobar homòlegs
 
@@ -78,6 +88,18 @@ c) Do you think this motif can still be functional
    3. Calculate the statistic potential of the motif and align the profile with the profile of any homolog
       with known structure, as found in question "b"
 
+d) Can you add the ATP or GDP (FER UN BLAST AMB LA SEQ DE ATP I VEUREM QUINES REGIONS INTERACTIUEN AMB AQUST P-LOOP)
+
+blastp -query problem_1_A.fa -db /mnt/NFS_UPF/soft/databases/blastdat/pdb_seq -out problem_1.blastp 
+gedit problem_1.blast (the e-values are really bad, )
+....
+open on chimera the superimposition and save the supeimposition with GDP in a pdb file. Unselect the whole structure, until you get the motif with the 
+
+
+to know the residues of a function, we go to `database of active sites`on google, and in EMBL-BI there's a dataase of the catalityic sites, and just put the pdb and will know the relevant residues --> that's one way. If this residues have been substiuted, they won' work. The function has changed a lot? 
+
+
+----------
 
 MOTIF STRUCTURE
 
