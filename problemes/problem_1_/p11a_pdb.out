@@ -1,0 +1,1308 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  p11a_profile-1.hmm
+# target sequence database:        /mnt/NFS_UPF/soft/databases/blastdat/pdb_seq
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       P1;p11a  [M=21]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence Description
+    ------- ------ -----    ------- ------ -----   ---- --  -------- -----------
+  ------ inclusion threshold ------
+        0.1   14.8   0.1       0.29   13.6   0.1    1.7  1  1kao_A    mol:protein length:167  RAP2A
+        0.1   14.8   0.1       0.29   13.6   0.1    1.7  1  2rap_A    mol:protein length:167  RAP2A
+        0.1   14.8   0.1       0.29   13.6   0.1    1.7  1  3rap_R    mol:protein length:167  PROTEIN (G protein RAP2A)
+        0.1   14.8   0.1       0.29   13.6   0.1    1.7  1  3rap_S    mol:protein length:167  PROTEIN (G protein RAP2A)
+       0.11   14.8   0.1       0.35   13.3   0.1    1.8  1  3brw_D    mol:protein length:167  Ras-related protein Rap-1b
+       0.11   14.8   0.1       0.35   13.3   0.1    1.8  1  3cf6_R    mol:protein length:167  Ras-related protein Rap-1b
+       0.11   14.8   0.1       0.35   13.3   0.1    1.8  1  1gua_A    mol:protein length:167  RAP1A
+       0.11   14.7   0.1       0.35   13.3   0.1    1.8  1  1c1y_A    mol:protein length:167  RAS-RELATED PROTEIN RAP-1A
+       0.22   13.9   0.1       0.97   12.1   0.1    2.1  1  1lf0_A    mol:protein length:166  Transforming protein P21/H-
+       0.22   13.9   0.1       0.97   12.1   0.1    2.1  1  1lf5_A    mol:protein length:166  Transforming protein P21/H-
+       0.22   13.9   0.1       0.97   12.1   0.1    2.1  1  1nvu_Q    mol:protein length:166  Transforming protein p21/H-
+       0.22   13.9   0.1       0.97   12.1   0.1    2.1  1  1nvu_R    mol:protein length:166  Transforming protein p21/H-
+       0.22   13.9   0.1       0.97   12.1   0.1    2.1  1  1nvx_Q    mol:protein length:166  Transforming protein p21/H-
+       0.22   13.9   0.1       0.97   12.1   0.1    2.1  1  1nvx_R    mol:protein length:166  Transforming protein p21/H-
+       0.22   13.9   0.1       0.97   12.1   0.1    2.1  1  2rgc_A    mol:protein length:166  GTPase HRas
+       0.22   13.9   0.1       0.97   12.1   0.1    2.0  1  1nvv_Q    mol:protein length:166  Transforming protein p21/H-
+       0.22   13.9   0.1       0.97   12.1   0.1    2.0  1  1xd2_A    mol:protein length:166  Transforming protein p21/H-
+       0.23   13.9   0.1       0.97   12.1   0.1    2.0  1  2rga_A    mol:protein length:166  GTPase HRas
+       0.23   13.9   0.1       0.97   12.1   0.1    2.0  1  2rgg_A    mol:protein length:166  GTPase HRas
+       0.23   13.8   0.1       0.97   12.1   0.1    2.0  1  1zvq_A    mol:protein length:166  Transforming protein p21/H-
+       0.23   13.8   0.1       0.97   12.1   0.1    2.0  1  1zw6_A    mol:protein length:166  Transforming protein p21/H-
+       0.24   13.8   0.1       0.97   12.1   0.1    2.0  1  2rgd_A    mol:protein length:166  GTPase HRas
+       0.24   13.8   0.1       0.97   12.1   0.1    2.0  1  721p_A    mol:protein length:166  H-RAS P21 PROTEIN
+       0.24   13.8   0.1       0.97   12.1   0.1    2.0  1  2ce2_X    mol:protein length:166  GTPASE HRAS
+       0.24   13.8   0.1       0.97   12.1   0.1    2.0  1  2cl0_X    mol:protein length:166  GTPASE HRAS
+       0.24   13.8   0.1       0.97   12.1   0.1    2.0  1  2cl6_X    mol:protein length:166  GTPASE HRAS
+       0.24   13.8   0.1       0.97   12.1   0.1    2.0  1  2cl7_X    mol:protein length:166  GTPASE HRAS
+       0.24   13.8   0.1       0.97   12.1   0.1    2.0  1  2clc_X    mol:protein length:166  GTPASE HRAS
+       0.24   13.8   0.1       0.97   12.1   0.1    2.0  1  2evw_X    mol:protein length:166  GTPase HRas
+       0.24   13.8   0.1       0.97   12.1   0.1    2.0  1  2cld_X    mol:protein length:166  GTPASE HRAS
+       0.24   13.8   0.1       0.97   12.1   0.1    2.0  1  221p_A    mol:protein length:166  H-RAS P21 PROTEIN
+       0.25   13.8   0.1       0.97   12.1   0.1    2.0  1  121p_A    mol:protein length:166  H-RAS P21 PROTEIN
+       0.25   13.8   0.1       0.97   12.1   0.1    2.0  1  1bkd_R    mol:protein length:166  H-RAS
+       0.25   13.8   0.1       0.97   12.1   0.1    2.0  1  1crp_A    mol:protein length:166  C-H-RAS P21 PROTEIN
+       0.25   13.8   0.1       0.97   12.1   0.1    2.0  1  1crq_A    mol:protein length:166  C-H-RAS P21 PROTEIN
+       0.25   13.8   0.1       0.97   12.1   0.1    2.0  1  1crr_A    mol:protein length:166  C-H-RAS P21 PROTEIN
+       0.25   13.8   0.1       0.97   12.1   0.1    2.0  1  1ctq_A    mol:protein length:166  PROTEIN (TRANSFORMING PROTE
+       0.25   13.8   0.1       0.97   12.1   0.1    2.0  1  1gnp_A    mol:protein length:166  C-H-RAS P21 PROTEIN
+       0.25   13.8   0.1       0.97   12.1   0.1    2.0  1  1gnq_A    mol:protein length:166  C-H-RAS P21 PROTEIN
+       0.25   13.8   0.1       0.97   12.1   0.1    2.0  1  1gnr_A    mol:protein length:166  C-H-RAS P21 PROTEIN
+       0.25   13.8   0.1       0.97   12.1   0.1    2.0  1  1k8r_A    mol:protein length:166  Transforming protein P21/H-
+       0.25   13.8   0.1       0.97   12.1   0.1    2.0  1  1nvv_R    mol:protein length:166  Transforming protein p21/H-
+       0.25   13.8   0.1       0.97   12.1   0.1    2.0  1  1nvw_Q    mol:protein length:166  Transforming protein p21/H-
+       0.25   13.8   0.1       0.97   12.1   0.1    2.0  1  1nvw_R    mol:protein length:166  Transforming protein p21/H-
+       0.25   13.8   0.1       0.97   12.1   0.1    2.0  1  1p2s_A    mol:protein length:166  Transforming protein p21/H-
+       0.25   13.8   0.1       0.97   12.1   0.1    2.0  1  1p2t_A    mol:protein length:166  Transforming protein p21/H-
+       0.25   13.8   0.1       0.97   12.1   0.1    2.0  1  1p2u_A    mol:protein length:166  Transforming protein p21/H-
+       0.25   13.8   0.1       0.97   12.1   0.1    2.0  1  1p2v_A    mol:protein length:166  Transforming protein p21/H-
+       0.25   13.8   0.1       0.97   12.1   0.1    2.0  1  1qra_A    mol:protein length:166  TRANSFORMING PROTEIN P21/H-
+       0.25   13.8   0.1       0.97   12.1   0.1    2.0  1  1wq1_R    mol:protein length:166  H-RAS
+       0.25   13.8   0.1       0.97   12.1   0.1    2.0  1  1xd2_B    mol:protein length:166  Transforming protein p21/H-
+       0.25   13.8   0.1       0.97   12.1   0.1    2.0  1  2rge_A    mol:protein length:166  GTPase HRas
+       0.25   13.8   0.1       0.97   12.1   0.1    2.0  1  5p21_A    mol:protein length:166  C-H-RAS P21 PROTEIN
+       0.25   13.8   0.1       0.97   12.1   0.1    2.0  1  2rgb_A    mol:protein length:166  GTPase HRas
+       0.25   13.8   0.1       0.97   12.1   0.1    2.0  1  3ddc_A    mol:protein length:166  GTPase HRas
+       0.25   13.8   0.1       0.97   12.1   0.1    2.0  1  1iaq_A    mol:protein length:166  TRANSFORMING PROTEIN P21/H-
+       0.25   13.8   0.1       0.97   12.1   0.1    2.0  1  1iaq_B    mol:protein length:166  TRANSFORMING PROTEIN P21/H-
+       0.25   13.8   0.1       0.97   12.1   0.1    2.0  1  1iaq_C    mol:protein length:166  TRANSFORMING PROTEIN P21/H-
+       0.25   13.8   0.1       0.97   12.1   0.1    2.0  1  2quz_A    mol:protein length:166  GTPase HRas
+       0.25   13.8   0.1       0.97   12.1   0.1    2.0  1  621p_A    mol:protein length:166  H-RAS P21 PROTEIN
+       0.25   13.8   0.1       0.98   12.1   0.1    2.0  1  1lfd_B    mol:protein length:167  RAS
+       0.25   13.8   0.1       0.98   12.1   0.1    2.0  1  1lfd_D    mol:protein length:167  RAS
+       0.25   13.7   0.1       0.97   12.1   0.1    2.0  1  1xj0_A    mol:protein length:166  Transforming protein p21/H-
+       0.26   13.7   0.1       0.98   12.1   0.1    2.0  1  1xcm_A    mol:protein length:167  Transforming protein p21/H-
+       0.26   13.7   0.1          1   12.0   0.1    2.0  1  1aa9_A    mol:protein length:171  C-HA-RAS
+       0.26   13.7   0.1          1   12.0   0.1    2.0  1  1ioz_A    mol:protein length:171  TRANSFORMING PROTEIN P21/H-
+       0.26   13.7   0.1          1   12.0   0.1    2.0  1  1q21_A    mol:protein length:171  C-H-RAS P21 PROTEIN CATALYT
+       0.26   13.7   0.1          1   12.0   0.1    2.0  1  6q21_A    mol:protein length:171  C-H-RAS P21 PROTEIN CATALYT
+       0.26   13.7   0.1          1   12.0   0.1    2.0  1  6q21_B    mol:protein length:171  C-H-RAS P21 PROTEIN CATALYT
+       0.26   13.7   0.1          1   12.0   0.1    2.0  1  6q21_C    mol:protein length:171  C-H-RAS P21 PROTEIN CATALYT
+       0.26   13.7   0.1          1   12.0   0.1    2.0  1  6q21_D    mol:protein length:171  C-H-RAS P21 PROTEIN CATALYT
+       0.28   13.6   0.1       0.99   12.1   0.1    1.9  1  1u8y_A    mol:protein length:168  Ras-related protein Ral-A
+       0.28   13.6   0.1       0.99   12.1   0.1    1.9  1  1u8y_B    mol:protein length:168  Ras-related protein Ral-A
+       0.28   13.6   0.1       0.99   12.1   0.1    1.9  1  1u8z_A    mol:protein length:168  Ras-related protein Ral-A
+       0.28   13.6   0.1       0.99   12.1   0.1    1.9  1  1u8z_B    mol:protein length:168  Ras-related protein Ral-A
+       0.28   13.6   0.1       0.99   12.1   0.1    1.9  1  1u90_A    mol:protein length:168  Ras-related protein Ral-A
+       0.28   13.6   0.1       0.99   12.1   0.1    1.9  1  1u90_B    mol:protein length:168  Ras-related protein Ral-A
+       0.29   13.6   0.1        1.1   12.0   0.1    1.9  1  1zc3_A    mol:protein length:175  Ras-related protein Ral-A
+       0.29   13.6   0.1        1.1   12.0   0.1    1.9  1  1zc3_C    mol:protein length:175  Ras-related protein Ral-A
+       0.29   13.6   0.1        1.1   12.0   0.1    1.9  1  1zc4_A    mol:protein length:175  Ras-related protein Ral-A
+       0.29   13.6   0.1        1.1   12.0   0.1    1.9  1  1zc4_C    mol:protein length:175  Ras-related protein Ral-A
+        0.3   13.5   0.1        1.1   12.0   0.1    1.8  1  1uad_A    mol:protein length:175  Ras-related protein Ral-A
+        0.3   13.5   0.1        1.1   12.0   0.1    1.8  1  1uad_B    mol:protein length:175  Ras-related protein Ral-A
+       0.31   13.5   0.1        1.2   11.9   0.1    2.0  1  4q21_A    mol:protein length:189  C-H-RAS P21 PROTEIN CATALYT
+       0.33   13.4   0.1        1.2   11.9   0.1    1.9  1  2pmx_A    mol:protein length:187  K-Ras
+       0.33   13.4   0.1        1.2   11.9   0.1    1.9  1  2pmx_B    mol:protein length:187  K-Ras
+       0.33   13.4   0.1        1.2   11.9   0.1    1.9  1  2pmx_C    mol:protein length:187  K-Ras
+       0.33   13.4   0.1        1.2   11.9   0.1    1.9  1  2pmx_D    mol:protein length:187  K-Ras
+       0.33   13.4   0.1        1.2   11.9   0.1    1.9  1  2pmx_E    mol:protein length:187  K-Ras
+       0.33   13.4   0.1        1.2   11.9   0.1    1.9  1  2pmx_F    mol:protein length:187  K-Ras
+       0.34   13.4   0.0       0.93   12.2   0.0    1.7  1  1x1r_A    mol:protein length:178  Ras-related protein M-Ras
+       0.34   13.4   0.0       0.93   12.2   0.0    1.7  1  1x1s_A    mol:protein length:178  Ras-related protein M-Ras
+       0.35   13.3   0.1        1.2   11.8   0.1    1.9  1  3con_A    mol:protein length:190  GTPase NRas
+       0.39   13.2   0.1        1.4   11.7   0.1    1.8  1  2bov_A    mol:protein length:206  RAS-RELATED PROTEIN RAL-A
+       0.87   12.2   0.0        6.6    9.8   0.0    2.5  1  1cp2_A    mol:protein length:269  NITROGENASE IRON PROTEIN
+       0.87   12.2   0.0        6.6    9.8   0.0    2.5  1  1cp2_B    mol:protein length:269  NITROGENASE IRON PROTEIN
+        0.9   12.2   1.9        1.2   11.9   0.1    2.2  1  2a78_A    mol:protein length:187  Ras-related protein Ral-A
+        0.9   12.2   1.9        1.2   11.9   0.1    2.2  1  2a9k_A    mol:protein length:187  Ras-related protein Ral-A
+
+
+Domain annotation for each sequence (and alignments):
+>> 1kao_A  mol:protein length:167  RAP2A
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   13.6   0.1   0.00021      0.29       1      19 [.       5      23 ..       5      25 .. 0.90
+
+  Alignments for each domain:
+  == domain 1  score: 13.6 bits;  conditional E-value: 0.00021
+  P1;p11a  1 kiamlgeggvgeaaltvnl 19
+             k+ +lg ggvg++altv +
+   1kao_A  5 KVVVLGSGGVGKSALTVQF 23
+             7899************975 PP
+
+>> 2rap_A  mol:protein length:167  RAP2A
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   13.6   0.1   0.00021      0.29       1      19 [.       5      23 ..       5      25 .. 0.90
+
+  Alignments for each domain:
+  == domain 1  score: 13.6 bits;  conditional E-value: 0.00021
+  P1;p11a  1 kiamlgeggvgeaaltvnl 19
+             k+ +lg ggvg++altv +
+   2rap_A  5 KVVVLGSGGVGKSALTVQF 23
+             7899************975 PP
+
+>> 3rap_R  mol:protein length:167  PROTEIN (G protein RAP2A)
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   13.6   0.1   0.00021      0.29       1      19 [.       5      23 ..       5      25 .. 0.90
+
+  Alignments for each domain:
+  == domain 1  score: 13.6 bits;  conditional E-value: 0.00021
+  P1;p11a  1 kiamlgeggvgeaaltvnl 19
+             k+ +lg ggvg++altv +
+   3rap_R  5 KVVVLGSGGVGKSALTVQF 23
+             7899************975 PP
+
+>> 3rap_S  mol:protein length:167  PROTEIN (G protein RAP2A)
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   13.6   0.1   0.00021      0.29       1      19 [.       5      23 ..       5      25 .. 0.90
+
+  Alignments for each domain:
+  == domain 1  score: 13.6 bits;  conditional E-value: 0.00021
+  P1;p11a  1 kiamlgeggvgeaaltvnl 19
+             k+ +lg ggvg++altv +
+   3rap_S  5 KVVVLGSGGVGKSALTVQF 23
+             7899************975 PP
+
+>> 3brw_D  mol:protein length:167  Ras-related protein Rap-1b
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   13.3   0.1   0.00026      0.35       1      19 [.       5      23 ..       5      25 .. 0.89
+
+  Alignments for each domain:
+  == domain 1  score: 13.3 bits;  conditional E-value: 0.00026
+  P1;p11a  1 kiamlgeggvgeaaltvnl 19
+             k+ +lg ggvg++altv +
+   3brw_D  5 KLVVLGSGGVGKSALTVQF 23
+             6889************975 PP
+
+>> 3cf6_R  mol:protein length:167  Ras-related protein Rap-1b
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   13.3   0.1   0.00026      0.35       1      19 [.       5      23 ..       5      25 .. 0.89
+
+  Alignments for each domain:
+  == domain 1  score: 13.3 bits;  conditional E-value: 0.00026
+  P1;p11a  1 kiamlgeggvgeaaltvnl 19
+             k+ +lg ggvg++altv +
+   3cf6_R  5 KLVVLGSGGVGKSALTVQF 23
+             6889************975 PP
+
+>> 1gua_A  mol:protein length:167  RAP1A
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   13.3   0.1   0.00026      0.35       1      19 [.       5      23 ..       5      25 .. 0.89
+
+  Alignments for each domain:
+  == domain 1  score: 13.3 bits;  conditional E-value: 0.00026
+  P1;p11a  1 kiamlgeggvgeaaltvnl 19
+             k+ +lg ggvg++altv +
+   1gua_A  5 KLVVLGSGGVGKSALTVQF 23
+             6889************975 PP
+
+>> 1c1y_A  mol:protein length:167  RAS-RELATED PROTEIN RAP-1A
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   13.3   0.1   0.00026      0.35       1      19 [.       5      23 ..       5      25 .. 0.89
+
+  Alignments for each domain:
+  == domain 1  score: 13.3 bits;  conditional E-value: 0.00026
+  P1;p11a  1 kiamlgeggvgeaaltvnl 19
+             k+ +lg ggvg++altv +
+   1c1y_A  5 KLVVLGSGGVGKSALTVQF 23
+             6889************975 PP
+
+>> 1lf0_A  mol:protein length:166  Transforming protein P21/H-RAS-1
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   12.1   0.1   0.00072      0.97       1      19 [.       5      23 ..       5      25 .. 0.89
+
+  Alignments for each domain:
+  == domain 1  score: 12.1 bits;  conditional E-value: 0.00072
+  P1;p11a  1 kiamlgeggvgeaaltvnl 19
+             k+ ++g ggvg++alt+ l
+   1lf0_A  5 KLVVVGAGGVGKSALTIQL 23
+             67899***********998 PP
+
+>> 1lf5_A  mol:protein length:166  Transforming protein P21/H-RAS-1
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   12.1   0.1   0.00072      0.97       1      19 [.       5      23 ..       5      25 .. 0.89
+
+  Alignments for each domain:
+  == domain 1  score: 12.1 bits;  conditional E-value: 0.00072
+  P1;p11a  1 kiamlgeggvgeaaltvnl 19
+             k+ ++g ggvg++alt+ l
+   1lf5_A  5 KLVVVGAGGVGKSALTIQL 23
+             67899***********998 PP
+
+>> 1nvu_Q  mol:protein length:166  Transforming protein p21/H-RAS-1
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   12.1   0.1   0.00072      0.97       1      19 [.       5      23 ..       5      25 .. 0.89
+
+  Alignments for each domain:
+  == domain 1  score: 12.1 bits;  conditional E-value: 0.00072
+  P1;p11a  1 kiamlgeggvgeaaltvnl 19
+             k+ ++g ggvg++alt+ l
+   1nvu_Q  5 KLVVVGAGGVGKSALTIQL 23
+             67899***********998 PP
+
+>> 1nvu_R  mol:protein length:166  Transforming protein p21/H-RAS-1
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   12.1   0.1   0.00072      0.97       1      19 [.       5      23 ..       5      25 .. 0.89
+
+  Alignments for each domain:
+  == domain 1  score: 12.1 bits;  conditional E-value: 0.00072
+  P1;p11a  1 kiamlgeggvgeaaltvnl 19
+             k+ ++g ggvg++alt+ l
+   1nvu_R  5 KLVVVGAGGVGKSALTIQL 23
+             67899***********998 PP
+
+>> 1nvx_Q  mol:protein length:166  Transforming protein p21/H-RAS-1
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   12.1   0.1   0.00072      0.97       1      19 [.       5      23 ..       5      25 .. 0.89
+
+  Alignments for each domain:
+  == domain 1  score: 12.1 bits;  conditional E-value: 0.00072
+  P1;p11a  1 kiamlgeggvgeaaltvnl 19
+             k+ ++g ggvg++alt+ l
+   1nvx_Q  5 KLVVVGAGGVGKSALTIQL 23
+             67899***********998 PP
+
+>> 1nvx_R  mol:protein length:166  Transforming protein p21/H-RAS-1
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   12.1   0.1   0.00072      0.97       1      19 [.       5      23 ..       5      25 .. 0.89
+
+  Alignments for each domain:
+  == domain 1  score: 12.1 bits;  conditional E-value: 0.00072
+  P1;p11a  1 kiamlgeggvgeaaltvnl 19
+             k+ ++g ggvg++alt+ l
+   1nvx_R  5 KLVVVGAGGVGKSALTIQL 23
+             67899***********998 PP
+
+>> 2rgc_A  mol:protein length:166  GTPase HRas
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   12.1   0.1   0.00072      0.97       1      19 [.       5      23 ..       5      25 .. 0.89
+
+  Alignments for each domain:
+  == domain 1  score: 12.1 bits;  conditional E-value: 0.00072
+  P1;p11a  1 kiamlgeggvgeaaltvnl 19
+             k+ ++g ggvg++alt+ l
+   2rgc_A  5 KLVVVGAGGVGKSALTIQL 23
+             67899***********998 PP
+
+>> 1nvv_Q  mol:protein length:166  Transforming protein p21/H-RAS-1
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   12.1   0.1   0.00072      0.97       1      19 [.       5      23 ..       5      25 .. 0.89
+
+  Alignments for each domain:
+  == domain 1  score: 12.1 bits;  conditional E-value: 0.00072
+  P1;p11a  1 kiamlgeggvgeaaltvnl 19
+             k+ ++g ggvg++alt+ l
+   1nvv_Q  5 KLVVVGAGGVGKSALTIQL 23
+             67899***********998 PP
+
+>> 1xd2_A  mol:protein length:166  Transforming protein p21/H-Ras-1
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   12.1   0.1   0.00072      0.97       1      19 [.       5      23 ..       5      25 .. 0.89
+
+  Alignments for each domain:
+  == domain 1  score: 12.1 bits;  conditional E-value: 0.00072
+  P1;p11a  1 kiamlgeggvgeaaltvnl 19
+             k+ ++g ggvg++alt+ l
+   1xd2_A  5 KLVVVGAGGVGKSALTIQL 23
+             67899***********998 PP
+
+>> 2rga_A  mol:protein length:166  GTPase HRas
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   12.1   0.1   0.00072      0.97       1      19 [.       5      23 ..       5      25 .. 0.89
+
+  Alignments for each domain:
+  == domain 1  score: 12.1 bits;  conditional E-value: 0.00072
+  P1;p11a  1 kiamlgeggvgeaaltvnl 19
+             k+ ++g ggvg++alt+ l
+   2rga_A  5 KLVVVGAGGVGKSALTIQL 23
+             67899***********998 PP
+
+>> 2rgg_A  mol:protein length:166  GTPase HRas
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   12.1   0.1   0.00072      0.97       1      19 [.       5      23 ..       5      25 .. 0.89
+
+  Alignments for each domain:
+  == domain 1  score: 12.1 bits;  conditional E-value: 0.00072
+  P1;p11a  1 kiamlgeggvgeaaltvnl 19
+             k+ ++g ggvg++alt+ l
+   2rgg_A  5 KLVVVGAGGVGKSALTIQL 23
+             67899***********998 PP
+
+>> 1zvq_A  mol:protein length:166  Transforming protein p21/H-Ras-1
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   12.1   0.1   0.00072      0.97       1      19 [.       5      23 ..       5      25 .. 0.89
+
+  Alignments for each domain:
+  == domain 1  score: 12.1 bits;  conditional E-value: 0.00072
+  P1;p11a  1 kiamlgeggvgeaaltvnl 19
+             k+ ++g ggvg++alt+ l
+   1zvq_A  5 KLVVVGAGGVGKSALTIQL 23
+             67899***********998 PP
+
+>> 1zw6_A  mol:protein length:166  Transforming protein p21/H-Ras-1
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   12.1   0.1   0.00072      0.97       1      19 [.       5      23 ..       5      25 .. 0.89
+
+  Alignments for each domain:
+  == domain 1  score: 12.1 bits;  conditional E-value: 0.00072
+  P1;p11a  1 kiamlgeggvgeaaltvnl 19
+             k+ ++g ggvg++alt+ l
+   1zw6_A  5 KLVVVGAGGVGKSALTIQL 23
+             67899***********998 PP
+
+>> 2rgd_A  mol:protein length:166  GTPase HRas
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   12.1   0.1   0.00072      0.97       1      19 [.       5      23 ..       5      25 .. 0.89
+
+  Alignments for each domain:
+  == domain 1  score: 12.1 bits;  conditional E-value: 0.00072
+  P1;p11a  1 kiamlgeggvgeaaltvnl 19
+             k+ ++g ggvg++alt+ l
+   2rgd_A  5 KLVVVGAGGVGKSALTIQL 23
+             67899***********998 PP
+
+>> 721p_A  mol:protein length:166  H-RAS P21 PROTEIN
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   12.1   0.1   0.00072      0.97       1      19 [.       5      23 ..       5      25 .. 0.89
+
+  Alignments for each domain:
+  == domain 1  score: 12.1 bits;  conditional E-value: 0.00072
+  P1;p11a  1 kiamlgeggvgeaaltvnl 19
+             k+ ++g ggvg++alt+ l
+   721p_A  5 KLVVVGAGGVGKSALTIQL 23
+             67899***********998 PP
+
+>> 2ce2_X  mol:protein length:166  GTPASE HRAS
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   12.1   0.1   0.00072      0.97       1      19 [.       5      23 ..       5      25 .. 0.89
+
+  Alignments for each domain:
+  == domain 1  score: 12.1 bits;  conditional E-value: 0.00072
+  P1;p11a  1 kiamlgeggvgeaaltvnl 19
+             k+ ++g ggvg++alt+ l
+   2ce2_X  5 KLVVVGAGGVGKSALTIQL 23
+             67899***********998 PP
+
+>> 2cl0_X  mol:protein length:166  GTPASE HRAS
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   12.1   0.1   0.00072      0.97       1      19 [.       5      23 ..       5      25 .. 0.89
+
+  Alignments for each domain:
+  == domain 1  score: 12.1 bits;  conditional E-value: 0.00072
+  P1;p11a  1 kiamlgeggvgeaaltvnl 19
+             k+ ++g ggvg++alt+ l
+   2cl0_X  5 KLVVVGAGGVGKSALTIQL 23
+             67899***********998 PP
+
+>> 2cl6_X  mol:protein length:166  GTPASE HRAS
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   12.1   0.1   0.00072      0.97       1      19 [.       5      23 ..       5      25 .. 0.89
+
+  Alignments for each domain:
+  == domain 1  score: 12.1 bits;  conditional E-value: 0.00072
+  P1;p11a  1 kiamlgeggvgeaaltvnl 19
+             k+ ++g ggvg++alt+ l
+   2cl6_X  5 KLVVVGAGGVGKSALTIQL 23
+             67899***********998 PP
+
+>> 2cl7_X  mol:protein length:166  GTPASE HRAS
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   12.1   0.1   0.00072      0.97       1      19 [.       5      23 ..       5      25 .. 0.89
+
+  Alignments for each domain:
+  == domain 1  score: 12.1 bits;  conditional E-value: 0.00072
+  P1;p11a  1 kiamlgeggvgeaaltvnl 19
+             k+ ++g ggvg++alt+ l
+   2cl7_X  5 KLVVVGAGGVGKSALTIQL 23
+             67899***********998 PP
+
+>> 2clc_X  mol:protein length:166  GTPASE HRAS
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   12.1   0.1   0.00072      0.97       1      19 [.       5      23 ..       5      25 .. 0.89
+
+  Alignments for each domain:
+  == domain 1  score: 12.1 bits;  conditional E-value: 0.00072
+  P1;p11a  1 kiamlgeggvgeaaltvnl 19
+             k+ ++g ggvg++alt+ l
+   2clc_X  5 KLVVVGAGGVGKSALTIQL 23
+             67899***********998 PP
+
+>> 2evw_X  mol:protein length:166  GTPase HRas
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   12.1   0.1   0.00072      0.97       1      19 [.       5      23 ..       5      25 .. 0.89
+
+  Alignments for each domain:
+  == domain 1  score: 12.1 bits;  conditional E-value: 0.00072
+  P1;p11a  1 kiamlgeggvgeaaltvnl 19
+             k+ ++g ggvg++alt+ l
+   2evw_X  5 KLVVVGAGGVGKSALTIQL 23
+             67899***********998 PP
+
+>> 2cld_X  mol:protein length:166  GTPASE HRAS
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   12.1   0.1   0.00072      0.97       1      19 [.       5      23 ..       5      25 .. 0.89
+
+  Alignments for each domain:
+  == domain 1  score: 12.1 bits;  conditional E-value: 0.00072
+  P1;p11a  1 kiamlgeggvgeaaltvnl 19
+             k+ ++g ggvg++alt+ l
+   2cld_X  5 KLVVVGAGGVGKSALTIQL 23
+             67899***********998 PP
+
+>> 221p_A  mol:protein length:166  H-RAS P21 PROTEIN
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   12.1   0.1   0.00072      0.97       1      19 [.       5      23 ..       5      25 .. 0.89
+
+  Alignments for each domain:
+  == domain 1  score: 12.1 bits;  conditional E-value: 0.00072
+  P1;p11a  1 kiamlgeggvgeaaltvnl 19
+             k+ ++g ggvg++alt+ l
+   221p_A  5 KLVVVGAGGVGKSALTIQL 23
+             67899***********998 PP
+
+>> 121p_A  mol:protein length:166  H-RAS P21 PROTEIN
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   12.1   0.1   0.00072      0.97       1      19 [.       5      23 ..       5      25 .. 0.89
+
+  Alignments for each domain:
+  == domain 1  score: 12.1 bits;  conditional E-value: 0.00072
+  P1;p11a  1 kiamlgeggvgeaaltvnl 19
+             k+ ++g ggvg++alt+ l
+   121p_A  5 KLVVVGAGGVGKSALTIQL 23
+             67899***********998 PP
+
+>> 1bkd_R  mol:protein length:166  H-RAS
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   12.1   0.1   0.00072      0.97       1      19 [.       5      23 ..       5      25 .. 0.89
+
+  Alignments for each domain:
+  == domain 1  score: 12.1 bits;  conditional E-value: 0.00072
+  P1;p11a  1 kiamlgeggvgeaaltvnl 19
+             k+ ++g ggvg++alt+ l
+   1bkd_R  5 KLVVVGAGGVGKSALTIQL 23
+             67899***********998 PP
+
+>> 1crp_A  mol:protein length:166  C-H-RAS P21 PROTEIN
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   12.1   0.1   0.00072      0.97       1      19 [.       5      23 ..       5      25 .. 0.89
+
+  Alignments for each domain:
+  == domain 1  score: 12.1 bits;  conditional E-value: 0.00072
+  P1;p11a  1 kiamlgeggvgeaaltvnl 19
+             k+ ++g ggvg++alt+ l
+   1crp_A  5 KLVVVGAGGVGKSALTIQL 23
+             67899***********998 PP
+
+>> 1crq_A  mol:protein length:166  C-H-RAS P21 PROTEIN
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   12.1   0.1   0.00072      0.97       1      19 [.       5      23 ..       5      25 .. 0.89
+
+  Alignments for each domain:
+  == domain 1  score: 12.1 bits;  conditional E-value: 0.00072
+  P1;p11a  1 kiamlgeggvgeaaltvnl 19
+             k+ ++g ggvg++alt+ l
+   1crq_A  5 KLVVVGAGGVGKSALTIQL 23
+             67899***********998 PP
+
+>> 1crr_A  mol:protein length:166  C-H-RAS P21 PROTEIN
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   12.1   0.1   0.00072      0.97       1      19 [.       5      23 ..       5      25 .. 0.89
+
+  Alignments for each domain:
+  == domain 1  score: 12.1 bits;  conditional E-value: 0.00072
+  P1;p11a  1 kiamlgeggvgeaaltvnl 19
+             k+ ++g ggvg++alt+ l
+   1crr_A  5 KLVVVGAGGVGKSALTIQL 23
+             67899***********998 PP
+
+>> 1ctq_A  mol:protein length:166  PROTEIN (TRANSFORMING PROTEIN P21/H-RAS-1)
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   12.1   0.1   0.00072      0.97       1      19 [.       5      23 ..       5      25 .. 0.89
+
+  Alignments for each domain:
+  == domain 1  score: 12.1 bits;  conditional E-value: 0.00072
+  P1;p11a  1 kiamlgeggvgeaaltvnl 19
+             k+ ++g ggvg++alt+ l
+   1ctq_A  5 KLVVVGAGGVGKSALTIQL 23
+             67899***********998 PP
+
+>> 1gnp_A  mol:protein length:166  C-H-RAS P21 PROTEIN
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   12.1   0.1   0.00072      0.97       1      19 [.       5      23 ..       5      25 .. 0.89
+
+  Alignments for each domain:
+  == domain 1  score: 12.1 bits;  conditional E-value: 0.00072
+  P1;p11a  1 kiamlgeggvgeaaltvnl 19
+             k+ ++g ggvg++alt+ l
+   1gnp_A  5 KLVVVGAGGVGKSALTIQL 23
+             67899***********998 PP
+
+>> 1gnq_A  mol:protein length:166  C-H-RAS P21 PROTEIN
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   12.1   0.1   0.00072      0.97       1      19 [.       5      23 ..       5      25 .. 0.89
+
+  Alignments for each domain:
+  == domain 1  score: 12.1 bits;  conditional E-value: 0.00072
+  P1;p11a  1 kiamlgeggvgeaaltvnl 19
+             k+ ++g ggvg++alt+ l
+   1gnq_A  5 KLVVVGAGGVGKSALTIQL 23
+             67899***********998 PP
+
+>> 1gnr_A  mol:protein length:166  C-H-RAS P21 PROTEIN
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   12.1   0.1   0.00072      0.97       1      19 [.       5      23 ..       5      25 .. 0.89
+
+  Alignments for each domain:
+  == domain 1  score: 12.1 bits;  conditional E-value: 0.00072
+  P1;p11a  1 kiamlgeggvgeaaltvnl 19
+             k+ ++g ggvg++alt+ l
+   1gnr_A  5 KLVVVGAGGVGKSALTIQL 23
+             67899***********998 PP
+
+>> 1k8r_A  mol:protein length:166  Transforming protein P21/H-RAS-1
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   12.1   0.1   0.00072      0.97       1      19 [.       5      23 ..       5      25 .. 0.89
+
+  Alignments for each domain:
+  == domain 1  score: 12.1 bits;  conditional E-value: 0.00072
+  P1;p11a  1 kiamlgeggvgeaaltvnl 19
+             k+ ++g ggvg++alt+ l
+   1k8r_A  5 KLVVVGAGGVGKSALTIQL 23
+             67899***********998 PP
+
+>> 1nvv_R  mol:protein length:166  Transforming protein p21/H-RAS-1
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   12.1   0.1   0.00072      0.97       1      19 [.       5      23 ..       5      25 .. 0.89
+
+  Alignments for each domain:
+  == domain 1  score: 12.1 bits;  conditional E-value: 0.00072
+  P1;p11a  1 kiamlgeggvgeaaltvnl 19
+             k+ ++g ggvg++alt+ l
+   1nvv_R  5 KLVVVGAGGVGKSALTIQL 23
+             67899***********998 PP
+
+>> 1nvw_Q  mol:protein length:166  Transforming protein p21/H-RAS-1
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   12.1   0.1   0.00072      0.97       1      19 [.       5      23 ..       5      25 .. 0.89
+
+  Alignments for each domain:
+  == domain 1  score: 12.1 bits;  conditional E-value: 0.00072
+  P1;p11a  1 kiamlgeggvgeaaltvnl 19
+             k+ ++g ggvg++alt+ l
+   1nvw_Q  5 KLVVVGAGGVGKSALTIQL 23
+             67899***********998 PP
+
+>> 1nvw_R  mol:protein length:166  Transforming protein p21/H-RAS-1
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   12.1   0.1   0.00072      0.97       1      19 [.       5      23 ..       5      25 .. 0.89
+
+  Alignments for each domain:
+  == domain 1  score: 12.1 bits;  conditional E-value: 0.00072
+  P1;p11a  1 kiamlgeggvgeaaltvnl 19
+             k+ ++g ggvg++alt+ l
+   1nvw_R  5 KLVVVGAGGVGKSALTIQL 23
+             67899***********998 PP
+
+>> 1p2s_A  mol:protein length:166  Transforming protein p21/H-RAS-1
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   12.1   0.1   0.00072      0.97       1      19 [.       5      23 ..       5      25 .. 0.89
+
+  Alignments for each domain:
+  == domain 1  score: 12.1 bits;  conditional E-value: 0.00072
+  P1;p11a  1 kiamlgeggvgeaaltvnl 19
+             k+ ++g ggvg++alt+ l
+   1p2s_A  5 KLVVVGAGGVGKSALTIQL 23
+             67899***********998 PP
+
+>> 1p2t_A  mol:protein length:166  Transforming protein p21/H-RAS-1
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   12.1   0.1   0.00072      0.97       1      19 [.       5      23 ..       5      25 .. 0.89
+
+  Alignments for each domain:
+  == domain 1  score: 12.1 bits;  conditional E-value: 0.00072
+  P1;p11a  1 kiamlgeggvgeaaltvnl 19
+             k+ ++g ggvg++alt+ l
+   1p2t_A  5 KLVVVGAGGVGKSALTIQL 23
+             67899***********998 PP
+
+>> 1p2u_A  mol:protein length:166  Transforming protein p21/H-RAS-1
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   12.1   0.1   0.00072      0.97       1      19 [.       5      23 ..       5      25 .. 0.89
+
+  Alignments for each domain:
+  == domain 1  score: 12.1 bits;  conditional E-value: 0.00072
+  P1;p11a  1 kiamlgeggvgeaaltvnl 19
+             k+ ++g ggvg++alt+ l
+   1p2u_A  5 KLVVVGAGGVGKSALTIQL 23
+             67899***********998 PP
+
+>> 1p2v_A  mol:protein length:166  Transforming protein p21/H-RAS-1
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   12.1   0.1   0.00072      0.97       1      19 [.       5      23 ..       5      25 .. 0.89
+
+  Alignments for each domain:
+  == domain 1  score: 12.1 bits;  conditional E-value: 0.00072
+  P1;p11a  1 kiamlgeggvgeaaltvnl 19
+             k+ ++g ggvg++alt+ l
+   1p2v_A  5 KLVVVGAGGVGKSALTIQL 23
+             67899***********998 PP
+
+>> 1qra_A  mol:protein length:166  TRANSFORMING PROTEIN P21/H-RAS-1
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   12.1   0.1   0.00072      0.97       1      19 [.       5      23 ..       5      25 .. 0.89
+
+  Alignments for each domain:
+  == domain 1  score: 12.1 bits;  conditional E-value: 0.00072
+  P1;p11a  1 kiamlgeggvgeaaltvnl 19
+             k+ ++g ggvg++alt+ l
+   1qra_A  5 KLVVVGAGGVGKSALTIQL 23
+             67899***********998 PP
+
+>> 1wq1_R  mol:protein length:166  H-RAS
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   12.1   0.1   0.00072      0.97       1      19 [.       5      23 ..       5      25 .. 0.89
+
+  Alignments for each domain:
+  == domain 1  score: 12.1 bits;  conditional E-value: 0.00072
+  P1;p11a  1 kiamlgeggvgeaaltvnl 19
+             k+ ++g ggvg++alt+ l
+   1wq1_R  5 KLVVVGAGGVGKSALTIQL 23
+             67899***********998 PP
+
+>> 1xd2_B  mol:protein length:166  Transforming protein p21/H-Ras-1
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   12.1   0.1   0.00072      0.97       1      19 [.       5      23 ..       5      25 .. 0.89
+
+  Alignments for each domain:
+  == domain 1  score: 12.1 bits;  conditional E-value: 0.00072
+  P1;p11a  1 kiamlgeggvgeaaltvnl 19
+             k+ ++g ggvg++alt+ l
+   1xd2_B  5 KLVVVGAGGVGKSALTIQL 23
+             67899***********998 PP
+
+>> 2rge_A  mol:protein length:166  GTPase HRas
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   12.1   0.1   0.00072      0.97       1      19 [.       5      23 ..       5      25 .. 0.89
+
+  Alignments for each domain:
+  == domain 1  score: 12.1 bits;  conditional E-value: 0.00072
+  P1;p11a  1 kiamlgeggvgeaaltvnl 19
+             k+ ++g ggvg++alt+ l
+   2rge_A  5 KLVVVGAGGVGKSALTIQL 23
+             67899***********998 PP
+
+>> 5p21_A  mol:protein length:166  C-H-RAS P21 PROTEIN
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   12.1   0.1   0.00072      0.97       1      19 [.       5      23 ..       5      25 .. 0.89
+
+  Alignments for each domain:
+  == domain 1  score: 12.1 bits;  conditional E-value: 0.00072
+  P1;p11a  1 kiamlgeggvgeaaltvnl 19
+             k+ ++g ggvg++alt+ l
+   5p21_A  5 KLVVVGAGGVGKSALTIQL 23
+             67899***********998 PP
+
+>> 2rgb_A  mol:protein length:166  GTPase HRas
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   12.1   0.1   0.00072      0.97       1      19 [.       5      23 ..       5      25 .. 0.89
+
+  Alignments for each domain:
+  == domain 1  score: 12.1 bits;  conditional E-value: 0.00072
+  P1;p11a  1 kiamlgeggvgeaaltvnl 19
+             k+ ++g ggvg++alt+ l
+   2rgb_A  5 KLVVVGAGGVGKSALTIQL 23
+             67899***********998 PP
+
+>> 3ddc_A  mol:protein length:166  GTPase HRas
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   12.1   0.1   0.00072      0.97       1      19 [.       5      23 ..       5      25 .. 0.89
+
+  Alignments for each domain:
+  == domain 1  score: 12.1 bits;  conditional E-value: 0.00072
+  P1;p11a  1 kiamlgeggvgeaaltvnl 19
+             k+ ++g ggvg++alt+ l
+   3ddc_A  5 KLVVVGAGGVGKSALTIQL 23
+             67899***********998 PP
+
+>> 1iaq_A  mol:protein length:166  TRANSFORMING PROTEIN P21/H-RAS-1
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   12.1   0.1   0.00072      0.97       1      19 [.       5      23 ..       5      25 .. 0.89
+
+  Alignments for each domain:
+  == domain 1  score: 12.1 bits;  conditional E-value: 0.00072
+  P1;p11a  1 kiamlgeggvgeaaltvnl 19
+             k+ ++g ggvg++alt+ l
+   1iaq_A  5 KLVVVGAGGVGKSALTIQL 23
+             67899***********998 PP
+
+>> 1iaq_B  mol:protein length:166  TRANSFORMING PROTEIN P21/H-RAS-1
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   12.1   0.1   0.00072      0.97       1      19 [.       5      23 ..       5      25 .. 0.89
+
+  Alignments for each domain:
+  == domain 1  score: 12.1 bits;  conditional E-value: 0.00072
+  P1;p11a  1 kiamlgeggvgeaaltvnl 19
+             k+ ++g ggvg++alt+ l
+   1iaq_B  5 KLVVVGAGGVGKSALTIQL 23
+             67899***********998 PP
+
+>> 1iaq_C  mol:protein length:166  TRANSFORMING PROTEIN P21/H-RAS-1
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   12.1   0.1   0.00072      0.97       1      19 [.       5      23 ..       5      25 .. 0.89
+
+  Alignments for each domain:
+  == domain 1  score: 12.1 bits;  conditional E-value: 0.00072
+  P1;p11a  1 kiamlgeggvgeaaltvnl 19
+             k+ ++g ggvg++alt+ l
+   1iaq_C  5 KLVVVGAGGVGKSALTIQL 23
+             67899***********998 PP
+
+>> 2quz_A  mol:protein length:166  GTPase HRas
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   12.1   0.1   0.00072      0.97       1      19 [.       5      23 ..       5      25 .. 0.89
+
+  Alignments for each domain:
+  == domain 1  score: 12.1 bits;  conditional E-value: 0.00072
+  P1;p11a  1 kiamlgeggvgeaaltvnl 19
+             k+ ++g ggvg++alt+ l
+   2quz_A  5 KLVVVGAGGVGKSALTIQL 23
+             67899***********998 PP
+
+>> 621p_A  mol:protein length:166  H-RAS P21 PROTEIN
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   12.1   0.1   0.00072      0.97       1      19 [.       5      23 ..       5      25 .. 0.89
+
+  Alignments for each domain:
+  == domain 1  score: 12.1 bits;  conditional E-value: 0.00072
+  P1;p11a  1 kiamlgeggvgeaaltvnl 19
+             k+ ++g ggvg++alt+ l
+   621p_A  5 KLVVVGAGGVGKSALTIQL 23
+             67899***********998 PP
+
+>> 1lfd_B  mol:protein length:167  RAS
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   12.1   0.1   0.00072      0.98       1      19 [.       5      23 ..       5      25 .. 0.89
+
+  Alignments for each domain:
+  == domain 1  score: 12.1 bits;  conditional E-value: 0.00072
+  P1;p11a  1 kiamlgeggvgeaaltvnl 19
+             k+ ++g ggvg++alt+ l
+   1lfd_B  5 KLVVVGAGGVGKSALTIQL 23
+             67899***********998 PP
+
+>> 1lfd_D  mol:protein length:167  RAS
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   12.1   0.1   0.00072      0.98       1      19 [.       5      23 ..       5      25 .. 0.89
+
+  Alignments for each domain:
+  == domain 1  score: 12.1 bits;  conditional E-value: 0.00072
+  P1;p11a  1 kiamlgeggvgeaaltvnl 19
+             k+ ++g ggvg++alt+ l
+   1lfd_D  5 KLVVVGAGGVGKSALTIQL 23
+             67899***********998 PP
+
+>> 1xj0_A  mol:protein length:166  Transforming protein p21/H-Ras-1
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   12.1   0.1   0.00072      0.97       1      19 [.       5      23 ..       5      25 .. 0.89
+
+  Alignments for each domain:
+  == domain 1  score: 12.1 bits;  conditional E-value: 0.00072
+  P1;p11a  1 kiamlgeggvgeaaltvnl 19
+             k+ ++g ggvg++alt+ l
+   1xj0_A  5 KLVVVGAGGVGKSALTIQL 23
+             67899***********998 PP
+
+>> 1xcm_A  mol:protein length:167  Transforming protein p21/H-Ras-1
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   12.1   0.1   0.00072      0.98       1      19 [.       5      23 ..       5      25 .. 0.89
+
+  Alignments for each domain:
+  == domain 1  score: 12.1 bits;  conditional E-value: 0.00072
+  P1;p11a  1 kiamlgeggvgeaaltvnl 19
+             k+ ++g ggvg++alt+ l
+   1xcm_A  5 KLVVVGAGGVGKSALTIQL 23
+             67899***********998 PP
+
+>> 1aa9_A  mol:protein length:171  C-HA-RAS
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   12.0   0.1   0.00075         1       1      19 [.       5      23 ..       5      25 .. 0.89
+
+  Alignments for each domain:
+  == domain 1  score: 12.0 bits;  conditional E-value: 0.00075
+  P1;p11a  1 kiamlgeggvgeaaltvnl 19
+             k+ ++g ggvg++alt+ l
+   1aa9_A  5 KLVVVGAGGVGKSALTIQL 23
+             67899***********998 PP
+
+>> 1ioz_A  mol:protein length:171  TRANSFORMING PROTEIN P21/H-RAS-1
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   12.0   0.1   0.00075         1       1      19 [.       5      23 ..       5      25 .. 0.89
+
+  Alignments for each domain:
+  == domain 1  score: 12.0 bits;  conditional E-value: 0.00075
+  P1;p11a  1 kiamlgeggvgeaaltvnl 19
+             k+ ++g ggvg++alt+ l
+   1ioz_A  5 KLVVVGAGGVGKSALTIQL 23
+             67899***********998 PP
+
+>> 1q21_A  mol:protein length:171  C-H-RAS P21 PROTEIN CATALYTIC DOMAIN
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   12.0   0.1   0.00075         1       1      19 [.       5      23 ..       5      25 .. 0.89
+
+  Alignments for each domain:
+  == domain 1  score: 12.0 bits;  conditional E-value: 0.00075
+  P1;p11a  1 kiamlgeggvgeaaltvnl 19
+             k+ ++g ggvg++alt+ l
+   1q21_A  5 KLVVVGAGGVGKSALTIQL 23
+             67899***********998 PP
+
+>> 6q21_A  mol:protein length:171  C-H-RAS P21 PROTEIN CATALYTIC DOMAIN
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   12.0   0.1   0.00075         1       1      19 [.       5      23 ..       5      25 .. 0.89
+
+  Alignments for each domain:
+  == domain 1  score: 12.0 bits;  conditional E-value: 0.00075
+  P1;p11a  1 kiamlgeggvgeaaltvnl 19
+             k+ ++g ggvg++alt+ l
+   6q21_A  5 KLVVVGAGGVGKSALTIQL 23
+             67899***********998 PP
+
+>> 6q21_B  mol:protein length:171  C-H-RAS P21 PROTEIN CATALYTIC DOMAIN
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   12.0   0.1   0.00075         1       1      19 [.       5      23 ..       5      25 .. 0.89
+
+  Alignments for each domain:
+  == domain 1  score: 12.0 bits;  conditional E-value: 0.00075
+  P1;p11a  1 kiamlgeggvgeaaltvnl 19
+             k+ ++g ggvg++alt+ l
+   6q21_B  5 KLVVVGAGGVGKSALTIQL 23
+             67899***********998 PP
+
+>> 6q21_C  mol:protein length:171  C-H-RAS P21 PROTEIN CATALYTIC DOMAIN
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   12.0   0.1   0.00075         1       1      19 [.       5      23 ..       5      25 .. 0.89
+
+  Alignments for each domain:
+  == domain 1  score: 12.0 bits;  conditional E-value: 0.00075
+  P1;p11a  1 kiamlgeggvgeaaltvnl 19
+             k+ ++g ggvg++alt+ l
+   6q21_C  5 KLVVVGAGGVGKSALTIQL 23
+             67899***********998 PP
+
+>> 6q21_D  mol:protein length:171  C-H-RAS P21 PROTEIN CATALYTIC DOMAIN
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   12.0   0.1   0.00075         1       1      19 [.       5      23 ..       5      25 .. 0.89
+
+  Alignments for each domain:
+  == domain 1  score: 12.0 bits;  conditional E-value: 0.00075
+  P1;p11a  1 kiamlgeggvgeaaltvnl 19
+             k+ ++g ggvg++alt+ l
+   6q21_D  5 KLVVVGAGGVGKSALTIQL 23
+             67899***********998 PP
+
+>> 1u8y_A  mol:protein length:168  Ras-related protein Ral-A
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   12.1   0.1   0.00073      0.99       1      18 [.       6      23 ..       6      25 .. 0.90
+
+  Alignments for each domain:
+  == domain 1  score: 12.1 bits;  conditional E-value: 0.00073
+  P1;p11a  1 kiamlgeggvgeaaltvn 18
+             k+ m+g ggvg++alt+ 
+   1u8y_A  6 KVIMVGSGGVGKSALTLQ 23
+             789************985 PP
+
+>> 1u8y_B  mol:protein length:168  Ras-related protein Ral-A
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   12.1   0.1   0.00073      0.99       1      18 [.       6      23 ..       6      25 .. 0.90
+
+  Alignments for each domain:
+  == domain 1  score: 12.1 bits;  conditional E-value: 0.00073
+  P1;p11a  1 kiamlgeggvgeaaltvn 18
+             k+ m+g ggvg++alt+ 
+   1u8y_B  6 KVIMVGSGGVGKSALTLQ 23
+             789************985 PP
+
+>> 1u8z_A  mol:protein length:168  Ras-related protein Ral-A
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   12.1   0.1   0.00073      0.99       1      18 [.       6      23 ..       6      25 .. 0.90
+
+  Alignments for each domain:
+  == domain 1  score: 12.1 bits;  conditional E-value: 0.00073
+  P1;p11a  1 kiamlgeggvgeaaltvn 18
+             k+ m+g ggvg++alt+ 
+   1u8z_A  6 KVIMVGSGGVGKSALTLQ 23
+             789************985 PP
+
+>> 1u8z_B  mol:protein length:168  Ras-related protein Ral-A
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   12.1   0.1   0.00073      0.99       1      18 [.       6      23 ..       6      25 .. 0.90
+
+  Alignments for each domain:
+  == domain 1  score: 12.1 bits;  conditional E-value: 0.00073
+  P1;p11a  1 kiamlgeggvgeaaltvn 18
+             k+ m+g ggvg++alt+ 
+   1u8z_B  6 KVIMVGSGGVGKSALTLQ 23
+             789************985 PP
+
+>> 1u90_A  mol:protein length:168  Ras-related protein Ral-A
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   12.1   0.1   0.00073      0.99       1      18 [.       6      23 ..       6      25 .. 0.90
+
+  Alignments for each domain:
+  == domain 1  score: 12.1 bits;  conditional E-value: 0.00073
+  P1;p11a  1 kiamlgeggvgeaaltvn 18
+             k+ m+g ggvg++alt+ 
+   1u90_A  6 KVIMVGSGGVGKSALTLQ 23
+             789************985 PP
+
+>> 1u90_B  mol:protein length:168  Ras-related protein Ral-A
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   12.1   0.1   0.00073      0.99       1      18 [.       6      23 ..       6      25 .. 0.90
+
+  Alignments for each domain:
+  == domain 1  score: 12.1 bits;  conditional E-value: 0.00073
+  P1;p11a  1 kiamlgeggvgeaaltvn 18
+             k+ m+g ggvg++alt+ 
+   1u90_B  6 KVIMVGSGGVGKSALTLQ 23
+             789************985 PP
+
+>> 1zc3_A  mol:protein length:175  Ras-related protein Ral-A
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   12.0   0.1   0.00077       1.1       1      18 [.       8      25 ..       8      27 .. 0.90
+
+  Alignments for each domain:
+  == domain 1  score: 12.0 bits;  conditional E-value: 0.00077
+  P1;p11a  1 kiamlgeggvgeaaltvn 18
+             k+ m+g ggvg++alt+ 
+   1zc3_A  8 KVIMVGSGGVGKSALTLQ 25
+             789************985 PP
+
+>> 1zc3_C  mol:protein length:175  Ras-related protein Ral-A
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   12.0   0.1   0.00077       1.1       1      18 [.       8      25 ..       8      27 .. 0.90
+
+  Alignments for each domain:
+  == domain 1  score: 12.0 bits;  conditional E-value: 0.00077
+  P1;p11a  1 kiamlgeggvgeaaltvn 18
+             k+ m+g ggvg++alt+ 
+   1zc3_C  8 KVIMVGSGGVGKSALTLQ 25
+             789************985 PP
+
+>> 1zc4_A  mol:protein length:175  Ras-related protein Ral-A
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   12.0   0.1   0.00077       1.1       1      18 [.       8      25 ..       8      27 .. 0.90
+
+  Alignments for each domain:
+  == domain 1  score: 12.0 bits;  conditional E-value: 0.00077
+  P1;p11a  1 kiamlgeggvgeaaltvn 18
+             k+ m+g ggvg++alt+ 
+   1zc4_A  8 KVIMVGSGGVGKSALTLQ 25
+             789************985 PP
+
+>> 1zc4_C  mol:protein length:175  Ras-related protein Ral-A
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   12.0   0.1   0.00077       1.1       1      18 [.       8      25 ..       8      27 .. 0.90
+
+  Alignments for each domain:
+  == domain 1  score: 12.0 bits;  conditional E-value: 0.00077
+  P1;p11a  1 kiamlgeggvgeaaltvn 18
+             k+ m+g ggvg++alt+ 
+   1zc4_C  8 KVIMVGSGGVGKSALTLQ 25
+             789************985 PP
+
+>> 1uad_A  mol:protein length:175  Ras-related protein Ral-A
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   12.0   0.1   0.00077       1.1       1      18 [.       8      25 ..       8      27 .. 0.90
+
+  Alignments for each domain:
+  == domain 1  score: 12.0 bits;  conditional E-value: 0.00077
+  P1;p11a  1 kiamlgeggvgeaaltvn 18
+             k+ m+g ggvg++alt+ 
+   1uad_A  8 KVIMVGSGGVGKSALTLQ 25
+             789************985 PP
+
+>> 1uad_B  mol:protein length:175  Ras-related protein Ral-A
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   12.0   0.1   0.00077       1.1       1      18 [.       8      25 ..       8      27 .. 0.90
+
+  Alignments for each domain:
+  == domain 1  score: 12.0 bits;  conditional E-value: 0.00077
+  P1;p11a  1 kiamlgeggvgeaaltvn 18
+             k+ m+g ggvg++alt+ 
+   1uad_B  8 KVIMVGSGGVGKSALTLQ 25
+             789************985 PP
+
+>> 4q21_A  mol:protein length:189  C-H-RAS P21 PROTEIN CATALYTIC DOMAIN
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.9   0.1   0.00088       1.2       1      19 [.       5      23 ..       5      25 .. 0.89
+
+  Alignments for each domain:
+  == domain 1  score: 11.9 bits;  conditional E-value: 0.00088
+  P1;p11a  1 kiamlgeggvgeaaltvnl 19
+             k+ ++g ggvg++alt+ l
+   4q21_A  5 KLVVVGAGGVGKSALTIQL 23
+             67899***********998 PP
+
+>> 2pmx_A  mol:protein length:187  K-Ras
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.9   0.1   0.00086       1.2       1      19 [.      23      41 ..      23      43 .. 0.89
+
+  Alignments for each domain:
+  == domain 1  score: 11.9 bits;  conditional E-value: 0.00086
+  P1;p11a  1 kiamlgeggvgeaaltvnl 19
+             k+ ++g ggvg++alt+ l
+   2pmx_A 23 KLVVVGAGGVGKSALTIQL 41
+             67899***********998 PP
+
+>> 2pmx_B  mol:protein length:187  K-Ras
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.9   0.1   0.00086       1.2       1      19 [.      23      41 ..      23      43 .. 0.89
+
+  Alignments for each domain:
+  == domain 1  score: 11.9 bits;  conditional E-value: 0.00086
+  P1;p11a  1 kiamlgeggvgeaaltvnl 19
+             k+ ++g ggvg++alt+ l
+   2pmx_B 23 KLVVVGAGGVGKSALTIQL 41
+             67899***********998 PP
+
+>> 2pmx_C  mol:protein length:187  K-Ras
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.9   0.1   0.00086       1.2       1      19 [.      23      41 ..      23      43 .. 0.89
+
+  Alignments for each domain:
+  == domain 1  score: 11.9 bits;  conditional E-value: 0.00086
+  P1;p11a  1 kiamlgeggvgeaaltvnl 19
+             k+ ++g ggvg++alt+ l
+   2pmx_C 23 KLVVVGAGGVGKSALTIQL 41
+             67899***********998 PP
+
+>> 2pmx_D  mol:protein length:187  K-Ras
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.9   0.1   0.00086       1.2       1      19 [.      23      41 ..      23      43 .. 0.89
+
+  Alignments for each domain:
+  == domain 1  score: 11.9 bits;  conditional E-value: 0.00086
+  P1;p11a  1 kiamlgeggvgeaaltvnl 19
+             k+ ++g ggvg++alt+ l
+   2pmx_D 23 KLVVVGAGGVGKSALTIQL 41
+             67899***********998 PP
+
+>> 2pmx_E  mol:protein length:187  K-Ras
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.9   0.1   0.00086       1.2       1      19 [.      23      41 ..      23      43 .. 0.89
+
+  Alignments for each domain:
+  == domain 1  score: 11.9 bits;  conditional E-value: 0.00086
+  P1;p11a  1 kiamlgeggvgeaaltvnl 19
+             k+ ++g ggvg++alt+ l
+   2pmx_E 23 KLVVVGAGGVGKSALTIQL 41
+             67899***********998 PP
+
+>> 2pmx_F  mol:protein length:187  K-Ras
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.9   0.1   0.00086       1.2       1      19 [.      23      41 ..      23      43 .. 0.89
+
+  Alignments for each domain:
+  == domain 1  score: 11.9 bits;  conditional E-value: 0.00086
+  P1;p11a  1 kiamlgeggvgeaaltvnl 19
+             k+ ++g ggvg++alt+ l
+   2pmx_F 23 KLVVVGAGGVGKSALTIQL 41
+             67899***********998 PP
+
+>> 1x1r_A  mol:protein length:178  Ras-related protein M-Ras
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   12.2   0.0   0.00069      0.93       1      18 [.      15      32 ..      15      35 .. 0.89
+
+  Alignments for each domain:
+  == domain 1  score: 12.2 bits;  conditional E-value: 0.00069
+  P1;p11a  1 kiamlgeggvgeaaltvn 18
+             k+ ++g+ggvg++alt+ 
+   1x1r_A 15 KLVVVGDGGVGKSALTIQ 32
+             67899***********96 PP
+
+>> 1x1s_A  mol:protein length:178  Ras-related protein M-Ras
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   12.2   0.0   0.00069      0.93       1      18 [.      15      32 ..      15      35 .. 0.89
+
+  Alignments for each domain:
+  == domain 1  score: 12.2 bits;  conditional E-value: 0.00069
+  P1;p11a  1 kiamlgeggvgeaaltvn 18
+             k+ ++g+ggvg++alt+ 
+   1x1s_A 15 KLVVVGDGGVGKSALTIQ 32
+             67899***********96 PP
+
+>> 3con_A  mol:protein length:190  GTPase NRas
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.8   0.1   0.00089       1.2       1      19 [.      23      41 ..      23      43 .. 0.89
+
+  Alignments for each domain:
+  == domain 1  score: 11.8 bits;  conditional E-value: 0.00089
+  P1;p11a  1 kiamlgeggvgeaaltvnl 19
+             k+ ++g ggvg++alt+ l
+   3con_A 23 KLVVVGAGGVGKSALTIQL 41
+             67899***********998 PP
+
+>> 2bov_A  mol:protein length:206  RAS-RELATED PROTEIN RAL-A
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.7   0.1   0.00099       1.4       1      18 [.      16      33 ..      16      35 .. 0.90
+
+  Alignments for each domain:
+  == domain 1  score: 11.7 bits;  conditional E-value: 0.00099
+  P1;p11a  1 kiamlgeggvgeaaltvn 18
+             k+ m+g ggvg++alt+ 
+   2bov_A 16 KVIMVGSGGVGKSALTLQ 33
+             789************985 PP
+
+>> 1cp2_A  mol:protein length:269  NITROGENASE IRON PROTEIN
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    9.8   0.0    0.0049       6.6       2      20 ..       4      22 ..       3      23 .. 0.92
+
+  Alignments for each domain:
+  == domain 1  score: 9.8 bits;  conditional E-value: 0.0049
+  P1;p11a  2 iamlgeggvgeaaltvnlt 20
+             +a+ g+gg+g++  t nlt
+   1cp2_A  4 VAIYGKGGIGKSTTTQNLT 22
+             7999*************98 PP
+
+>> 1cp2_B  mol:protein length:269  NITROGENASE IRON PROTEIN
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    9.8   0.0    0.0049       6.6       2      20 ..       4      22 ..       3      23 .. 0.92
+
+  Alignments for each domain:
+  == domain 1  score: 9.8 bits;  conditional E-value: 0.0049
+  P1;p11a  2 iamlgeggvgeaaltvnlt 20
+             +a+ g+gg+g++  t nlt
+   1cp2_B  4 VAIYGKGGIGKSTTTQNLT 22
+             7999*************98 PP
+
+>> 2a78_A  mol:protein length:187  Ras-related protein Ral-A
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.9   0.1   0.00086       1.2       1      18 [.      20      37 ..      20      39 .. 0.90
+
+  Alignments for each domain:
+  == domain 1  score: 11.9 bits;  conditional E-value: 0.00086
+  P1;p11a  1 kiamlgeggvgeaaltvn 18
+             k+ m+g ggvg++alt+ 
+   2a78_A 20 KVIMVGSGGVGKSALTLQ 37
+             789************985 PP
+
+>> 2a9k_A  mol:protein length:187  Ras-related protein Ral-A
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.9   0.1   0.00086       1.2       1      18 [.      20      37 ..      20      39 .. 0.90
+
+  Alignments for each domain:
+  == domain 1  score: 11.9 bits;  conditional E-value: 0.00086
+  P1;p11a  1 kiamlgeggvgeaaltvn 18
+             k+ m+g ggvg++alt+ 
+   2a9k_A 20 KVIMVGSGGVGKSALTLQ 37
+             789************985 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (21 nodes)
+Target sequences:                       133266  (30839592 residues searched)
+Passed MSV filter:                      3619  (0.0271562); expected 2665.3 (0.02)
+Passed bias filter:                     3105  (0.0232993); expected 2665.3 (0.02)
+Passed Vit filter:                       636  (0.00477241); expected 133.3 (0.001)
+Passed Fwd filter:                        98  (0.000735371); expected 1.3 (1e-05)
+Initial search space (Z):             133266  [actual number of targets]
+Domain search space  (domZ):              98  [number of targets reported over threshold]
+# CPU time: 0.43u 0.05s 00:00:00.48 Elapsed: 00:00:00.48
+# Mc/sec: 1349.23
+//
+[ok]
