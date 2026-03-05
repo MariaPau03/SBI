@@ -1,0 +1,112 @@
+# hmmscan :: search sequence(s) against a profile database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query sequence file:             target.fa
+# target HMM database:             /mnt/NFS_UPF/soft/databases/pfam-3/Pfam-A.hmm
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       target  [L=217]
+Scores for complete sequence (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Model    Description
+    ------- ------ -----    ------- ------ -----   ---- --  -------- -----------
+    1.8e-34  116.7   0.1    2.2e-16   58.8   0.0    2.5  3  SH3_1     SH3 domain
+      6e-28   96.0   0.0    1.4e-16   59.5   0.0    2.4  2  SH3_2     Variant SH3 domain
+    1.5e-23   82.2   0.2    2.4e-23   81.6   0.2    1.3  1  SH2       SH2 domain
+    0.00084   18.8   0.0     0.0026   17.2   0.0    1.8  1  SH3_3     Bacterial SH3 domain
+
+
+Domain annotation for each model (and alignments):
+>> SH3_1  SH3 domain
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   58.8   0.0   6.5e-20   2.2e-16       1      47 [.       4      49 ..       4      50 .. 0.97
+   2 ?   -3.5   0.0       1.8   6.3e+03      31      38 ..      59      66 ..      55      68 .. 0.74
+   3 !   55.5   0.0     7e-19   2.4e-15       1      47 [.     164     208 ..     164     209 .. 0.97
+
+  Alignments for each domain:
+  == domain 1  score: 58.8 bits;  conditional E-value: 6.5e-20
+            EESS-BE-SSTTS-EB-TT-EEEEEEESSS.SEEEEEETTTTB---EE CS
+   SH3_1  1 iAlYDYearesdELsfkkGDviivleksed.gWwkgrlkgtgkeGliP 47
+            +AlY ++a+esdEL f+kGD++++l++++d +W+k++l+  g eG+iP
+  target  4 VALYSFQATESDELAFNKGDTLKILNMEDDqNWYKAELR--GVEGFIP 49
+            7**************************************..79***** PP
+
+  == domain 2  score: -3.5 bits;  conditional E-value: 1.8
+            SEEEEEET CS
+   SH3_1 31 gWwkgrlk 38
+             W+ gr  
+  target 59 PWYSGRIS 66
+            59999976 PP
+
+  == domain 3  score: 55.5 bits;  conditional E-value: 7e-19
+             EESS-BE-SSTTS-EB-TT-EEEEEEESSSSEEEEEETTTTB---EE CS
+   SH3_1   1 iAlYDYearesdELsfkkGDviivleksedgWwkgrlkgtgkeGliP 47 
+             +A +D+ a++++ Lsf++GD+i+vle+ + +Ww+gr+   g+ G++P
+  target 164 QAQFDFSAQDPSQLSFRRGDIIEVLERPDPHWWRGRSC--GRVGFFP 208
+             599***********************************..69***** PP
+
+>> SH3_2  Variant SH3 domain
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   34.3   0.0   3.2e-12   1.1e-08       5      54 ..       6      55 ..       3      56 .. 0.88
+   2 !   59.5   0.0   4.2e-20   1.4e-16       2      55 .]     163     215 ..     162     215 .. 0.93
+
+  Alignments for each domain:
+  == domain 1  score: 34.3 bits;  conditional E-value: 3.2e-12
+            -S-B--SS-----B----EEEEE.E-S--.--BEEEE-TT---B--HHHHH CS
+   SH3_2  5 iedyvaedpeeLslkkGDvikvlgskesd.gwwegesgGrvGlfPsslVee 54
+            + ++ a+   eL + kGD++k+l + e+d +w+++e +G++G++P +++++
+  target  6 LYSFQATESDELAFNKGDTLKIL-NMEDDqNWYKAELRGVEGFIPKNYIRV 55
+            55788889999************.777777*****************9875 PP
+
+  == domain 2  score: 59.5 bits;  conditional E-value: 4.2e-20
+             EEE-S-B--SS-----B----EEEEE.E-S----BEEEE-TT---B--HHHHHH CS
+   SH3_2   2 vraiedyvaedpeeLslkkGDvikvlgskesdgwwegesgGrvGlfPsslVeev 55 
+             ++a +d+ a+dp+ Ls+++GD+i+vl ++ +++ww+g+s GrvG+fP+s+V++v
+  target 163 AQAQFDFSAQDPSQLSFRRGDIIEVL-ERPDPHWWRGRSCGRVGFFPRSYVQPV 215
+             799***********************.66666********************96 PP
+
+>> SH2  SH2 domain
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   81.6   0.2   6.9e-27   2.4e-23       1      77 []      60     135 ..      60     135 .. 0.96
+
+  Alignments for each domain:
+  == domain 1  score: 81.6 bits;  conditional E-value: 6.9e-27
+             TBESS--HHHHHHHHCT.S.---EEEEE-SS---EEEEEEEEETEEEEEEEEEETTC.EEECTSEEESSHHHHHHHH CS
+     SH2   1 WyhgkisreeaerlLlegkkdGtFLvReSeskpGdytlsvvddgkvkhyriqslengkyyitenekfsslqeLvehY 77 
+             Wy g isr+ ae++L+++++ G+FL+ReSes+pG++++sv + ++v+h+++ ++++gky++ e ekf+sl+eLv++Y
+  target  60 WYSGRISRQLAEEILMKRNHLGAFLIRESESSPGEFSVSVNYGDQVQHFKVLREASGKYFLWE-EKFNSLNELVDFY 135
+             ********************************************************9776666.99*********99 PP
+
+>> SH3_3  Bacterial SH3 domain
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   17.2   0.0   7.5e-07    0.0026      19      51 ..      19      53 ..      16      54 .. 0.93
+
+  Alignments for each domain:
+  == domain 1  score: 17.2 bits;  conditional E-value: 7.5e-07
+   SH3_3 19 lpkGekvtvlgeeng..WykieyngktGYvssdyv 51
+            ++kG+++++l+ e++  Wyk e+ g +G++ ++y+
+  target 19 FNKGDTLKILNMEDDqnWYKAELRGVEGFIPKNYI 53
+            689********999999*****************8 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query sequence(s):                         1  (217 residues searched)
+Target model(s):                       13672  (2396357 nodes)
+Passed MSV filter:                       261  (0.0190901); expected 273.4 (0.02)
+Passed bias filter:                      245  (0.0179198); expected 273.4 (0.02)
+Passed Vit filter:                        36  (0.00263312); expected 13.7 (0.001)
+Passed Fwd filter:                         4  (0.000292569); expected 0.1 (1e-05)
+Initial search space (Z):              13672  [actual number of targets]
+Domain search space  (domZ):               4  [number of targets reported over threshold]
+# CPU time: 0.14u 0.12s 00:00:00.26 Elapsed: 00:00:05.24
+# Mc/sec: 99.24
+//
+[ok]

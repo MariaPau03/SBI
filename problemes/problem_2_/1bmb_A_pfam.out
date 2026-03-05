@@ -1,0 +1,47 @@
+# hmmscan :: search sequence(s) against a profile database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query sequence file:             1bmb_A.fa
+# target HMM database:             /mnt/NFS_UPF/soft/databases/pfam-3/Pfam-A.hmm
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       1bmb_A  [L=98]
+Scores for complete sequence (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Model    Description
+    ------- ------ -----    ------- ------ -----   ---- --  -------- -----------
+    6.9e-26   89.7   0.0    8.6e-26   89.4   0.0    1.1  1  SH2       SH2 domain
+
+
+Domain annotation for each model (and alignments):
+>> SH2  SH2 domain
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   89.4   0.0   6.3e-30   8.6e-26       1      77 []       5      80 ..       5      80 .. 0.96
+
+  Alignments for each domain:
+  == domain 1  score: 89.4 bits;  conditional E-value: 6.3e-30
+            TBESS--HHHHHHHHCT.S.---EEEEE-SS---EEEEEEEEETEEEEEEEEEETTC.EEECTSEEESSHHHHHHHH CS
+     SH2  1 WyhgkisreeaerlLlegkkdGtFLvReSeskpGdytlsvvddgkvkhyriqslengkyyitenekfsslqeLvehY 77
+            W++gki r++ae++L ++++dG+FL+ReSes pGd++lsv++ ++v+h+++ ++  gky++    kf+sl+eLv+++
+  1bmb_A  5 WFFGKIPRAKAEEMLSKQRHDGAFLIRESESAPGDFSLSVKFGNDVQHFKVLRDGAGKYFLWV-VKFNSLNELVDYH 80
+            ********************************************************9666655.9**********98 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query sequence(s):                         1  (98 residues searched)
+Target model(s):                       13672  (2396357 nodes)
+Passed MSV filter:                       263  (0.0192364); expected 273.4 (0.02)
+Passed bias filter:                      229  (0.0167496); expected 273.4 (0.02)
+Passed Vit filter:                        26  (0.0019017); expected 13.7 (0.001)
+Passed Fwd filter:                         1  (7.31422e-05); expected 0.1 (1e-05)
+Initial search space (Z):              13672  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.14u 0.11s 00:00:00.25 Elapsed: 00:00:00.16
+# Mc/sec: 1467.77
+//
+[ok]
