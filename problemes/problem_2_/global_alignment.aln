@@ -1,0 +1,26 @@
+CLUSTAL 2.1 multiple sequence alignment
+
+
+p9g_domain2       -----------------------------------------------------------W
+p9g_domain3.      -----------------------------------------------------------W
+target            MESVALYSFQATESDELAFNKGDTLKILNMEDDQNWYKAELRGVEGFIPKNYIRVKPHPW
+p9g_domain1       ------------------------------------------------------------
+                                                                              
+
+p9g_domain2       YSGRISRQLAEEILMKRNHLGAFLIRESESSPGEFSVSVNYGDQVQHFKVLREASGKYFL
+p9g_domain3.      YSGRISRQLAEEILMKRNHLGAFLIRESESSPGEFSVSVNYGDQVQHFKVLREASGKYFL
+target            YSGRISRQLAEEILMKRNHLGAFLIRESESSPGEFSVSVNYGDQVQHFKVLREASGKYFL
+p9g_domain1       --------------MESVALYSFQATESDE------LAFNKGD---TLKILNMEDDQNWY
+                                *:   * :*   **:.      ::.* **    :*:*.  ..: : 
+
+p9g_domain2       WEEKFNSLNELVDFY---------------------------------------------
+p9g_domain3.      WEEKFNSLNELVDFY---------------------------------------------
+target            WEEKFNSLNELVDFYRTTTIAKKRQIFLRDEEPLLKSPGACFAQAQFDFSAQDPSQLSFR
+p9g_domain1       KAE----LRGVEGF----------------------------------------------
+                    *    *. : .*                                              
+
+p9g_domain2       -------------------------------------
+p9g_domain3.      -------------------------------------
+target            RGDIIEVLERPDPHWWRGRSCGRVGFFPRSYVQPVHL
+p9g_domain1       -------------------------------------
+                                                       
