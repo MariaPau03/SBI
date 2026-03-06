@@ -1,22 +1,26 @@
 CLUSTAL 2.1 multiple sequence alignment
 
 
-1gri_A          MEAIAKYDFKATADDELSFKRGDILKVQNWYKAELNGKDGFIPKNYIEMKPHPWFFGKIP
-1bmb_A          -------------------------------------------------KPHPWFFGKIP
-1fyr_D          ---------------------------------------------------HPWFFGKIP
-                                                                   *********
+1gri_A          MEAIAKYDFKATADDELSFKRGDILKVQ------NWYKAELNGKDGFIPKNYIEMKPHPW
+1fyr_D          ---------------------------------------------------------HPW
+1bmb_A          -------------------------------------------------------KPHPW
+target          MESVALYSFQATESDELAFNKGDTLKILNMEDDQNWYKAELRGVEGFIPKNYIRVKPHPW
+                                                                         ***
 
-1gri_A          RAKAEEMLSKQRHDGAFLIRESESAPGDFSLSVKFGNDVQHFKVLRDGAGKYFLWVVKFN
-1bmb_A          RAKAEEMLSKQRHDGAFLIRESESAPGDFSLSVKFGNDVQHFKVLRDGAGKYFLWVVKFN
-1fyr_D          RAKAEEMLSKQRHDGAFLIRESESAPGDFSLSVKFGNDVQHFKVLRDGAGKYFLWVVKFN
-                ************************************************************
+1gri_A          FFGKIPRAKAEEMLSKQRHDGAFLIRESESAPGDFSLSVKFGNDVQHFKVLRDGAGKYFL
+1fyr_D          FFGKIPRAKAEEMLSKQRHDGAFLIRESESAPGDFSLSVKFGNDVQHFKVLRDGAGKYFL
+1bmb_A          FFGKIPRAKAEEMLSKQRHDGAFLIRESESAPGDFSLSVKFGNDVQHFKVLRDGAGKYFL
+target          YSGRISRQLAEEILMKRNHLGAFLIRESESSPGEFSVSVNYGDQVQHFKVLREASGKYFL
+                : *:*.*  ***:* *:.* **********:**:**:**::*::********:.:*****
 
-1gri_A          SLNELVDYHRSTSVSRNQQIFLRDIEQVPQQPTYVQALFDFDPQEDGELGFRRGDFIHVM
-1bmb_A          SLNELVDYHRSTSVSRNQQIFLRDIEQ---------------------------------
-1fyr_D          SLNELVDYHRSTSVSRNQQIFLRDIE----------------------------------
-                **************************                                  
+1gri_A          WVVKFNSLNELVDYHRSTSVSRNQQIFLRDIEQVPQQP--TYVQALFDFDPQEDGELGFR
+1fyr_D          WVVKFNSLNELVDYHRSTSVSRNQQIFLRDIE----------------------------
+1bmb_A          WVVKFNSLNELVDYHRSTSVSRNQQIFLRDIEQ---------------------------
+target          WEEKFNSLNELVDFYRTTTIAKKRQIFLRDEEPLLKSPGACFAQAQFDFSAQDPSQLSFR
+                *  **********::*:*::::::****** *                            
 
-1gri_A          DNSDPNWWKGACHGQTGMFPRNYVTPVNRNV
-1bmb_A          -------------------------------
-1fyr_D          -------------------------------
-                                               
+1gri_A          RGDFIHVMDNSDPNWWKGACHGQTGMFPRNYVTPVNRNV
+1fyr_D          ---------------------------------------
+1bmb_A          ---------------------------------------
+target          RGDIIEVLERPDPHWWRGRSCGRVGFFPRSYVQPVHL--
+                                                       

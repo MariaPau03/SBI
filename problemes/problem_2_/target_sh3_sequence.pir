@@ -1,0 +1,6 @@
+>P1;p9c_domain1
+structureX:p9c_domain1:4: : 43  : :  : : -1.00 :-1.00
+---IAKYDFKATADDELSFKRGDILKVQNWYKAELNGKDGFIP----*
+>P1;target
+structureX:target:1: : 47  : :  : : -1.00 :-1.00
+MESVALYSFQATESDELAFNKGDTLKILNMEDDQNWYKAELRGVEGF*
