@@ -1,0 +1,22 @@
+CLUSTAL 2.1 multiple sequence alignment
+
+
+1gri_A          MEAIAKYDFKATADDELSFKRGDILKVQNWYKAELNGKDGFIPKNYIEMKPHPWFFGKIP
+1bmb_A          -------------------------------------------------KPHPWFFGKIP
+1fyr_D          ---------------------------------------------------HPWFFGKIP
+                                                                   *********
+
+1gri_A          RAKAEEMLSKQRHDGAFLIRESESAPGDFSLSVKFGNDVQHFKVLRDGAGKYFLWVVKFN
+1bmb_A          RAKAEEMLSKQRHDGAFLIRESESAPGDFSLSVKFGNDVQHFKVLRDGAGKYFLWVVKFN
+1fyr_D          RAKAEEMLSKQRHDGAFLIRESESAPGDFSLSVKFGNDVQHFKVLRDGAGKYFLWVVKFN
+                ************************************************************
+
+1gri_A          SLNELVDYHRSTSVSRNQQIFLRDIEQVPQQPTYVQALFDFDPQEDGELGFRRGDFIHVM
+1bmb_A          SLNELVDYHRSTSVSRNQQIFLRDIEQ---------------------------------
+1fyr_D          SLNELVDYHRSTSVSRNQQIFLRDIE----------------------------------
+                **************************                                  
+
+1gri_A          DNSDPNWWKGACHGQTGMFPRNYVTPVNRNV
+1bmb_A          -------------------------------
+1fyr_D          -------------------------------
+                                               
