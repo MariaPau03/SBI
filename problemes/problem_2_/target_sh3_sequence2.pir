@@ -1,5 +1,5 @@
 >P1;p9c_domain1
-structureX:p9c_domain1:150:A:200: :  : : -1.00 :-1.00
+structureX:p9c_domain1:150:A:200:A:  : : -1.00 :-1.00
 QQPTYVQALFDFDPQEDGELGFRRGDFIHVMDNSDPNWWKGACHGQTGMFP-------*
 >P1;target
 structureX:target:163: : 215  : :  : : -1.00 :-1.00
