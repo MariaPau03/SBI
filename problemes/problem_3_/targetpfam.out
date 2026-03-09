@@ -1,0 +1,65 @@
+# hmmscan :: search sequence(s) against a profile database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query sequence file:             target1.fa
+# target HMM database:             /mnt/NFS_UPF/soft/databases/pfam-3/Pfam-A.hmm
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       target1  [L=314]
+Scores for complete sequence (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Model         Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------      -----------
+      5e-67  226.3   0.0    5.6e-67  226.1   0.0    1.0  1  Peptidase_M14  Zinc carboxypeptidase
+
+
+Domain annotation for each model (and alignments):
+>> Peptidase_M14  Zinc carboxypeptidase
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  226.1   0.0   4.1e-71   5.6e-67       2     278 ..      19     302 ..      18     303 .. 0.95
+
+  Alignments for each domain:
+  == domain 1  score: 226.1 bits;  conditional E-value: 4.1e-71
+                    HHHHHHHHHHSTTTEEEEE----TT----EEEEESTTT.T--TTSEEEEEEE-SSTT-THHHHHHHHHHHHHHCCC.TCHHHHHHHHHEEEEEES- CS
+  Peptidase_M14   2 eayldalaaaypdlvrlvsiGkSvegRplkvlkisssageaapgkpvvlvdagiHarEwvgseallyllrqLlsay.rdeeikrlldktdiyivPv 96 
+                    ++++d l a++p+lv++ ++G+S+egRpl+vlk s++     +++pv ++d g+ +r w ++ ++++++++ +++y +++  ++lld++d+y+  v
+        target1  19 YDFMDLLVAQHPELVSKLQLGRSYEGRPLYVLKYSTG----GSNRPVLWLDLGLASRVWLTQVTGVWFAKKFTENYgQNPSFTALLDSMDLYLELV 110
+                    689*********************************9....8****************************************************** PP
+
+                    S-----HHHHHT-TT--S-----T.....---GGG-SSSTTT-.-SBS-TTSTTB----TT-SHHHHHHHHHHHH.TTEEEEEEEEESSSEEEES- CS
+  Peptidase_M14  97 lNPDGyelsstgdrawrkgRsnan.....gvDlnRnFpdlwnsegastspcsetyrgpapfsepEtravldliqk.knivlyidlhgysqvilypy 186
+                     NP G+  +++++r wrk+Rs        gvD nRn++  ++++g s+spcsety+g++++se E+++++d++++  n+++y++l +ysq++lypy
+        target1 111 TNPNGFVFTHSENRLWRKTRSVTSsslcvGVDANRNWDVGYGKAGVSSSPCSETYHGKYANSEVEVKSLVDFVKNhGNFKAYLSLVSYSQLLLYPY 206
+                    *********************999*****************999****************************7666******************** PP
+
+                    SSSS.SS-TTHHHHHHHHHHHHHHHHHTCC......TTS-.B--.EHHHHT------HHHHHH.HHT-SEEEEEEES-SSS..----GGGHHHHHH CS
+  Peptidase_M14 187 dytrsspppddeelkslakayakalqamlr......gteylsdgitngdliyeasggmkdwayeetgikfeytlelgdegn..flppasqiepege 274
+                    +yt  ++ pd++el+++ak+ +++l  + +      gt+y ++g +  +++y++sgg+ dw+y ++g+k+++t+el+d+g+  fl+pasq+ p+++
+        target1 207 GYTT-QSLPDKTELNQVAKSSVEELLLSQNsvkslyGTSY-KYG-SLLTTLYQVSGGSLDWSY-NQGLKYSFTYELRDTGRygFLLPASQLLPTVQ 298
+                    ****.*******************9886666666666666.777.55556*************.68899*************************** PP
+
+                    HHHH CS
+  Peptidase_M14 275 enle 278
+                    e++ 
+        target1 299 ETWL 302
+                    **96 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query sequence(s):                         1  (314 residues searched)
+Target model(s):                       13672  (2396357 nodes)
+Passed MSV filter:                       317  (0.0231861); expected 273.4 (0.02)
+Passed bias filter:                      269  (0.0196752); expected 273.4 (0.02)
+Passed Vit filter:                        16  (0.00117028); expected 13.7 (0.001)
+Passed Fwd filter:                         1  (7.31422e-05); expected 0.1 (1e-05)
+Initial search space (Z):              13672  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.27u 0.28s 00:00:00.55 Elapsed: 00:00:17.23
+# Mc/sec: 43.67
+//
+[ok]
