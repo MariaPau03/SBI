@@ -1,56 +1,47 @@
-# Save this as annotate_aln.py
 input_file = "p3b.aln"
 output_file = "p3b_annotated.aln"
 
-# Define your indices (0-indexed based on the sequence string)
-# 69=h, 72=e, 145=R, 196=H, 248=Y, 270=E
-important_indices = [69, 72, 145, 196, 248, 270]
+# Biological indices (based on your aa[69] check)
+# We will use these as "absolute" positions in the sequence
+target_indices = [69, 72, 145, 196, 248, 270]
 
 with open(input_file, "r") as f:
     lines = f.readlines()
 
 annotated_lines = []
+global_idx = 0  # This tracks our current position in the total sequence
+
 for line in lines:
     annotated_lines.append(line)
     
-    # Check if the line starts with our sequence name
+    # We only care about lines starting with the sequence name
     if line.startswith("8cpa_A"):
         parts = line.split()
-        if len(parts) < 2: continue
-        
-        name = parts[0]
         sequence = parts[1]
         
-        # Create a matching @ line
-        # We find where the sequence starts in the original line to match indentation
+        # Calculate indentation to match the sequence column exactly
         indent = line.find(sequence)
+        
+        # Create a list of spaces the length of this specific block
         func_markers = list(" " * len(sequence))
         
-        # We need a way to track global index if the file is split into blocks
-        # This script assumes you are matching the string indices to the visible characters
-        # If the file is split, we manually check which indices fall into this block
-        
-        # For simplicity, if this is the FIRST block (contains index 69):
-        if "yhtlde" in sequence: # Block 1
-            for idx in [69, 72, 145, 196]:
-                # We need to calculate the local index within this specific block
-                # This is easiest done by string matching the landmark
-                if idx == 69: pos = sequence.find("h")
-                if idx == 72: pos = sequence.find("e")
-                if idx == 145: pos = sequence.find("R")
-                if idx == 196: pos = sequence.rfind("H") # last H in block 1
-                if pos != -1: func_markers[pos] = "@"
-        
-        # If this is the SECOND block (contains index 248):
-        if "GTSY" in sequence: # Block 2
-            for idx in [248, 270]:
-                if idx == 248: pos = sequence.find("Y")
-                if idx == 270: pos = sequence.find("E")
-                if pos != -1: func_markers[pos] = "@"
+        # Check every character in THIS block
+        for local_pos in range(len(sequence)):
+            # If the current global position is one of our targets
+            if global_idx in target_indices:
+                func_markers[local_pos] = "@"
+            
+            # Increment global_idx, but only if it's not a gap/pad 
+            # (Remove the 'if' below if your indices include gaps)
+            global_idx += 1 
 
-        annotated_lines.append("#=GC Func" + " " * (indent - 9) + "".join(func_markers) + "\n")
+        # Construct the annotation line
+        # "#=GC Func" is 9 chars, so we pad the rest with spaces to reach 'indent'
+        prefix = "#=GC Func"
+        padding = " " * (indent - len(prefix))
+        annotated_lines.append(prefix + padding + "".join(func_markers) + "\n")
 
 with open(output_file, "w") as f:
     f.writelines(annotated_lines)
 
-print(f"File saved as {output_file}")
+print(f"File saved as {output_file}. Global residues marked: {target_indices}")
