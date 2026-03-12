@@ -1,0 +1,13 @@
+# STOCKHOLM 1.0
+
+target         atkaicilkgdgpvqgtlssls---------------LHFEAKGDEGGdtIVITGSLTGLTEGDHGWHIHQWGDN-TQGCTSAGPLFNPLSKKLGGPKDEERVVGDLGNITADKNGVALIDLIDPLLSLSGEYSLLGRTMVIHEKPLVLgrggneelmiqnSTKKTGNAGSRLACGV-lglak
+#=GR target PP ***7655555444444444443...............4688888777788************************9.*********************************************************************9988***************************9.6****
+1cbj_A         ...................atkAVCVLKG-DGPVQGTIHFEAKG--DT..VVVTGSITGLTEGDHGFHVHQFGDN-TQGCTSAGPHFNPLSKKHGGPKDEERHVGDLGNVTADKNGVAIVDIVDPLISLSGEYSIIGRTMVVHEKPDDLgrg......gneESTKTGNAGSRLACGVIgiak.
+#=GR 1cbj_A PP ...................***6899996.899***********..66..************************9.****************************************************************************......*******************9****.
+1q0e_A         ...................atkAVCVLKG-DGPVQGTIHFEAKG--DT..VVVTGSITGLTEGDHGFHVHQFGDN-TQGCTSAGPHFNPLSKKHGGPKDEERHVGDLGNVTADKNGVAIVDIVDPLISLSGEYSIIGRTMVVHEKPDDLgrg......gneESTKTGNAGSRLACGVIgiak.
+#=GR 1q0e_A PP ...................***6899996.899***********..66..************************9.****************************************************************************......*******************9****.
+1sda_B         ...................atkAVCVLKG-DGPVQGTIHFEAKG--DT..VVVTGSITGLTEGDHGFHVHQFGDN-TQGCTSAGPHFNPLSKKHGGPKDEERHVGDLGNVTADKNGVAIVDIVDPLISLS-GESIIGRTMVVHEKPDDLgrg......gneESTKTGNAGSRLACGVIgiak.
+#=GR 1sda_B PP ...................***6899996.899***********..66..************************9.*****************************************************9.77*******************......*******************9****.
+#=GC PP_cons   ......................6899996.899****89999997766..************************9.*******************************************************99***************9............***************99.....
+#=GC RF        ......................xxxxxxxxxxxxxxxxxxxxxxxxxx..xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx............xxxxxxxxxxxxxxxxx.....
+//
