@@ -1,0 +1,52 @@
+
+
+Scores
+1) 0.5
+2) 0.5 
+3) 1
+4) 0.5
+5) 1  
+6) 1
+7) 1  
+
+One group in PRBB has studied a particular protein with the following sequence:
+
+ATKAICILKGDGPVQGTLSSLSLHFEAKGDEGGDTIVITGSLTGLTEGDHGWHIHQWGDNTQGCTSAGPLFNPLSKK
+LGGPKDEERVVGDLGNITADKNGVALIDLIDPLLSLSGEYSLLGRTMVIHEKPLVLGRGGNEELMIQNSTKKTGNAG
+SRLACGVLGLAK
+
+They are not sure about the function of this protein. 
+Could you answer the following questions?:
+
+1) To what PFAM family this protein belongs? 
+   (fetch and rename the HMM model as "target29.hmm"). 
+2) Please align the sequence of this protein with three different 
+   close homologs, with known structure and different sequences, using the HMM profile.
+   (place the alignment in a file named "align29.txt")
+3) Do you think it will work as any of the closest homologs? (summarize your 
+   hypothesis: Show the amino-acids required for the particular function 
+   in the previous sequence alignment with a "@" symbol on the top of the alignment
+   in clustalw format in a file named "align29_function.aln" )
+   Example:
+             @
+     AAAAAAAAGAAAAAA
+     AAAAAAAAAAAAAAA
+
+Build the the structure of this protein by homolgy modelling.
+
+4) What's the fold of this protein?
+5) Superpose the structure of your model with one member of the same fold 
+   (as for example one of the templates), name the file p29_fig1_superpose.pdb 
+   and show a picture in ribbons of the superimposition in p29_fig1.jpg
+   showing the location of heteroatoms (except water). What's the RMSD 
+   of the CA atoms? (save the file as  p29_RMSca_superpose.txt)
+6) Illustrate a detail with the active site of the enzyme in the previous 
+   superposition to reinforce your discussion in question 3 (p29_fig2.jpg) 
+7) Compare the energy of knowledge based potentials of Prosa of your model 
+   and your template(s) in p29_fig3.jpg 
+   (please keep the same colors for target and template as in p29_fig1.jpg 
+    or some reference energy_vs_sequence so I can understand your answer)
+      
+      
+      
+      
