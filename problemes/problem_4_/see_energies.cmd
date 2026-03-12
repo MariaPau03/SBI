@@ -2,8 +2,8 @@
 read pdb 1z8u_D.pdb 1z8u_D
 read pdb 1y01_B.pdb 1y01_B
 read pdb 1bz1_C.pdb 1bz1_C
-read pdb target.pdb target(CA)
-read pdb model.pdb model
+read pdb target.B99990001.pdb model
+
 
 # 2. Analyze energies
 analyse energy *
@@ -12,7 +12,6 @@ analyse energy *
 color * 1z8u_D green
 color * 1y01_B cyan
 color * 1bz1_C yellow
-color * target(CA) red
 color * model magenta
 
 # 5. THE SHIFT COMMAND (Crucial Step)
@@ -31,7 +30,7 @@ winsize * 20
 # 6. Graph setup
 draw * * 0
 draw pair * 1
-graph title 1z8u_D 1y01_B 1bz1_C target(CA) model
+graph title 1z8u_D 1y01_B 1bz1_C  target.B99990001.pdb
 
 # 7. Generate the plot
 plot
