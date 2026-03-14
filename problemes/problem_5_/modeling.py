@@ -9,8 +9,8 @@ env = environ()  # create a new MODELLER environment to build this model in
 env.io.atom_files_directory = ['.', '../atom_files']
 
 a = automodel(env,
-              alnfile  = 'alignment_hmm.pir', # alignment filename
-              knowns   = ('1cbj_A', '1q0e_A', '1sda_B'),     # codes of the templates
+              alnfile  = 'align29_function.pir', # alignment filename
+              knowns   = ('1cbj_A', '1q0e_A', '1cob_A'),     # codes of the templates
               sequence = 'target')               # code of the target
 a.starting_model= 1                 # index of the first model
 a.ending_model  = 2                 # index of the last model
