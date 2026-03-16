@@ -2,26 +2,26 @@ CLUSTAL 2.1 multiple sequence alignment
 
 
 target          HKCHLCGRAFRTVTLLRNHLNTHTGTRPHKCPDCDMAFVTSGELVRHRRYKHTHEKPFKC
-5YEL            ------------------------------------------------------------
-5T0U            ------------------------------------------------------------
+5yel_B          ------------------------------------------------------------
+5tou_A          ------------------------------------------------------------
                                                                             
 
 target          SMCDYASVEVSKLKRHIRSHTGERPFQCSLCSYASRDTYKLKRHMRTHSGEKPYEAYINH
-5YEL            ---------------------------------------------------KPYECYICH
-5T0U            ------------------------------------------------PLGSTHKCHLCG
-                                                                   ..::.::  
+5yel_B          ---------------------------------------------------KPYECYICH
+5tou_A          ----------------------------------------------------THKCHLCG
+                                                                    .::.::  
 
 target          ARFTQSGTMKMNILQKSTENVAKFHDPHSDTVIARKSDLGVSLRKQSSYIEQGKKCRYCD
-5YEL            ARFTQSGTMKMHILQKHTENVAKFHCPHCDTVIARKSDLGVHLRKQHSYIEQGKKCRYCD
-5T0U            RAFRTVTLLRNH-LNTHTG-TRPHKCPDCDMAFVTSGELVRHRRYKHTH-EKPFKCSMCD
-                  *     :: : *:. *  .  .: *..* .:. ..:*    * : :: *:  **  **
+5yel_B          ARFTQSGTMKMHILQK---HVAKFHCPHCDTVIARKSDLGVHLRKQHSYIEQGKKCRYCD
+5tou_A          RAFRTVTLLRNHLNTHT--GTRPHKCPDCDMAFVTSGELVRHRRYKHTH-EKPFKCSMCD
+                  *     :: ::  :    .  .: *..* .:. ..:*    * : :: *:  **  **
 
 target          AVFHERYALIQHQKSHKNEKRFKCDQCDYASRQERHMIMHKRTHTGEKPYACSHCDKTFR
-5YEL            AVFHERYALIQHQKSHKNEKRFKCDQCDYASRQERHMIMHKRTHTGEKPYACSHCDKTFR
-5T0U            YASVEVSKLKRHIRSHTGERPFQCSLCSYASRDTYKLKRHMRTHSGEKPYECYICHARFT
-                 .  *   * :* :**..*: *:*. *.****:  ::  * ***:***** *  *.  * 
+5yel_B          AVFHERYALIQHQKSHKNEKRFKCDQCDYASRQERHMIMHKRTHTG-KPYACSHCDKTFR
+5tou_A          YASVEVSKLKRHIRSHTGERPFQCSLCSYASRDTYKLKRHMRTHSGEKPYECYICHARFT
+                 .  *   * :* :**..*: *:*. *.****:  ::  * ***:* *** *  *.  * 
 
-target          QKQLLDMHFKRYHDPNFVPAAFVCSKCGKTFTRRNTMARHADNCAGP---
-5YEL            QKQLLDMHFKRYHDPNFVPAAFVCSKCGKTFTRRNTMARHADNCAGP---
-5T0U            QSGTMKMHILQKHTEN--VAKFHCPHCDTVIARKSDLGVHLRKQHSYIEQ
-                *.  :.**: : *  *   * * *.:*...::*:. :. *  :  .    
+target          QKQLLDMHFKRYHDPNFVPAAFVCSKCGKTFTRRNTMARHADNCAGP
+5yel_B          QKQLLDMHFKRYHDP--VPAAFVCSKCGKTFTRRNTMARHADNCA--
+5tou_A          QSGTMKMHILQKHTEN--VAKFHCPHCDTVIARKSDLGVHLRKQHSY
+                *.  :.**: : *      * * *.:*...::*:. :. *  :    

@@ -1,0 +1,22 @@
+CLUSTAL 2.1 multiple sequence alignment
+
+
+target          -----HKCHLCGRAFRTVTLLRNHLNTHTGTRPHKCPDCDMAFVTSGELVRHRRYKHTHE
+5T0U            PLGSTHKCHLCGRAFRTVTLLRNHLNTHTGTRPHKCPDCDMAFVTSGELVRHRRYKHTHE
+                     *******************************************************
+
+target          KPFKCSMCDYASVEVSKLKRHIRSHTGERPFQCSLCSYASRDTYKLKRHMRTHSGEKPYE
+5T0U            KPFKCSMCDYASVEVSKLKRHIRSHTGERPFQCSLCSYASRDTYKLKRHMRTHSGEKPYE
+                ************************************************************
+
+target          AYINHARFTQSGTMKMNILQKSTENVAKFHDPHSDTVIARKSDLGVSLRKQSSYIEQGKK
+5T0U            CYICHARFTQSGTMKMHILQKHTENVAKFHCPHCDTVIARKSDLGVHLRKQHSYIEQ---
+                .** ************:**** ******** **.************ **** *****   
+
+target          CRYCDAVFHERYALIQHQKSHKNEKRFKCDQCDYASRQERHMIMHKRTHTGEKPYACSHC
+5T0U            ------------------------------------------------------------
+                                                                            
+
+target          DKTFRQKQLLDMHFKRYHDPNFVPAAFVCSKCGKTFTRRNTMARHADNCAGP
+5T0U            ----------------------------------------------------
+                                                                    

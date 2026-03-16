@@ -1,0 +1,32 @@
+CLUSTAL 2.1 multiple sequence alignment
+
+
+5YEL_1|Chains      ------------------------------------------------------------
+5YEL_3|Chains      ------------------------------------------------------------
+target             HKCHLCGRAFRTVTLLRNHLNTHTGTRPHKCPDCDMAFVTSGELVRHRRYKHTHEKPFKC
+5YEL_2|Chains      ------------------------------------------------------------
+                                                                               
+
+5YEL_1|Chains      ------------------------------------------------------------
+5YEL_3|Chains      ------------------------------------------------------------
+target             SMCDYASVEVSKLKRHIRSHTGERPFQCSLCSYASRDTYKLKRHMRTHSGEKPYEAYINH
+5YEL_2|Chains      ---------------------------------------------------KPYECYICH
+                                                                               
+
+5YEL_1|Chains      ------------------------------------------------------------
+5YEL_3|Chains      ------------------------------------------------------------
+target             ARFTQSGTMKMNILQKSTENVAKFHDPHSDTVIARKSDLGVSLRKQSSYIEQGKKCRYCD
+5YEL_2|Chains      ARFTQSGTMKMHILQKHTENVAKFHCPHCDTVIARKSDLGVHLRKQHSYIEQGKKCRYCD
+                                                                               
+
+5YEL_1|Chains      ------------------------------------------------------------
+5YEL_3|Chains      ------------------------------------------------------------
+target             AVFHERYALIQHQKSHKNEKRFKCDQCDYASRQERHMIMHKRTHTGEKPYACSHCDKTFR
+5YEL_2|Chains      AVFHERYALIQHQKSHKNEKRFKCDQCDYASRQERHMIMHKRTHTGEKPYACSHCDKTFR
+                                                                               
+
+5YEL_1|Chains      -------ATTGCAGTACCACATTTAAC-CAGCAG-------------
+5YEL_3|Chains      -------TCTGCTG-GTTAAATGTGGTACTGCAA-------------
+target             QKQLLDMHFKRYHDPNFVPAAFVCSKCGKTFTRRNTMARHADNCAGP
+5YEL_2|Chains      QKQLLDMHFKRYHDPNFVPAAFVCSKCGKTFTRRNTMARHADNCAGP
+                                       *                          
