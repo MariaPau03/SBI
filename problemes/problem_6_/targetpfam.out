@@ -1,0 +1,926 @@
+# hmmscan :: search sequence(s) against a profile database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query sequence file:             target.fa
+# target HMM database:             /mnt/NFS_UPF/soft/databases/pfam-3/Pfam-A.hmm
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       target  [L=287]
+Scores for complete sequence (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Model          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------       -----------
+    5.7e-47  155.6  59.3    1.3e-08   34.5   0.5    9.2  9  zf-H2C2_2       Zinc-finger double domain
+    2.1e-24   84.3  70.3    0.00034   20.7   0.7    8.4  8  zf-C2H2         Zinc finger, C2H2 type
+    6.4e-21   72.9  61.8    0.00084   19.4   0.7    8.3  8  zf-C2H2_4       C2H2-type zinc finger
+    9.4e-11   41.4  40.1     0.0051   16.7   0.2    8.5  8  zf-C2H2_jaz     Zinc-finger double-stranded RNA-binding
+    1.4e-07   31.2  56.7    5.6e-05   23.0   0.8    8.6  8  zf-H2C2_5       C2H2-type zinc-finger domain
+    0.00073   19.2  53.9      0.019   14.7   2.0    8.7  9  zf-C2H2_6       C2H2-type zinc finger
+     0.0058   16.5   4.1     0.0058   16.5   4.1    4.9  5  LIM             LIM domain
+     0.0064   16.0  28.9        2.4    7.8   0.1    5.9  6  C1_1            Phorbol esters/diacylglycerol binding domain 
+  ------ inclusion threshold ------
+      0.013   15.4  40.1       0.59   10.1   7.7    6.1  5  zf-C2H2_2       C2H2 type zinc-finger (2 copies)
+      0.049   13.5  24.5        7.9    6.5   0.1    7.6  8  C1_3            C1-like domain
+      0.069   12.9   0.3      0.069   12.9   0.3    6.9  5  CxxC_CxxC_SSSS  Zinc ribbon domain
+       0.12   11.8  18.8        2.7    7.5   0.4    5.7  7  GAGA            GAGA factor
+       0.73    9.8   5.4         16    5.5   0.0    3.7  5  HTH_18          Helix-turn-helix domain
+        2.5    7.7  19.1        4.5    6.9   0.1    5.4  5  zf-C2HC_2       zinc-finger of a C2HC-type
+        2.8    7.7  38.4        3.6    7.3   4.4    5.8  6  Zn_Tnp_IS1595   Transposase zinc-ribbon domain
+        7.8    5.9  21.5        3.4    7.0   0.7    5.9  6  PyrI_C          Aspartate carbamoyltransferase regulatory cha
+
+
+Domain annotation for each model (and alignments):
+>> zf-H2C2_2  Zinc-finger double domain
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    5.6   0.3     0.022        19      15      26 .]       1      12 [.       1      12 [. 0.91
+   2 !   31.1   0.5   1.9e-10   1.6e-07       2      26 .]      16      40 ..      15      40 .. 0.96
+   3 !   24.1   2.6   3.1e-08   2.6e-05       2      24 ..      44      67 ..      43      69 .. 0.90
+   4 !   34.5   0.5   1.6e-11   1.3e-08       2      23 ..      73      94 ..      72      96 .. 0.94
+   5 !   19.7   0.9   7.5e-07   0.00064       2      16 ..     101     115 ..     100     115 .. 0.95
+   6 ?    4.3   0.1     0.057        49      16      24 ..     175     183 ..     163     185 .. 0.85
+   7 !   24.9   0.4   1.7e-08   1.5e-05       2      23 ..     189     210 ..     188     213 .. 0.90
+   8 !   31.1   4.0   1.8e-10   1.5e-07       4      25 ..     219     240 ..     214     241 .. 0.88
+   9 !   17.4   0.6     4e-06    0.0034       2      26 .]     245     273 ..     244     273 .. 0.80
+
+  Alignments for each domain:
+  == domain 1  score: 5.6 bits;  conditional E-value: 0.022
+  zf-H2C2_2 15 yeCplCgktFkt 26
+               ++C lCg++F t
+     target  1 HKCHLCGRAFRT 12
+               89********76 PP
+
+  == domain 2  score: 31.1 bits;  conditional E-value: 1.9e-10
+  zf-H2C2_2  2 LrrHlrkHtgekpyeCplCgktFkt 26
+               Lr Hl +Htg +p++Cp C+ +F+t
+     target 16 LRNHLNTHTGTRPHKCPDCDMAFVT 40
+               89*********************87 PP
+
+  == domain 3  score: 24.1 bits;  conditional E-value: 3.1e-08
+  zf-H2C2_2  2 LrrHlr.kHtgekpyeCplCgktF 24
+               L+rH r kHt ekp++C+ C+++ 
+     target 44 LVRHRRyKHTHEKPFKCSMCDYAS 67
+               99**9978*************985 PP
+
+  == domain 4  score: 34.5 bits;  conditional E-value: 1.6e-11
+  zf-H2C2_2  2 LrrHlrkHtgekpyeCplCgkt 23
+               L+rH+r Htge+p++C+lC+++
+     target 73 LKRHIRSHTGERPFQCSLCSYA 94
+               89******************97 PP
+
+  == domain 5  score: 19.7 bits;  conditional E-value: 7.5e-07
+  zf-H2C2_2   2 LrrHlrkHtgekpye 16 
+                L+rH+r+H+gekpye
+     target 101 LKRHMRTHSGEKPYE 115
+                89************7 PP
+
+  == domain 6  score: 4.3 bits;  conditional E-value: 0.057
+  zf-H2C2_2  16 eCplCgktF 24 
+                +C +C+ +F
+     target 175 KCRYCDAVF 183
+                8*****999 PP
+
+  == domain 7  score: 24.9 bits;  conditional E-value: 1.7e-08
+  zf-H2C2_2   2 LrrHlrkHtgekpyeCplCgkt 23 
+                L  H++ H++ek ++C++C+++
+     target 189 LIQHQKSHKNEKRFKCDQCDYA 210
+                668*****************97 PP
+
+  == domain 8  score: 31.1 bits;  conditional E-value: 1.8e-10
+  zf-H2C2_2   4 rHlrkHtgekpyeCplCgktFk 25 
+                 H r+Htgekpy C++C+ktF 
+     target 219 MHKRTHTGEKPYACSHCDKTFR 240
+                478******************6 PP
+
+  == domain 9  score: 17.4 bits;  conditional E-value: 4e-06
+  zf-H2C2_2   2 LrrHlrk.Htgek.p..yeCplCgktFkt 26 
+                L  H++  H + + p  + C++CgktF++
+     target 245 LDMHFKRyHDPNFvPaaFVCSKCGKTFTR 273
+                678*9854998875366**********85 PP
+
+>> zf-C2H2  Zinc finger, C2H2 type
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   20.6   3.9   4.2e-07   0.00036       1      23 []       1      23 [.       1      23 [. 0.98
+   2 !   20.7   0.7   3.9e-07   0.00034       1      23 []      29      52 ..      29      52 .. 0.95
+   3 !   12.0   0.9   0.00024      0.21       1      23 []      58      80 ..      58      80 .. 0.98
+   4 !   17.4   3.3   4.5e-06    0.0039       1      23 []      86     108 ..      86     108 .. 0.99
+   5 !   13.3   1.4   9.3e-05     0.079       2      23 .]     175     196 ..     175     196 .. 0.97
+   6 ?    6.2   3.0     0.017        14       1      23 []     202     224 ..     202     224 .. 0.98
+   7 !   15.5   4.6   1.9e-05     0.016       1      23 []     230     253 ..     230     253 .. 0.97
+   8 !   19.1   1.1   1.3e-06    0.0011       1      22 [.     262     283 ..     262     284 .. 0.91
+
+  Alignments for each domain:
+  == domain 1  score: 20.6 bits;  conditional E-value: 4.2e-07
+             EE------EESSHHHHHHHHCCH CS
+  zf-C2H2  1 yqCpdCgksFsrksnLlrHlrrH 23
+             ++C++Cg+ F++  +L++Hl++H
+   target  1 HKCHLCGRAFRTVTLLRNHLNTH 23
+             79********************9 PP
+
+  == domain 2  score: 20.7 bits;  conditional E-value: 3.9e-07
+             EE------EESSHHHHHHHHCC.H CS
+  zf-C2H2  1 yqCpdCgksFsrksnLlrHlrr.H 23
+             ++CpdC++ F ++ +L+rH r  H
+   target 29 HKCPDCDMAFVTSGELVRHRRYkH 52
+             79******************9888 PP
+
+  == domain 3  score: 12.0 bits;  conditional E-value: 0.00024
+             EE------EESSHHHHHHHHCCH CS
+  zf-C2H2  1 yqCpdCgksFsrksnLlrHlrrH 23
+             ++C  C++     s L+rH+r+H
+   target 58 FKCSMCDYASVEVSKLKRHIRSH 80
+             89********************9 PP
+
+  == domain 4  score: 17.4 bits;  conditional E-value: 4.5e-06
+              EE------EESSHHHHHHHHCCH CS
+  zf-C2H2   1 yqCpdCgksFsrksnLlrHlrrH 23 
+              +qC +C++  ++ + L+rH+r+H
+   target  86 FQCSLCSYASRDTYKLKRHMRTH 108
+              8*********************9 PP
+
+  == domain 5  score: 13.3 bits;  conditional E-value: 9.3e-05
+              E------EESSHHHHHHHHCCH CS
+  zf-C2H2   2 qCpdCgksFsrksnLlrHlrrH 23 
+              +C +C+ +F  ++ L +H+++H
+   target 175 KCRYCDAVFHERYALIQHQKSH 196
+              7*******************99 PP
+
+  == domain 6  score: 6.2 bits;  conditional E-value: 0.017
+              EE------EESSHHHHHHHHCCH CS
+  zf-C2H2   1 yqCpdCgksFsrksnLlrHlrrH 23 
+              ++C  C++  ++  ++  H r+H
+   target 202 FKCDQCDYASRQERHMIMHKRTH 224
+              89********************9 PP
+
+  == domain 7  score: 15.5 bits;  conditional E-value: 1.9e-05
+              EE------EESSHHHHHHHHCC.H CS
+  zf-C2H2   1 yqCpdCgksFsrksnLlrHlrr.H 23 
+              y C +C+k+F++k +L  H +r H
+   target 230 YACSHCDKTFRQKQLLDMHFKRyH 253
+              89******************9988 PP
+
+  == domain 8  score: 19.1 bits;  conditional E-value: 1.3e-06
+              EE------EESSHHHHHHHHCC CS
+  zf-C2H2   1 yqCpdCgksFsrksnLlrHlrr 22 
+              ++C +Cgk+F+r+ ++ rH  +
+   target 262 FVCSKCGKTFTRRNTMARHADN 283
+              89*****************766 PP
+
+>> zf-C2H2_4  C2H2-type zinc finger
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   16.6   3.2   7.8e-06    0.0066       1      23 [.       1      23 [.       1      24 [. 0.96
+   2 !   11.5   0.5   0.00032      0.27       1      24 []      29      52 ..      29      53 .. 0.90
+   3 !    9.2   0.3    0.0018       1.5       1      23 [.      58      80 ..      58      81 .. 0.95
+   4 !   15.7   1.6   1.5e-05     0.013       1      23 [.      86     108 ..      86     109 .. 0.96
+   5 !   14.2   1.9   4.6e-05      0.04       2      23 ..     175     196 ..     175     197 .. 0.95
+   6 !    7.6   1.7    0.0059         5       1      23 [.     202     224 ..     202     225 .. 0.96
+   7 !   16.5   3.1   8.4e-06    0.0072       1      24 []     230     253 ..     230     253 .. 0.96
+   8 !   19.4   0.7   9.8e-07   0.00084       1      23 [.     262     284 ..     262     285 .. 0.92
+
+  Alignments for each domain:
+  == domain 1  score: 16.6 bits;  conditional E-value: 7.8e-06
+  zf-C2H2_4  1 faCplCgktFttreeLrrHlakh 23
+               ++C lCg+ F+t + Lr+Hl +h
+     target  1 HKCHLCGRAFRTVTLLRNHLNTH 23
+               79*******************99 PP
+
+  == domain 2  score: 11.5 bits;  conditional E-value: 0.00032
+  zf-C2H2_4  1 faCplCgktFttreeLrrHlakhH 24
+               ++Cp C   F t  eL rH +  H
+     target 29 HKCPDCDMAFVTSGELVRHRRYKH 52
+               79*****************98554 PP
+
+  == domain 3  score: 9.2 bits;  conditional E-value: 0.0018
+  zf-C2H2_4  1 faCplCgktFttreeLrrHlakh 23
+               f+C+ C       + L+rH+++h
+     target 58 FKCSMCDYASVEVSKLKRHIRSH 80
+               89********************9 PP
+
+  == domain 4  score: 15.7 bits;  conditional E-value: 1.5e-05
+  zf-C2H2_4   1 faCplCgktFttreeLrrHlakh 23 
+                f+C+lC+   + ++ L+rH+++h
+     target  86 FQCSLCSYASRDTYKLKRHMRTH 108
+                89********************9 PP
+
+  == domain 5  score: 14.2 bits;  conditional E-value: 4.6e-05
+  zf-C2H2_4   2 aCplCgktFttreeLrrHlakh 23 
+                +C +C ++F  r++L +H+++h
+     target 175 KCRYCDAVFHERYALIQHQKSH 196
+                6********************9 PP
+
+  == domain 6  score: 7.6 bits;  conditional E-value: 0.0059
+  zf-C2H2_4   1 faCplCgktFttreeLrrHlakh 23 
+                f+C +C    ++  ++  H ++h
+     target 202 FKCDQCDYASRQERHMIMHKRTH 224
+                89*******************99 PP
+
+  == domain 7  score: 16.5 bits;  conditional E-value: 8.4e-06
+  zf-C2H2_4   1 faCplCgktFttreeLrrHlakhH 24 
+                +aC++C ktF+++  L  H+++ H
+     target 230 YACSHCDKTFRQKQLLDMHFKRYH 253
+                89******************9987 PP
+
+  == domain 8  score: 19.4 bits;  conditional E-value: 9.8e-07
+  zf-C2H2_4   1 faCplCgktFttreeLrrHlakh 23 
+                f C++CgktFt+r+ + rH +++
+     target 262 FVCSKCGKTFTRRNTMARHADNC 284
+                78*****************8765 PP
+
+>> zf-C2H2_jaz  Zinc-finger double-stranded RNA-binding
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   16.7   0.2     6e-06    0.0051       2      24 ..       1      27 [.       1      30 [. 0.84
+   2 ?    5.0   0.0     0.029        25       2      21 ..      29      48 ..      28      49 .. 0.91
+   3 ?    4.1   0.3     0.056        48       2      24 ..      58      80 ..      57      81 .. 0.90
+   4 ?    3.4   0.6     0.096        82       4      24 ..      88     108 ..      85     109 .. 0.84
+   5 !   13.0   3.6   8.8e-05     0.075       4      25 ..     176     197 ..     174     197 .. 0.96
+   6 ?    1.3   0.4      0.43   3.7e+02       1       9 [.     201     209 ..     201     224 .. 0.76
+   7 !   12.9   1.1   9.6e-05     0.082       2      22 ..     230     250 ..     229     250 .. 0.93
+   8 !    7.7   0.1    0.0041       3.5       2      20 ..     262     280 ..     261     280 .. 0.91
+
+  Alignments for each domain:
+  == domain 1  score: 16.7 bits;  conditional E-value: 6e-06
+                 -B-TTT--B-SSHHHHHHHTT-....H CS
+  zf-C2H2_jaz  2 fYCvaCdkyFksenqlknHlks....K 24
+                 + C +C++ F +   l+nHl++    +
+       target  1 HKCHLCGRAFRTVTLLRNHLNThtgtR 27
+                 67*******************955555 PP
+
+  == domain 2  score: 5.0 bits;  conditional E-value: 0.029
+                 -B-TTT--B-SSHHHHHHHT CS
+  zf-C2H2_jaz  2 fYCvaCdkyFksenqlknHl 21
+                 + C+ Cd  F +  +l  H 
+       target 29 HKCPDCDMAFVTSGELVRHR 48
+                 78**************9996 PP
+
+  == domain 3  score: 4.1 bits;  conditional E-value: 0.056
+                 -B-TTT--B-SSHHHHHHHTT-H CS
+  zf-C2H2_jaz  2 fYCvaCdkyFksenqlknHlksK 24
+                 f C  Cd      + lk H++s+
+       target 58 FKCSMCDYASVEVSKLKRHIRSH 80
+                 89999*999999999*****997 PP
+
+  == domain 4  score: 3.4 bits;  conditional E-value: 0.096
+                  -TTT--B-SSHHHHHHHTT-H CS
+  zf-C2H2_jaz   4 CvaCdkyFksenqlknHlksK 24 
+                  C +C+    +   lk H++++
+       target  88 CSLCSYASRDTYKLKRHMRTH 108
+                  88888888889999*****97 PP
+
+  == domain 5  score: 13.0 bits;  conditional E-value: 8.8e-05
+                  -TTT--B-SSHHHHHHHTT-HH CS
+  zf-C2H2_jaz   4 CvaCdkyFksenqlknHlksKk 25 
+                  C +Cd  F+ + +l +H ks+k
+       target 176 CRYCDAVFHERYALIQHQKSHK 197
+                  99******************97 PP
+
+  == domain 6  score: 1.3 bits;  conditional E-value: 0.43
+                  --B-TTT-- CS
+  zf-C2H2_jaz   1 qfYCvaCdk 9  
+                  +f C+ Cd 
+       target 201 RFKCDQCDY 209
+                  699****95 PP
+
+  == domain 7  score: 12.9 bits;  conditional E-value: 9.6e-05
+                  -B-TTT--B-SSHHHHHHHTT CS
+  zf-C2H2_jaz   2 fYCvaCdkyFksenqlknHlk 22 
+                  + C +Cdk+F   + l+ H+k
+       target 230 YACSHCDKTFRQKQLLDMHFK 250
+                  77*****************97 PP
+
+  == domain 8  score: 7.7 bits;  conditional E-value: 0.0041
+                  -B-TTT--B-SSHHHHHHH CS
+  zf-C2H2_jaz   2 fYCvaCdkyFksenqlknH 20 
+                  f+C  C+k+F+ +n++  H
+       target 262 FVCSKCGKTFTRRNTMARH 280
+                  99999**********9888 PP
+
+>> zf-H2C2_5  C2H2-type zinc-finger domain
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -0.4   3.6       1.7   1.5e+03       1      22 [.       1      23 [.       1      25 [. 0.70
+   2 ?    4.0   0.4     0.068        58       1      23 [.      29      52 ..      29      53 .. 0.79
+   3 !   13.8   0.2   5.3e-05     0.045       1      22 [.      58      80 ..      58      82 .. 0.91
+   4 !   23.0   0.8   6.6e-08   5.6e-05       1      23 [.      86     109 ..      86     110 .. 0.92
+   5 ?    5.6   2.6     0.022        19       2      22 ..     175     196 ..     174     198 .. 0.86
+   6 !   14.1   1.2   4.3e-05     0.037       1      22 [.     202     224 ..     202     226 .. 0.90
+   7 ?    4.6   2.1     0.045        39       1      21 [.     230     251 ..     230     254 .. 0.77
+   8 ?   -0.0   0.3       1.4   1.2e+03       3      18 ..     264     280 ..     262     280 .. 0.60
+
+  Alignments for each domain:
+  == domain 1  score: -0.4 bits;  conditional E-value: 1.7
+  zf-H2C2_5  1 ykCshCsfssn.pktlerHlklh 22
+               +kC++C   ++    l++Hl +h
+     target  1 HKCHLCGRAFRtVTLLRNHLNTH 23
+               68888875554477788898885 PP
+
+  == domain 2  score: 4.0 bits;  conditional E-value: 0.068
+  zf-H2C2_5  1 ykCshCsfss.npktlerHlklhH 23
+               +kC+ C+  + ++ +l+rH + +H
+     target 29 HKCPDCDMAFvTSGELVRHRRYKH 52
+               799999966635779999999999 PP
+
+  == domain 3  score: 13.8 bits;  conditional E-value: 5.3e-05
+  zf-H2C2_5  1 ykCshCsfssn.pktlerHlklh 22
+               +kCs C++ s   ++l+rH++ h
+     target 58 FKCSMCDYASVeVSKLKRHIRSH 80
+               79********88********995 PP
+
+  == domain 4  score: 23.0 bits;  conditional E-value: 6.6e-08
+  zf-H2C2_5   1 ykCshCsfssn.pktlerHlklhH 23 
+                ++Cs+Cs+ s+  ++l+rH+++h 
+     target  86 FQCSLCSYASRdTYKLKRHMRTHS 109
+                79********9899********86 PP
+
+  == domain 5  score: 5.6 bits;  conditional E-value: 0.022
+  zf-H2C2_5   2 kCshCsfssn.pktlerHlklh 22 
+                kC++C+ +++  + l +H+k h
+     target 175 KCRYCDAVFHeRYALIQHQKSH 196
+                8*********555*******96 PP
+
+  == domain 6  score: 14.1 bits;  conditional E-value: 4.3e-05
+  zf-H2C2_5   1 ykCshCsfssn.pktlerHlklh 22 
+                +kC++C++ s+ ++++  H ++h
+     target 202 FKCDQCDYASRqERHMIMHKRTH 224
+                79********9899*****9996 PP
+
+  == domain 7  score: 4.6 bits;  conditional E-value: 0.045
+  zf-H2C2_5   1 ykCshCsfssn.pktlerHlkl 21 
+                y CshC+ +++ ++ l  H+k+
+     target 230 YACSHCDKTFRqKQLLDMHFKR 251
+                89*****888757778788776 PP
+
+  == domain 8  score: -0.0 bits;  conditional E-value: 1.4
+  zf-H2C2_5   3 CshCsfssn.pktlerH 18 
+                Cs+C  +++   t+ rH
+     target 264 CSKCGKTFTrRNTMARH 280
+                99996444425567776 PP
+
+>> zf-C2H2_6  C2H2-type zinc finger
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !    8.5   1.7     0.002       1.7       2      24 ..       1      23 [.       1      25 [. 0.89
+   2 !    9.9   0.1   0.00073      0.63       1      23 [.      28      50 ..      28      53 .. 0.87
+   3 ?   -2.5   0.1       5.7   4.8e+03       2       8 ..      58      64 ..      57      64 .. 0.79
+   4 ?   -0.3   0.1       1.1   9.8e+02       2       8 ..      86      92 ..      85      92 .. 0.84
+   5 !   14.7   2.0   2.2e-05     0.019       3      25 ..     175     197 ..     173     199 .. 0.93
+   6 ?    2.4   0.6      0.17   1.4e+02       2       8 ..     202     208 ..     201     208 .. 0.88
+   7 ?    0.9   0.2      0.48   4.1e+02      18      24 ..     218     224 ..     217     227 .. 0.84
+   8 !    9.2   0.3    0.0012         1       2      12 ..     230     240 ..     229     244 .. 0.88
+   9 !    8.8   0.4    0.0016       1.4       2      13 ..     262     273 ..     261     277 .. 0.85
+
+  Alignments for each domain:
+  == domain 1  score: 8.5 bits;  conditional E-value: 0.002
+  zf-C2H2_6  2 htCgrCgktFsslqaLggHKksh 24
+               h+C  Cg+ F++ + L+ H   h
+     target  1 HKCHLCGRAFRTVTLLRNHLNTH 23
+               9***********99999997655 PP
+
+  == domain 2  score: 9.9 bits;  conditional E-value: 0.00073
+  zf-C2H2_6  1 vhtCgrCgktFsslqaLggHKks 23
+               +h+C++C+  F +   L+ H+++
+     target 28 PHKCPDCDMAFVTSGELVRHRRY 50
+               59*********998899999986 PP
+
+  == domain 3  score: -2.5 bits;  conditional E-value: 5.7
+  zf-C2H2_6  2 htCgrCg 8 
+               ++C+ C+
+     target 58 FKCSMCD 64
+               89*9885 PP
+
+  == domain 4  score: -0.3 bits;  conditional E-value: 1.1
+  zf-C2H2_6  2 htCgrCg 8 
+               ++C+ C+
+     target 86 FQCSLCS 92
+               89****5 PP
+
+  == domain 5  score: 14.7 bits;  conditional E-value: 2.2e-05
+  zf-C2H2_6   3 tCgrCgktFsslqaLggHKkshC 25 
+                +C  C+++F+   aL++H ksh 
+     target 175 KCRYCDAVFHERYALIQHQKSHK 197
+                8*********************7 PP
+
+  == domain 6  score: 2.4 bits;  conditional E-value: 0.17
+  zf-C2H2_6   2 htCgrCg 8  
+                ++C++C+
+     target 202 FKCDQCD 208
+                99****6 PP
+
+  == domain 7  score: 0.9 bits;  conditional E-value: 0.48
+  zf-C2H2_6  18 ggHKksh 24 
+                + HK+ h
+     target 218 IMHKRTH 224
+                89***99 PP
+
+  == domain 8  score: 9.2 bits;  conditional E-value: 0.0012
+  zf-C2H2_6   2 htCgrCgktFs 12 
+                + C++C+ktF+
+     target 230 YACSHCDKTFR 240
+                77********6 PP
+
+  == domain 9  score: 8.8 bits;  conditional E-value: 0.0016
+  zf-C2H2_6   2 htCgrCgktFss 13 
+                + C+ CgktF+ 
+     target 262 FVCSKCGKTFTR 273
+                78********75 PP
+
+>> LIM  LIM domain
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    1.4   0.1      0.36   3.1e+02       1      37 [.       3      39 ..       3      48 .. 0.76
+   2 !    7.9   1.1    0.0034       2.9       1      33 [.      31      64 ..      31      69 .. 0.83
+   3 ?   -0.3   0.1       1.2     1e+03      27      34 ..      86      93 ..      83     105 .. 0.77
+   4 ?    3.3   6.5     0.093        80       1      43 [.     176     218 ..     176     225 .. 0.84
+   5 !   16.5   4.1   6.7e-06    0.0058       1      44 [.     232     279 ..     232     284 .. 0.83
+
+  Alignments for each domain:
+  == domain 1  score: 1.4 bits;  conditional E-value: 0.36
+            -TTT-----TTSCEEEETTEEEECCC-B-TTT-SB-- CS
+     LIM  1 CagCnkkiadrelvlkaldkvyHeeCFtCseCqkplk 37
+            C+ C++ ++   l+++ l+++      +C +C+  + 
+  target  3 CHLCGRAFRTVTLLRNHLNTHTGTRPHKCPDCDMAFV 39
+            8999999998888888888877777778888876665 PP
+
+  == domain 2  score: 7.9 bits;  conditional E-value: 0.0034
+            -TTT---.--TTSCEEEETTEEEECCC-B-TTT- CS
+     LIM  1 CagCnkk.iadrelvlkaldkvyHeeCFtCseCq 33
+            C  C+   +++ elv++ + k+ He+ F+Cs C+
+  target 31 CPDCDMAfVTSGELVRHRRYKHTHEKPFKCSMCD 64
+            88888661558889988899999**********7 PP
+
+  == domain 3  score: -0.3 bits;  conditional E-value: 1.2
+            -B-TTT-S CS
+     LIM 27 FtCseCqk 34
+            F+Cs C+ 
+  target 86 FQCSLCSY 93
+            99999975 PP
+
+  == domain 4  score: 3.3 bits;  conditional E-value: 0.093
+             -TTT-----TTSCEEEETTEEEECCC-B-TTT-SB-----EEE CS
+     LIM   1 CagCnkkiadrelvlkaldkvyHeeCFtCseCqkplkeksffe 43 
+             C  C+  +++r+ +++ +  +  e+ F+C +C+    ++ +++
+  target 176 CRYCDAVFHERYALIQHQKSHKNEKRFKCDQCDYASRQERHMI 218
+             99************99999999999*******98777666444 PP
+
+  == domain 5  score: 16.5 bits;  conditional E-value: 6.7e-06
+             -TTT-----TTSCEEEETTEEEE.....CCC-B-TTT-SB-----EEEE CS
+     LIM   1 CagCnkkiadrelvlkaldkvyH.....eeCFtCseCqkplkeksffek 44 
+             C+ C+k++++++l+  +  k+yH     ++ F+Cs+C+k+++ ++++ +
+  target 232 CSHCDKTFRQKQLL-DMHFKRYHdpnfvPAAFVCSKCGKTFTRRNTMAR 279
+             *********99999.68889999555556899**********9996654 PP
+
+>> C1_1  Phorbol esters/diacylglycerol binding domain (C1 domain)
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    4.1   0.4     0.039        34      13      37 ..       2      37 ..       1      38 [. 0.83
+   2 !    7.8   0.1    0.0028       2.4       8      36 ..      25      65 ..      19      67 .. 0.84
+   3 !    7.2   0.6    0.0044       3.8       4      36 ..      51      93 ..      47      95 .. 0.83
+   4 !    7.4   0.4    0.0037       3.2      27      41 ..     172     186 ..     165     198 .. 0.89
+   5 ?    3.3   5.3     0.072        61       5      38 ..     196     239 ..     192     242 .. 0.69
+   6 !    6.3   5.2    0.0081         7       7      38 ..     225     271 ..     216     286 .. 0.77
+
+  Alignments for each domain:
+  == domain 1  score: 4.1 bits;  conditional E-value: 0.039
+            B-TTT-SB-...........--------EETTT--B CS
+    C1_1 13 fCkhCgkfl...........wgkgkqglkCswCqll 37
+            +C  Cg  +            + g+++ kC +C + 
+  target  2 KCHLCGRAFrtvtllrnhlnTHTGTRPHKCPDCDMA 37
+            799999999999999999944499999999999875 PP
+
+  == domain 2  score: 7.8 bits;  conditional E-value: 0.0028
+            -SS--B-TTT-SB-...........--.------EETTT-- CS
+    C1_1  8 fkqptfCkhCgkfl...........wg.kgkqglkCswCql 36
+              +p++C  C+  +           ++     ++kCs C +
+  target 25 GTRPHKCPDCDMAFvtsgelvrhrrYKhTHEKPFKCSMCDY 65
+            47899*********9********9955499999******87 PP
+
+  == domain 3  score: 7.2 bits;  conditional E-value: 0.0044
+            E----SS--B-TTT-SB-...........--------EETTT-- CS
+    C1_1  4 vhrnfkqptfCkhCgkfl...........wgkgkqglkCswCql 36
+            +h++ ++p +C+ C+              ++ g ++++Cs C++
+  target 51 KHTH-EKPFKCSMCDYASvevsklkrhirSHTGERPFQCSLCSY 93
+            5555.889999999998889999999996669999*******97 PP
+
+  == domain 4  score: 7.4 bits;  conditional E-value: 0.0037
+             ---EETTT--B--ST CS
+    C1_1  27 qglkCswCqllvHkk 41 
+             qg+kC+ C  ++H++
+  target 172 QGKKCRYCDAVFHER 186
+             999*********986 PP
+
+  == domain 5  score: 3.3 bits;  conditional E-value: 0.072
+             ----SS--B-TTT-SB-..........--.------EETTT--B- CS
+    C1_1   5 hrnfkqptfCkhCgkfl..........wg.kgkqglkCswCqllv 38 
+             h+n ++  +C++C+             ++  g  ++ Cs C +++
+  target 196 HKN-EKRFKCDQCDYASrqerhmimhkRThTGEKPYACSHCDKTF 239
+             555.77778888888777788888887444788888888887765 PP
+
+  == domain 6  score: 6.3 bits;  conditional E-value: 0.0081
+             --SS--B-TTT-SB-...............--------EETTT--B- CS
+    C1_1   7 nfkqptfCkhCgkfl...............wgkgkqglkCswCqllv 38 
+             + ++p  C+hC+k +                 +   ++ Cs C++++
+  target 225 TGEKPYACSHCDKTFrqkqlldmhfkryhdPNFVPAAFVCSKCGKTF 271
+             3378999********99999999999998444888999999999987 PP
+
+>> zf-C2H2_2  C2H2 type zinc-finger (2 copies)
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    6.5   0.5    0.0094         8      51      73 ..       1      23 [.       1      31 [. 0.86
+   2 ?   10.1   7.7   0.00069      0.59       2      74 ..      31     109 ..      30     126 .. 0.77
+   3 ?    7.1   4.0    0.0058         5      40      74 ..     163     197 ..     122     212 .. 0.75
+   4 ?    2.8  13.3      0.13   1.1e+02       2      72 ..     176     251 ..     175     256 .. 0.79
+   5 ?    4.4   0.2      0.04        34      50      70 ..     261     281 ..     253     284 .. 0.86
+
+  Alignments for each domain:
+  == domain 1  score: 6.5 bits;  conditional E-value: 0.0094
+  zf-C2H2_2 51 leClyCekefkslealreHmkkk 73
+               ++C +C++ f+++  lr+H++++
+     target  1 HKCHLCGRAFRTVTLLRNHLNTH 23
+               58*****************9875 PP
+
+  == domain 2  score: 10.1 bits;  conditional E-value: 0.00069
+  zf-C2H2_2   2 Clfcekeskeveellehmkkehgffipekeylv.dleglleylrekiee.....kleClyCekefkslealreHmkkkg 74 
+                C  c++ + +  el++h + +h+   p k ++  +++  +++l+++i +      ++C +C++ ++++ +l+ Hm++++
+     target  31 CPDCDMAFVTSGELVRHRRYKHTHEKPFKCSMCdYASVEVSKLKRHIRShtgerPFQCSLCSYASRDTYKLKRHMRTHS 109
+                7779999999999****999999887744444414444466666666666666789*******************9876 PP
+
+  == domain 3  score: 7.1 bits;  conditional E-value: 0.0058
+  zf-C2H2_2  40 leylrekieekleClyCekefkslealreHmkkkg 74 
+                l++ ++ ie++ +C yC+  f+++ al +H k+++
+     target 163 LRKQSSYIEQGKKCRYCDAVFHERYALIQHQKSHK 197
+                5666778999********99**********76554 PP
+
+  == domain 4  score: 2.8 bits;  conditional E-value: 0.13
+  zf-C2H2_2   2 Clfcekeskeveellehm...kkehgffipekeylv.dleg.lleylrekieekleClyCekefkslealreHmkk 72 
+                C +c+  ++e+ +l++h    k+e +f +++ +y + +  + ++++ +++ e+ + C +C+k+f++++ l  H k 
+     target 176 CRYCDAVFHERYALIQHQkshKNEKRFKCDQCDYASrQERHmIMHKRTHTGEKPYACSHCDKTFRQKQLLDMHFKR 251
+                *****************85555666899999999996444414444555556689****************99875 PP
+
+  == domain 5  score: 4.4 bits;  conditional E-value: 0.04
+  zf-C2H2_2  50 kleClyCekefkslealreHm 70 
+                 + C  C+k+f+ ++++  H 
+     target 261 AFVCSKCGKTFTRRNTMARHA 281
+                589***************996 PP
+
+>> C1_3  C1-like domain
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    1.0   0.2      0.46   3.9e+02       2       8 ..       2       8 ..       1      12 [. 0.83
+   2 ?    3.0   0.1      0.11        97      17      24 ..      30      37 ..      24      38 .. 0.85
+   3 ?    2.9   0.2      0.12     1e+02      15      23 ..      57      65 ..      51      67 .. 0.80
+   4 ?   -0.0   0.1      0.98   8.4e+02      16      23 ..      86      93 ..      79      99 .. 0.65
+   5 ?    5.9   0.0     0.014        12      17      27 ..     175     185 ..     163     186 .. 0.88
+   6 ?    5.0   0.2     0.025        22      16      23 ..     202     209 ..     195     211 .. 0.88
+   7 ?    6.5   0.1    0.0092       7.9      13      22 ..     227     236 ..     221     239 .. 0.78
+   8 ?    0.0   0.1      0.94   8.1e+02       1       8 [.     262     269 ..     260     276 .. 0.65
+
+  Alignments for each domain:
+  == domain 1  score: 1.0 bits;  conditional E-value: 0.46
+    C1_3 2 tCdaCgl 8
+           +C++Cg+
+  target 2 KCHLCGR 8
+           7****98 PP
+
+  == domain 2  score: 3.0 bits;  conditional E-value: 0.11
+    C1_3 17 sCseCdFv 24
+            +C++Cd  
+  target 30 KCPDCDMA 37
+            6*****86 PP
+
+  == domain 3  score: 2.9 bits;  conditional E-value: 0.12
+    C1_3 15 fYsCseCdF 23
+            +++Cs Cd+
+  target 57 PFKCSMCDY 65
+            789*****9 PP
+
+  == domain 4  score: -0.0 bits;  conditional E-value: 0.98
+    C1_3 16 YsCseCdF 23
+            + Cs C +
+  target 86 FQCSLCSY 93
+            44555554 PP
+
+  == domain 5  score: 5.9 bits;  conditional E-value: 0.014
+    C1_3  17 sCseCdFvlHe 27 
+             +C  Cd v+He
+  target 175 KCRYCDAVFHE 185
+             5*********9 PP
+
+  == domain 6  score: 5.0 bits;  conditional E-value: 0.025
+    C1_3  16 YsCseCdF 23 
+             ++C +Cd+
+  target 202 FKCDQCDY 209
+             68*****9 PP
+
+  == domain 7  score: 6.5 bits;  conditional E-value: 0.0092
+    C1_3  13 gpfYsCseCd 22 
+               +Y Cs Cd
+  target 227 EKPYACSHCD 236
+             469******9 PP
+
+  == domain 8  score: 0.0 bits;  conditional E-value: 0.94
+    C1_3   1 ktCdaCgl 8  
+             ++C+ Cg+
+  target 262 FVCSKCGK 269
+             45666665 PP
+
+>> CxxC_CxxC_SSSS  Zinc ribbon domain
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -0.4   4.1       1.2     1e+03      24      33 ..      26      35 ..       1      39 [. 0.63
+   2 ?   -1.9   2.8       3.6   3.1e+03       6      18 ..      58      70 ..      57      96 .. 0.65
+   3 ?   -1.4   5.5       2.5   2.2e+03       8      33 ..     176     208 ..     175     217 .. 0.50
+   4 ?    4.9   0.7     0.026        22       6      17 ..     230     241 ..     229     246 .. 0.86
+   5 ?   12.9   0.3   8.1e-05     0.069       6      25 ..     262     282 ..     261     286 .. 0.84
+
+  Alignments for each domain:
+  == domain 1  score: -0.4 bits;  conditional E-value: 1.2
+  CxxC_CxxC_SSSS 24 ddeteCPeCg 33
+                      + +CP+C 
+          target 26 TRPHKCPDCD 35
+                    5678899985 PP
+
+  == domain 2  score: -1.9 bits;  conditional E-value: 3.6
+  CxxC_CxxC_SSSS  6 YrCekCgkefevl 18
+                    ++C+ C+    ++
+          target 58 FKCSMCDYASVEV 70
+                    7888886544443 PP
+
+  == domain 3  score: -1.4 bits;  conditional E-value: 2.5
+  CxxC_CxxC_SSSS   8 CekCgkefevl......qsisd.ddeteCPeCg 33 
+                     C++C+ +f ++      q+ ++ ++  +C +C 
+          target 176 CRYCDAVFHERyaliqhQKSHKnEKRFKCDQCD 208
+                     777766665531112214444445555555554 PP
+
+  == domain 4  score: 4.9 bits;  conditional E-value: 0.026
+  CxxC_CxxC_SSSS   6 YrCekCgkefev 17 
+                     Y C+ C+k+f +
+          target 230 YACSHCDKTFRQ 241
+                     99*******976 PP
+
+  == domain 5  score: 12.9 bits;  conditional E-value: 8.1e-05
+  CxxC_CxxC_SSSS   6 YrCekCgkefevlqsisd.dd 25 
+                     + C+kCgk+f+ + ++++ +d
+          target 262 FVCSKCGKTFTRRNTMARhAD 282
+                     89************9998544 PP
+
+>> GAGA  GAGA factor
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -0.8   0.1       1.3   1.1e+03      27      45 ..       3      21 ..       2      28 .. 0.84
+   2 ?    4.2   0.4     0.033        29      23      49 ..      27      53 ..       8      59 .. 0.84
+   3 ?    3.7   0.2     0.047        40      15      44 ..      48      77 ..      37      81 .. 0.76
+   4 ?    7.5   0.4    0.0032       2.7      20      47 ..      81     108 ..      71     114 .. 0.79
+   5 ?    4.4   0.1      0.03        26      11      37 ..     160     186 ..     150     195 .. 0.75
+   6 ?    0.9   0.1      0.37   3.2e+02       6      43 ..     183     220 ..     180     224 .. 0.75
+   7 ?    4.4   0.2      0.03        26      15      44 ..     220     249 ..     205     254 .. 0.78
+
+  Alignments for each domain:
+  == domain 1  score: -0.8 bits;  conditional E-value: 1.3
+            -TTT--EESSHHHHHHHHH CS
+    GAGA 27 CPiCqAviRqsRnLRRHLE 45
+            C +C    R    LR HL+
+  target  3 CHLCGRAFRTVTLLRNHLN 21
+            88899999999999***97 PP
+
+  == domain 2  score: 4.2 bits;  conditional E-value: 0.033
+            --EE-TTT--EESSHHHHHHHHHHHTT CS
+    GAGA 23 qPAtCPiCqAviRqsRnLRRHLELRHF 49
+             P  CP C      s  L RH   +H 
+  target 27 RPHKCPDCDMAFVTSGELVRHRRYKHT 53
+            7999*****************999884 PP
+
+  == domain 3  score: 3.7 bits;  conditional E-value: 0.047
+            -CCCCTTS--EE-TTT.--EESSHHHHHHHH CS
+    GAGA 15 iksksqsEqPAtCPiC.qAviRqsRnLRRHL 44
+             + k   E+P  C +C +A +  s  L+RH+
+  target 48 RRYKHTHEKPFKCSMCdYASVEVS-KLKRHI 77
+            5678889*********65666666.588886 PP
+
+  == domain 4  score: 7.5 bits;  conditional E-value: 0.0032
+             TTS--EE-TTT--EESSHHHHHHHHHHH CS
+    GAGA  20 qsEqPAtCPiCqAviRqsRnLRRHLELR 47 
+               E P  C +C    R    L+RH+   
+  target  81 TGERPFQCSLCSYASRDTYKLKRHMRTH 108
+             369*********************9755 PP
+
+  == domain 5  score: 4.4 bits;  conditional E-value: 0.03
+             -----CCCCTTS--EE-TTT--EESSH CS
+    GAGA  11 gllkiksksqsEqPAtCPiCqAviRqs 37 
+             g+   k+ s  Eq   C  C Av    
+  target 160 GVSLRKQSSYIEQGKKCRYCDAVFHER 186
+             66666788899************8765 PP
+
+  == domain 6  score: 0.9 bits;  conditional E-value: 0.37
+             -S--------CCCCTTS--EE-TTT--EESSHHHHHHH CS
+    GAGA   6 ikrkdgllkiksksqsEqPAtCPiCqAviRqsRnLRRH 43 
+             ++++ +l++ +   + E+   C  C    Rq R +  H
+  target 183 FHERYALIQHQKSHKNEKRFKCDQCDYASRQERHMIMH 220
+             555556666666667899999****9999**9987555 PP
+
+  == domain 7  score: 4.4 bits;  conditional E-value: 0.03
+             -CCCCTTS--EE-TTT--EESSHHHHHHHH CS
+    GAGA  15 iksksqsEqPAtCPiCqAviRqsRnLRRHL 44 
+              k     E+P  C  C    Rq   L  H 
+  target 220 HKRTHTGEKPYACSHCDKTFRQKQLLDMHF 249
+             45556689**************99888876 PP
+
+>> HTH_18  Helix-turn-helix domain
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -0.8   0.1       1.8   1.6e+03       2      25 ..       6      29 ..       5      31 .. 0.76
+   2 ?   -2.7   0.0       6.8   5.8e+03      25      38 ..      42      55 ..      39      56 .. 0.78
+   3 ?    5.5   0.0     0.019        16       1      26 [.      62      87 ..      62      88 .. 0.91
+   4 ?    4.7   0.0     0.034        29       1      35 [.      90     125 ..      90     143 .. 0.80
+   5 ?   -3.2   0.0       9.8   8.4e+03      61      75 ..     215     229 ..     208     231 .. 0.69
+
+  Alignments for each domain:
+  == domain 1  score: -0.8 bits;  conditional E-value: 1.8
+  HTH_18  2 aaalgvsrrtLsrlfkeefgltpk 25
+            + ++  + + L++++++++g+ p+
+  target  6 CGRAFRTVTLLRNHLNTHTGTRPH 29
+            566666777899999999999987 PP
+
+  == domain 2  score: -2.7 bits;  conditional E-value: 6.8
+  HTH_18 25 keylrrlRlerarr 38
+             e++r++R ++ ++
+  target 42 GELVRHRRYKHTHE 55
+            68999999998875 PP
+
+  == domain 3  score: 5.5 bits;  conditional E-value: 0.019
+  HTH_18  1 laaalgvsrrtLsrlfkeefgltpke 26
+            +++++ v+ ++L r+++ ++g  p +
+  target 62 MCDYASVEVSKLKRHIRSHTGERPFQ 87
+            58999****************99976 PP
+
+  == domain 4  score: 4.7 bits;  conditional E-value: 0.034
+  HTH_18   1 laaalgvsrrtLsrlfkeefg.ltpkeylrrlRler 35 
+             l++++     +L r+ +++ g +++ +y+++ R+ +
+  target  90 LCSYASRDTYKLKRHMRTHSGeKPYEAYINHARFTQ 125
+             67778888899*********9445567999999877 PP
+
+  == domain 5  score: -3.2 bits;  conditional E-value: 9.8
+  HTH_18  61 srFsrafkklfgetP 75 
+              +++ + + ++ge P
+  target 215 RHMIMHKRTHTGEKP 229
+             566667777777776 PP
+
+>> zf-C2HC_2  zinc-finger of a C2HC-type
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    6.9   0.1    0.0052       4.5       4      14 ..       2      12 ..       1      17 [. 0.84
+   2 ?   -1.0   0.2       1.6   1.4e+03       4       9 ..      87      92 ..      86      92 .. 0.85
+   3 ?   -1.6   0.5       2.5   2.1e+03       4       8 ..     175     179 ..     174     180 .. 0.84
+   4 ?    4.8   0.0     0.024        20       5      17 ..     232     244 ..     231     246 .. 0.89
+   5 ?    6.3   0.8    0.0082         7       5      24 ..     264     284 ..     262     285 .. 0.76
+
+  Alignments for each domain:
+  == domain 1  score: 6.9 bits;  conditional E-value: 0.0052
+  zf-C2HC_2  4 pCpiCgRsFnp 14
+               +C  CgR F +
+     target  2 KCHLCGRAFRT 12
+               7*******975 PP
+
+  == domain 2  score: -1.0 bits;  conditional E-value: 1.6
+  zf-C2HC_2  4 pCpiCg 9 
+               +C  C+
+     target 87 QCSLCS 92
+               9****6 PP
+
+  == domain 3  score: -1.6 bits;  conditional E-value: 2.5
+  zf-C2HC_2   4 pCpiC 8  
+                +C++C
+     target 175 KCRYC 179
+                7***9 PP
+
+  == domain 4  score: 4.8 bits;  conditional E-value: 0.024
+  zf-C2HC_2   5 CpiCgRsFnpdrl 17 
+                C +C  +F ++ l
+     target 232 CSHCDKTFRQKQL 244
+                ********99876 PP
+
+  == domain 5  score: 6.3 bits;  conditional E-value: 0.0082
+  zf-C2HC_2   5 CpiCgRsF.npdrlakHepvC 24 
+                C +Cg +F      a+H+  C
+     target 264 CSKCGKTFtRRNTMARHADNC 284
+                ********7766666666555 PP
+
+>> Zn_Tnp_IS1595  Transposase zinc-ribbon domain
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -1.3   3.1       2.1   1.8e+03      35      43 ..      26      34 ..       1      37 [. 0.54
+   2 ?    4.1   4.7     0.042        36      19      45 ..      29      65 ..      16      66 .. 0.70
+   3 ?    7.3   4.4    0.0043       3.6      12      45 ..      47      93 ..      43      94 .. 0.84
+   4 ?    6.5   3.9    0.0073       6.3      17      45 ..     172     209 ..     169     210 .. 0.83
+   5 ?    5.8   0.3     0.012        10      32      45 ..     224     237 ..     214     238 .. 0.77
+   6 ?    6.7   0.3    0.0068       5.8      16      27 ..     259     270 ..     249     285 .. 0.77
+
+  Alignments for each domain:
+  == domain 1  score: -1.3 bits;  conditional E-value: 2.1
+  Zn_Tnp_IS1595 35 rglyqCkeC 43
+                    + ++C +C
+         target 26 TRPHKCPDC 34
+                   444444444 PP
+
+  == domain 2  score: 4.1 bits;  conditional E-value: 0.042
+  Zn_Tnp_IS1595 19 fvCphCgsr.....eayrikt.....rglyqCkeCrk 45
+                   ++Cp C  +     e+ r ++     ++ ++C+ C +
+         target 29 HKCPDCDMAfvtsgELVRHRRykhthEKPFKCSMCDY 65
+                   56999987776444333333366677*********75 PP
+
+  == domain 3  score: 7.3 bits;  conditional E-value: 0.0043
+  Zn_Tnp_IS1595 12 alrWpng....fvCphCgsr..eayrikt.......rglyqCkeCrk 45
+                   ++r++++    f+C  C  +  e+ ++k+       ++ +qC+ C++
+         target 47 HRRYKHThekpFKCSMCDYAsvEVSKLKRhirshtgERPFQCSLCSY 93
+                   5666666666799******999*********************9986 PP
+
+  == domain 4  score: 6.5 bits;  conditional E-value: 0.0073
+  Zn_Tnp_IS1595  17 ngfvCphCgsr...eayrikt......rglyqCkeCrk 45 
+                    +g +C +C      ++  i++      +++++C +C +
+         target 172 QGKKCRYCDAVfheRYALIQHqkshknEKRFKCDQCDY 209
+                    5778*****99995566666699*************75 PP
+
+  == domain 5  score: 5.8 bits;  conditional E-value: 0.012
+  Zn_Tnp_IS1595  32 iktrglyqCkeCrk 45 
+                     ++++ y C++C k
+         target 224 HTGEKPYACSHCDK 237
+                    455999******88 PP
+
+  == domain 6  score: 6.7 bits;  conditional E-value: 0.0068
+  Zn_Tnp_IS1595  16 pngfvCphCgsr 27 
+                    p  fvC +Cg++
+         target 259 PAAFVCSKCGKT 270
+                    6679******86 PP
+
+>> PyrI_C  Aspartate carbamoyltransferase regulatory chain, metal binding domain
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -0.4   0.0       0.8   6.8e+02      37      46 ..       2      11 ..       1      15 [. 0.85
+   2 ?    0.7   0.1      0.37   3.2e+02      20      43 ..      43      65 ..      37      70 .. 0.72
+   3 ?    7.0   0.7     0.004       3.4      36      47 ..     174     185 ..     164     190 .. 0.83
+   4 ?    1.2   0.9      0.25   2.1e+02      30      46 ..     196     212 ..     190     220 .. 0.80
+   5 ?    5.1   0.2     0.016        14      31      50 ..     225     244 ..     212     246 .. 0.79
+   6 ?    2.0   0.0      0.15   1.3e+02      33      49 ..     259     275 ..     249     278 .. 0.83
+
+  Alignments for each domain:
+  == domain 1  score: -0.4 bits;  conditional E-value: 0.8
+            EETTT--EEC CS
+  PyrI_C 37 kCkYCekvis 46
+            kC+ C++ ++
+  target  2 KCHLCGRAFR 11
+            8*****9987 PP
+
+  == domain 2  score: 0.7 bits;  conditional E-value: 0.37
+            TS-.--EEEEETTTTEEEETTT-- CS
+  PyrI_C 20 EpvksrFkvkskeplklkCkYCek 43
+            E v+ r + k+++++ +kC+ C+ 
+  target 43 ELVRHRRY-KHTHEKPFKCSMCDY 65
+            55555443.56699999***9985 PP
+
+  == domain 3  score: 7.0 bits;  conditional E-value: 0.004
+             EEETTT--EECH CS
+  PyrI_C  36 lkCkYCekvise 47 
+              kC+YC+ v+ e
+  target 174 KKCRYCDAVFHE 185
+             59*******987 PP
+
+  == domain 4  score: 1.2 bits;  conditional E-value: 0.25
+             ETTTTEEEETTT--EEC CS
+  PyrI_C  30 skeplklkCkYCekvis 46 
+             +k+++++kC+ C+   +
+  target 196 HKNEKRFKCDQCDYASR 212
+             67999*******97655 PP
+
+  == domain 5  score: 5.1 bits;  conditional E-value: 0.016
+             TTTTEEEETTT--EECHHCH CS
+  PyrI_C  31 keplklkCkYCekviseeei 50 
+             + ++ + C+ C+k++++++ 
+  target 225 TGEKPYACSHCDKTFRQKQL 244
+             4567789********99875 PP
+
+  == domain 6  score: 2.0 bits;  conditional E-value: 0.15
+             TTEEEETTT--EECHHC CS
+  PyrI_C  33 plklkCkYCekviseee 49 
+             p  + C+ C+k++++++
+  target 259 PAAFVCSKCGKTFTRRN 275
+             66789********9865 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query sequence(s):                         1  (287 residues searched)
+Target model(s):                       13672  (2396357 nodes)
+Passed MSV filter:                       711  (0.0520041); expected 273.4 (0.02)
+Passed bias filter:                      243  (0.0177736); expected 273.4 (0.02)
+Passed Vit filter:                        49  (0.00358397); expected 13.7 (0.001)
+Passed Fwd filter:                        38  (0.0027794); expected 0.1 (1e-05)
+Initial search space (Z):              13672  [actual number of targets]
+Domain search space  (domZ):              16  [number of targets reported over threshold]
+# CPU time: 0.28u 0.14s 00:00:00.42 Elapsed: 00:00:03.87
+# Mc/sec: 177.71
+//
+[ok]

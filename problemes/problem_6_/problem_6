@@ -1,0 +1,34 @@
+
+problem
+
+a)0.5 pts
+b)0.5 pts
+c)0.5 pts
+d)0.5 pts
+e)0.5 pts
+f)1.0 pts 
+g)1.0 pts
+
+
+PROBLEM
+
+We want to construct the model of CTCF. 
+Some collegaues of the crystallogrphy department have made an almost complete model based on the structures of 5t0u and 5yel (from PDB).
+We must construct this model to analyze a problem in our sequence (see at the bottom).
+
+Answer the following questions:
+
+a) What's the fold of this protein according to SCOP
+b) What's the function of this protein and the PFAM domains (bring them and name them as p43b.hmm)
+c) Align the sequence of this problem and the sequences of the templates 5t0u and 5yel. Name the alignment p43c.aln.
+d) Construct a model of the sequence problem and name it p43c.pdb
+e) Show the pseudo-energy profile of the model with ProSA. Make an image and name it p43e.jpg (or pdf)
+f) Do you think the sequence problem is correct to maintain a structure similar to CTCF for all domains? Explain why?. 
+   You can show with one or two images the problem (name them p43f1.jpg, p43f2.jpg, etc)
+g) Obtain the structure bound with all other non-peptide molecules, such as DNA. 
+   Do you thing the sequence can still bind DNA? (name the model p43g.pdb)
+
+SEQUENCE PROBLEM:
+
+HKCHLCGRAFRTVTLLRNHLNTHTGTRPHKCPDCDMAFVTSGELVRHRRYKHTHEKPFKCSMCDYASVEVSKLKRHIRSHTGERPFQCSLCSYASRDTYKLKRHMRTHSGEKPYEAYINHARFTQSGTMKMNILQKSTENVAKFHDPHSDTVIARKSDLGVSLRKQSSYIEQGKKCRYCDAVFHERYALIQHQKSHKNEKRFKCDQCDYASRQERHMIMHKRTHTGEKPYACSHCDKTFRQKQLLDMHFKRYHDPNFVPAAFVCSKCGKTFTRRNTMARHADNCAGP
+
