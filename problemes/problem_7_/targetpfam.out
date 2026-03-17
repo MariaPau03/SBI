@@ -1,0 +1,61 @@
+# hmmscan :: search sequence(s) against a profile database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query sequence file:             target.fa
+# target HMM database:             /mnt/NFS_UPF/soft/databases/pfam-3/Pfam-A.hmm
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       problema40  [L=245]
+Scores for complete sequence (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Model    Description
+    ------- ------ -----    ------- ------ -----   ---- --  -------- -----------
+      3e-74  249.0   1.6    5.5e-63  212.1   0.1    2.1  2  TIM       Triosephosphate isomerase
+
+
+Domain annotation for each model (and alignments):
+>> TIM  Triosephosphate isomerase
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  212.1   0.1     4e-67   5.5e-63      77     244 .]       2     175 ..       1     175 [. 0.95
+   2 !   36.5   0.2   1.7e-13   2.3e-09       2      63 ..     185     245 .]     184     245 .] 0.95
+
+  Alignments for each domain:
+  == domain 1  score: 212.1 bits;  conditional E-value: 4e-67
+                 HHHHHHTT--EEEESEHHHHHHS.-BHHHHHHHHHHHHHTT-EEEEEESCEHHHHHTTHHHHHHHHHHHHHHHTSSTGGGGGEEEEEEEGGG------H CS
+         TIM  77 aemlkdlgvkyviiGHSErrqyfgetdeevakkvkaalkagltpvlCvgEtleereagktkevlkeqlkailekldeealknliiAYePvwAIGtgkva 175
+                 + +lkd+gv+++++GHSErr+y+get+e+va+kv+aa+++g++++ C+gEtl+ere+g+t+ v+ +q++ai +kl+++++++++iAYePvwAIGtgkva
+  problema40   2 LPILKDFGVNWIVLGHSERRAYYGETNEIVADKVAAAVASGFMVIACIGETLQERESGRTAVVVLTQIAAIAKKLKKADWAKVVIAYEPVWAIGTGKVA 100
+                 678************************************************************************************************ PP
+
+                 HHHHHHHHHH.......HHHHHHHHHTHHHHHCCSEEE------TTTHHHHHTSTT----EE-HGTTSCHHHHHHH CS
+         TIM 176 tpeeaqevha.......airkelaekfskevaeevrilyGGsvnaenakellkqkdvdGlLvGgaslkaesflaii 244
+                 tp++aqe+ha        ir+++++k++++va e+rilyGGsvn +na++l++q dv+G+LvGgaslk+e f++ii
+  problema40 101 TPQQAQEAHAlahsslaLIRSWVSSKIGADVAGELRILYGGSVNGKNARTLYQQRDVNGFLVGGASLKPE-FVDII 175
+                 ********96333333369*************************************************98.99997 PP
+
+  == domain 2  score: 36.5 bits;  conditional E-value: 1.7e-13
+                 EEEEEETT-S-HHHHHHHHHHHHCCCHHTTTEEEEEEE-GGGHHHHHHHC.STTSEEEES-- CS
+         TIM   2 iiigNwKmnktleeakellkkllaaklkeekvevvvappflyLesvkkalkeskikvgaQnv 63 
+                 i ++NwK+n+++++++el++ + ++++++ +v++vva  f++L+ +k++l++ k+ ++aQn+
+  problema40 185 IAAANWKCNGSQQSLSELIDLFNSTSINH-DVQCVVASTFVHLAMTKERLSHPKFVIAAQNA 245
+                 789******************88888888.******************************95 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query sequence(s):                         1  (245 residues searched)
+Target model(s):                       13672  (2396357 nodes)
+Passed MSV filter:                       483  (0.0353277); expected 273.4 (0.02)
+Passed bias filter:                      358  (0.0261849); expected 273.4 (0.02)
+Passed Vit filter:                        26  (0.0019017); expected 13.7 (0.001)
+Passed Fwd filter:                         1  (7.31422e-05); expected 0.1 (1e-05)
+Initial search space (Z):              13672  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.14u 0.14s 00:00:00.28 Elapsed: 00:00:02.85
+# Mc/sec: 206.00
+//
+[ok]
