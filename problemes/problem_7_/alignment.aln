@@ -1,0 +1,32 @@
+CLUSTAL 2.1 multiple sequence alignment
+
+
+2v5l_A          SKPQPIAAANWKCNGSQQSLSELIDLFNSTSINHDVQCVVASTFVHLAMTKERLSHPKFV
+6tim_A          SKPQPIAAANWKCNGSQQSLSELIDLFNSTSINHDVQCVVASTFVHLAMTKERLSHPKFV
+problema40      ------------------------------------------------------------
+                                                                            
+
+2v5l_A          IAAQNAIAKSGAFTGEVSLPILKDFGVNWIVLGHSERRAYYGETNEIVADKVAAAVASGF
+6tim_A          IAAQNAIAKSGAFTGEVSLPILKDFGVNWIVLGHSERRAYYGETNEIVADKVAAAVASGF
+problema40      -----------------SLPILKDFGVNWIVLGHSERRAYYGETNEIVADKVAAAVASGF
+                                 *******************************************
+
+2v5l_A          MVIACIGETLQERESGRTAVVVLTQIAAIAKKLKKADWAKVVIAYEPVWAIGTGKVATPQ
+6tim_A          MVIACIGETLQERESGRTAVVVLTQIAAIAKKLKKADWAKVVIAYEPVWAIGTGKVATPQ
+problema40      MVIACIGETLQERESGRTAVVVLTQIAAIAKKLKKADWAKVVIAYEPVWAIGTGKVATPQ
+                ************************************************************
+
+2v5l_A          QAQEAH-------ALIRSWVSSKIGADVAGELRILYGGSVNGKNARTLYQQRDVNGFLVG
+6tim_A          QAQEAH-------ALIRSWVSSKIGADVAGELRILYGGSVNGKNARTLYQQRDVNGFLVG
+problema40      QAQEAHALAHSSLALIRSWVSSKIGADVAGELRILYGGSVNGKNARTLYQQRDVNGFLVG
+                ******       ***********************************************
+
+2v5l_A          GASLKPEFVDIIKATQ--------------------------------------------
+6tim_A          GASLKPEFVDIIKATQ--------------------------------------------
+problema40      GASLKPEFVDIIKATQSKPQPIAAANWKCNGSQQSLSELIDLFNSTSINHDVQCVVASTF
+                ****************                                            
+
+2v5l_A          ----------------------
+6tim_A          ----------------------
+problema40      VHLAMTKERLSHPKFVIAAQNA
+                                      

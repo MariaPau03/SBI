@@ -1,0 +1,145 @@
+
+Obtain the largest sequence modelled of the problem and answer the following questions 
+ (modeling half reduces to half all scores, less than 1/4 modelled is zero)
+
+ a) what's the SCOP fold?
+
+
+ __b) what's the PFAM domain?__
+
+ `hmmscan /mnt/NFS_UPF/soft/databases/pfam-3/Pfam-A.hmm target.fa > targetpfam.out`
+
+ ```
+Query:       problema40  [L=245]
+Scores for complete sequence (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Model    Description
+    ------- ------ -----    ------- ------ -----   ---- --  -------- -----------
+      3e-74  249.0   1.6    5.5e-63  212.1   0.1    2.1  2  TIM       Triosephosphate isomerase
+```
+
+ c) Obtain the alignment between the sequence and the templates to produce the best model of the whole sequence (with more than 60% residues) and explain how it was obtained (name the alignment p40c.ali)
+
+ Usas __BLAST__ cuando esperas encontrar homólogos con una identidad de secuencia alta (generalmente >30−40%). __Jackhmmer/psi-blast__ se usan cuando necesitas cubrir una proteína larga con múltiples dominios (como los 11 dedos de zinc de CTCF). __Perfiles HMM__ se usan cuando buscas homólogos muy lejanos donde la secuencia ha cambiado totalmente, pero la estructura 3D se mantiene igual.
+
+`jackhmmer target.fa /mnt/NFS_UPF/soft/databases/blastdat/uniprot_sprot.fasta > target_jack.out`
+
+
+`blastp -query target.fa -db /mnt/NFS_UPF/soft/databases/blastdat/pdb_seq > target_blastp.out`
+
+Taking into acount both results, I'll stay with these homologs:
+ 
+
+- 6tim_B
+
+- 2v5l_B
+
+`PDBtoSplitChain.pl -i 6TIM.pdb -o 6tim_`
+
+`PDBtoSplitChain.pl -i 2V5L.pdb -o 2v5l_`
+
+```
+cat target.fa > alignment.fa
+cat 2v5l_A.fa >> alignment.fa
+cat 6tim_A.fa >> alignment.fa
+
+
+clustalw alignment.fa
+
+
+aconvertMod2.pl -in c -out p <alignment.aln > alignment.pir
+```
+
+Aquest aliniament mostr aun problema de permutació, on la seq problema ha sigut tallada en un punt idferent al dels templates. Tal y com està, modeller intenta modelr la seq `SLPIL...`del target contra `SKP...` dels templates, lo qual és incorrecte perquè són parts diferents ed la proteïna. 
+```
+>P1;2v5l_A
+structureX:2v5l_A:1: : 249  : :  : : -1.00 :-1.00
+SKPQPIAAANWKCNGSQQSLSELIDLFNSTSINHDVQCVVASTFVHLAMTKERLSHPKFV
+IAAQNAIAKSGAFTGEVSLPILKDFGVNWIVLGHSERRAYYGETNEIVADKVAAAVASGF
+MVIACIGETLQERESGRTAVVVLTQIAAIAKKLKKADWAKVVIAYEPVWAIGTGKVATPQ
+QAQEAH-------ALIRSWVSSKIGADVAGELRILYGGSVNGKNARTLYQQRDVNGFLVG
+GASLKPEFVDIIKATQ--------------------------------------------
+----------------------*
+>P1;6tim_A
+structureX:6tim_A:1: : 249  : :  : : -1.00 :-1.00
+SKPQPIAAANWKCNGSQQSLSELIDLFNSTSINHDVQCVVASTFVHLAMTKERLSHPKFV
+IAAQNAIAKSGAFTGEVSLPILKDFGVNWIVLGHSERRAYYGETNEIVADKVAAAVASGF
+MVIACIGETLQERESGRTAVVVLTQIAAIAKKLKKADWAKVVIAYEPVWAIGTGKVATPQ
+QAQEAH-------ALIRSWVSSKIGADVAGELRILYGGSVNGKNARTLYQQRDVNGFLVG
+GASLKPEFVDIIKATQ--------------------------------------------
+----------------------*
+>P1;problema40
+structureX:problema40:1: : 245  : :  : : -1.00 :-1.00
+------------------------------------------------------------
+-----------------SLPILKDFGVNWIVLGHSERRAYYGETNEIVADKVAAAVASGF
+MVIACIGETLQERESGRTAVVVLTQIAAIAKKLKKADWAKVVIAYEPVWAIGTGKVATPQ
+QAQEAHALAHSSLALIRSWVSSKIGADVAGELRILYGGSVNGKNARTLYQQRDVNGFLVG
+GASLKPEFVDIIKATQSKPQPIAAANWKCNGSQQSLSELIDLFNSTSINHDVQCVVASTF
+VHLAMTKERLSHPKFVIAAQNA*
+
+```
+
+Tu secuencia problema40 es lo que llamamos una permutación circular. Imagina que la proteína es un collar de perlas cerrado en círculo:
+
+- La naturaleza (el template) decidió "cortar" el collar en la perla 1.
+
+- Tu problema40 es el mismo collar, pero alguien lo "cortó" en la perla 150.
+
+Como el barril TIM es una estructura cerrada (circular), el orden en el que escribas la secuencia no cambia la forma final de la proteína, pero sí cambia cómo se lee el archivo. Al poner los guiones en el target, simplemente estás "girando" tu secuencia para que la perla 150 de tu target coincida con la perla 150 del molde.
+
+Para que el modelo sea funcional y cubra más del 60%, lo que se hace en estos casos de permutación es:
+
+Alinear el bloque más largo posible.
+
+Aceptar que los extremos (el "principio" que debería ir al "final") se modelarán como loops (lazos) o regiones sin molde directo, O usar varios moldes.
+
+
+Este es el pir file finalmente modificado:
+
+```
+>P1;2v5l_A
+structureX:2v5l_A:1: : 249  : :  : : -1.00 :-1.00
+------------------------------------------------------------
+SKPQPIAAANWKCNGSQQSLSELIDLFNSTSINHDVQCVVASTFVHLAMTKERLSHPKFV
+IAAQNAIAKSGAFTGEVSLPILKDFGVNWIVLGHSERRAYYGETNEIVADKVAAAVASGF
+MVIACIGETLQERESGRTAVVVLTQIAAIAKKLKKADWAKVVIAYEPVWAIGTGKVATPQ
+QAQEAH-------ALIRSWVSSKIGADVAGELRILYGGSVNGKNARTLYQQRDVNGFLVG
+GASLKPEFVDIIKATQ------*
+>P1;6tim_A
+structureX:6tim_A:1: : 249  : :  : : -1.00 :-1.00
+------------------------------------------------------------
+SKPQPIAAANWKCNGSQQSLSELIDLFNSTSINHDVQCVVASTFVHLAMTKERLSHPKFV
+IAAQNAIAKSGAFTGEVSLPILKDFGVNWIVLGHSERRAYYGETNEIVADKVAAAVASGF
+MVIACIGETLQERESGRTAVVVLTQIAAIAKKLKKADWAKVVIAYEPVWAIGTGKVATPQ
+QAQEAH-------ALIRSWVSSKIGADVAGELRILYGGSVNGKNARTLYQQRDVNGFLVG
+GASLKPEFVDIIKATQ------*
+>P1;problema40
+structureX:problema40:1: : 245  : :  : : -1.00 :-1.00
+------------------------------------------------------------
+-----------------SLPILKDFGVNWIVLGHSERRAYYGETNEIVADKVAAAVASGF
+MVIACIGETLQERESGRTAVVVLTQIAAIAKKLKKADWAKVVIAYEPVWAIGTGKVATPQ
+QAQEAHALAHSSLALIRSWVSSKIGADVAGELRILYGGSVNGKNARTLYQQRDVNGFLVG
+GASLKPEFVDIIKATQSKPQPIAAANWKCNGSQQSLSELIDLFNSTSINHDVQCVVASTF
+VHLAMTKERLSHPKFVIAAQNA*
+```
+
+Donde basicamente he alineado `SLPIL...`provocando que haya mas del 60% de seq alineada y que el final del targetq ue es `SKPQ...` sea el inicio de los templates. 
+
+ d) Obtain the statistic potential profile of Prosa and compare it with the template (name the image p40d_fig1). Is there any problematic region? identify it and show an image p40d_fig2 (use extension png of jpg) 
+ e) Obtain the alignment between the sequence and the templates to produce the best model of the whole sequence (with more than 60% residues) using a HMM. Name the HMM as p40e.hmm
+ f) Superpose the model with the template and name the file p40f.pdb
+ g) Calculate the secondary structure of your model (file p40g.dssp) and compare it with the predicted secondary structure in an easy to read alignment (figure or text file p40g_fig1) (use extension png, jpeg or txt)
+ h) If there is a problem, modify the model. Name the new model p40h.pdb
+ i) Compare with pseudo-energies to proof that the model is improved (show it in figure p40i_fig1 ) and show the modification of the structure of the new model in figure p40i_fig2 (use extensions png, jpeg or pdf)
+
+
+
+SEQUENCE PROBLEM
+
+
+>problema40 
+SLPILKDFGVNWIVLGHSERRAYYGETNEIVADKVAAAVASGFMVIACIGETLQERESGRTAVVVLTQIAAIAKKLKKAD
+WAKVVIAYEPVWAIGTGKVATPQQAQEAHALAHSSLALIRSWVSSKIGADVAGELRILYGGSVNGKNARTLYQQRDVNGFLVGGASL
+KPEFVDIIKATQSKPQPIAAANWKCNGSQQSLSELIDLFNSTSINHDVQCVVASTFVHLAMTKERLSHPKFVIAAQNA
+
+
