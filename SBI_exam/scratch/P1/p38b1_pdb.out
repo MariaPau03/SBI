@@ -1,0 +1,260 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  p38b1.hmm
+# target sequence database:        /mnt/NFS_UPF/soft/databases/blastdat/pdb_seq
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       Myc-LZ  [M=32]
+Accession:   PF02344.10
+Description: Myc leucine zipper domain
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence Description
+    ------- ------ -----    ------- ------ -----   ---- --  -------- -----------
+    3.2e-14   55.2  12.7    3.5e-14   55.1  12.7    1.0  1  1a93_A    mol:protein length:32  MYC PROTO-ONCOGENE PROTEIN
+    3.2e-14   55.2  12.7    3.5e-14   55.1  12.7    1.0  1  2a93_A    mol:protein length:32  C-MYC-MAX HETERODIMERIC LEUC
+    8.2e-14   53.9  10.5    8.2e-14   53.9  10.5    2.2  2  1nkp_A    mol:protein length:88  Myc proto-oncogene protein
+    8.2e-14   53.9  10.5    8.2e-14   53.9  10.5    2.2  2  1nkp_D    mol:protein length:88  Myc proto-oncogene protein
+  ------ inclusion threshold ------
+      0.085   15.5   1.1      0.085   15.5   1.1    2.2  3  1nwq_A    mol:protein length:62  CCAAT/enhancer binding prote
+      0.085   15.5   1.1      0.085   15.5   1.1    2.2  3  1nwq_C    mol:protein length:62  CCAAT/enhancer binding prote
+       0.29   13.8   0.3       0.29   13.8   0.3    1.0  1  2or9_P    mol:protein length:11  synthetic epitope peptide of
+        3.5   10.3   3.0        7.1    9.3   3.0    1.4  1  1mqr_A    mol:protein length:679  ALPHA-D-GLUCURONIDASE
+        3.5   10.3   3.0        7.1    9.3   3.0    1.4  1  1mqp_A    mol:protein length:679  alpha-D-glucuronidase
+        3.5   10.3   3.0        7.1    9.3   3.0    1.4  1  1k9e_A    mol:protein length:679  alpha-D-glucuronidase
+        3.5   10.3   3.0        7.1    9.3   3.0    1.4  1  1k9f_A    mol:protein length:679  alpha-D-glucuronidase
+        3.5   10.3   3.0        7.1    9.3   3.0    1.4  1  1k9d_A    mol:protein length:679  alpha-D-glucuronidase
+        3.5   10.3   3.0        7.1    9.3   3.0    1.4  1  1l8n_A    mol:protein length:679  ALPHA-D-GLUCURONIDASE
+        3.5   10.3   3.0        7.1    9.3   3.0    1.4  1  1mqq_A    mol:protein length:679  ALPHA-D-GLUCURONIDASE
+
+
+Domain annotation for each sequence (and alignments):
+>> 1a93_A  mol:protein length:32  MYC PROTO-ONCOGENE PROTEIN
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   55.1  12.7   3.6e-18   3.5e-14       1      27 [.       6      32 .]       6      32 .] 0.99
+
+  Alignments for each domain:
+  == domain 1  score: 55.1 bits;  conditional E-value: 3.6e-18
+  Myc-LZ  1 adEqkLIaEKdlLRkRREQLKHKLEQL 27
+            a+EqkLI+E dlLRkRREQLKHKLEQL
+  1a93_A  6 AEEQKLISEEDLLRKRREQLKHKLEQL 32
+            8*************************9 PP
+
+>> 2a93_A  mol:protein length:32  C-MYC-MAX HETERODIMERIC LEUCINE ZIPPER
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   55.1  12.7   3.6e-18   3.5e-14       1      27 [.       6      32 .]       6      32 .] 0.99
+
+  Alignments for each domain:
+  == domain 1  score: 55.1 bits;  conditional E-value: 3.6e-18
+  Myc-LZ  1 adEqkLIaEKdlLRkRREQLKHKLEQL 27
+            a+EqkLI+E dlLRkRREQLKHKLEQL
+  2a93_A  6 AEEQKLISEEDLLRKRREQLKHKLEQL 32
+            8*************************9 PP
+
+>> 1nkp_A  mol:protein length:88  Myc proto-oncogene protein
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    2.0   0.6      0.15   1.4e+03      14      22 ..      15      23 ..      12      30 .. 0.81
+   2 !   53.9  10.5   8.6e-18   8.2e-14       1      27 [.      59      85 ..      59      86 .. 0.98
+
+  Alignments for each domain:
+  == domain 1  score: 2.0 bits;  conditional E-value: 0.15
+  Myc-LZ 14 RkRREQLKH 22
+            R+RR  LK 
+  1nkp_A 15 RQRRNELKR 23
+            99*****95 PP
+
+  == domain 2  score: 53.9 bits;  conditional E-value: 8.6e-18
+  Myc-LZ  1 adEqkLIaEKdlLRkRREQLKHKLEQL 27
+            a+EqkLI+E dlLRkRREQLKHKLEQL
+  1nkp_A 59 AEEQKLISEEDLLRKRREQLKHKLEQL 85
+            8*************************9 PP
+
+>> 1nkp_D  mol:protein length:88  Myc proto-oncogene protein
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    2.0   0.6      0.15   1.4e+03      14      22 ..      15      23 ..      12      30 .. 0.81
+   2 !   53.9  10.5   8.6e-18   8.2e-14       1      27 [.      59      85 ..      59      86 .. 0.98
+
+  Alignments for each domain:
+  == domain 1  score: 2.0 bits;  conditional E-value: 0.15
+  Myc-LZ 14 RkRREQLKH 22
+            R+RR  LK 
+  1nkp_D 15 RQRRNELKR 23
+            99*****95 PP
+
+  == domain 2  score: 53.9 bits;  conditional E-value: 8.6e-18
+  Myc-LZ  1 adEqkLIaEKdlLRkRREQLKHKLEQL 27
+            a+EqkLI+E dlLRkRREQLKHKLEQL
+  1nkp_D 59 AEEQKLISEEDLLRKRREQLKHKLEQL 85
+            8*************************9 PP
+
+>> 1nwq_A  mol:protein length:62  CCAAT/enhancer binding protein alpha
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -0.7   0.3         1   9.8e+03      14      18 ..       8      12 ..       3      15 .. 0.77
+   2 ?   -3.3   0.1       6.7   6.4e+04      14      18 ..      19      23 ..      18      26 .. 0.58
+   3 ?   15.5   1.1   8.9e-06     0.085       6      28 ..      39      61 ..      34      62 .] 0.92
+
+  Alignments for each domain:
+  == domain 1  score: -0.7 bits;  conditional E-value: 1
+  Myc-LZ 14 RkRRE 18
+            R RRE
+  1nwq_A  8 RVRRE 12
+            77888 PP
+
+  == domain 2  score: -3.3 bits;  conditional E-value: 6.7
+  Myc-LZ 14 RkRRE 18
+            Rk R 
+  1nwq_A 19 RKSRD 23
+            55554 PP
+
+  == domain 3  score: 15.5 bits;  conditional E-value: 8.9e-06
+  Myc-LZ  6 LIaEKdlLRkRREQLKHKLEQLR 28
+            L +  d LRkR EQL   L  LR
+  1nwq_A 39 LTSDNDRLRKRVEQLSRELDTLR 61
+            77999***********9999998 PP
+
+>> 1nwq_C  mol:protein length:62  CCAAT/enhancer binding protein alpha
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -0.7   0.3         1   9.8e+03      14      18 ..       8      12 ..       3      15 .. 0.77
+   2 ?   -3.3   0.1       6.7   6.4e+04      14      18 ..      19      23 ..      18      26 .. 0.58
+   3 ?   15.5   1.1   8.9e-06     0.085       6      28 ..      39      61 ..      34      62 .] 0.92
+
+  Alignments for each domain:
+  == domain 1  score: -0.7 bits;  conditional E-value: 1
+  Myc-LZ 14 RkRRE 18
+            R RRE
+  1nwq_C  8 RVRRE 12
+            77888 PP
+
+  == domain 2  score: -3.3 bits;  conditional E-value: 6.7
+  Myc-LZ 14 RkRRE 18
+            Rk R 
+  1nwq_C 19 RKSRD 23
+            55554 PP
+
+  == domain 3  score: 15.5 bits;  conditional E-value: 8.9e-06
+  Myc-LZ  6 LIaEKdlLRkRREQLKHKLEQLR 28
+            L +  d LRkR EQL   L  LR
+  1nwq_C 39 LTSDNDRLRKRVEQLSRELDTLR 61
+            77999***********9999998 PP
+
+>> 2or9_P  mol:protein length:11  synthetic epitope peptide of 9E10
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   13.8   0.3     3e-05      0.29       3      12 ..       1      10 [.       1      11 [] 0.94
+
+  Alignments for each domain:
+  == domain 1  score: 13.8 bits;  conditional E-value: 3e-05
+  Myc-LZ  3 EqkLIaEKdl 12
+            EqkLI+E dl
+  2or9_P  1 EQKLISEEDL 10
+            9******997 PP
+
+>> 1mqr_A  mol:protein length:679  ALPHA-D-GLUCURONIDASE
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    9.3   3.0   0.00075       7.1      12      24 ..     621     633 ..     617     637 .. 0.87
+
+  Alignments for each domain:
+  == domain 1  score: 9.3 bits;  conditional E-value: 0.00075
+  Myc-LZ  12 lLRkRREQLKHKL 24 
+             +LRkR EQLK K+
+  1mqr_A 621 QLRKRWEQLKGKI 633
+             9*********997 PP
+
+>> 1mqp_A  mol:protein length:679  alpha-D-glucuronidase
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    9.3   3.0   0.00075       7.1      12      24 ..     621     633 ..     617     637 .. 0.87
+
+  Alignments for each domain:
+  == domain 1  score: 9.3 bits;  conditional E-value: 0.00075
+  Myc-LZ  12 lLRkRREQLKHKL 24 
+             +LRkR EQLK K+
+  1mqp_A 621 QLRKRWEQLKGKI 633
+             9*********997 PP
+
+>> 1k9e_A  mol:protein length:679  alpha-D-glucuronidase
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    9.3   3.0   0.00075       7.1      12      24 ..     621     633 ..     617     637 .. 0.87
+
+  Alignments for each domain:
+  == domain 1  score: 9.3 bits;  conditional E-value: 0.00075
+  Myc-LZ  12 lLRkRREQLKHKL 24 
+             +LRkR EQLK K+
+  1k9e_A 621 QLRKRWEQLKGKI 633
+             9*********997 PP
+
+>> 1k9f_A  mol:protein length:679  alpha-D-glucuronidase
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    9.3   3.0   0.00075       7.1      12      24 ..     621     633 ..     617     637 .. 0.87
+
+  Alignments for each domain:
+  == domain 1  score: 9.3 bits;  conditional E-value: 0.00075
+  Myc-LZ  12 lLRkRREQLKHKL 24 
+             +LRkR EQLK K+
+  1k9f_A 621 QLRKRWEQLKGKI 633
+             9*********997 PP
+
+>> 1k9d_A  mol:protein length:679  alpha-D-glucuronidase
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    9.3   3.0   0.00075       7.1      12      24 ..     621     633 ..     617     637 .. 0.87
+
+  Alignments for each domain:
+  == domain 1  score: 9.3 bits;  conditional E-value: 0.00075
+  Myc-LZ  12 lLRkRREQLKHKL 24 
+             +LRkR EQLK K+
+  1k9d_A 621 QLRKRWEQLKGKI 633
+             9*********997 PP
+
+>> 1l8n_A  mol:protein length:679  ALPHA-D-GLUCURONIDASE
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    9.3   3.0   0.00075       7.1      12      24 ..     621     633 ..     617     637 .. 0.87
+
+  Alignments for each domain:
+  == domain 1  score: 9.3 bits;  conditional E-value: 0.00075
+  Myc-LZ  12 lLRkRREQLKHKL 24 
+             +LRkR EQLK K+
+  1l8n_A 621 QLRKRWEQLKGKI 633
+             9*********997 PP
+
+>> 1mqq_A  mol:protein length:679  ALPHA-D-GLUCURONIDASE
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    9.3   3.0   0.00075       7.1      12      24 ..     621     633 ..     617     637 .. 0.87
+
+  Alignments for each domain:
+  == domain 1  score: 9.3 bits;  conditional E-value: 0.00075
+  Myc-LZ  12 lLRkRREQLKHKL 24 
+             +LRkR EQLK K+
+  1mqq_A 621 QLRKRWEQLKGKI 633
+             9*********997 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (32 nodes)
+Target sequences:                       133266  (30839592 residues searched)
+Passed MSV filter:                      3396  (0.0254829); expected 2665.3 (0.02)
+Passed bias filter:                     2530  (0.0189846); expected 2665.3 (0.02)
+Passed Vit filter:                       291  (0.0021836); expected 133.3 (0.001)
+Passed Fwd filter:                        14  (0.000105053); expected 1.3 (1e-05)
+Initial search space (Z):             133266  [actual number of targets]
+Domain search space  (domZ):              14  [number of targets reported over threshold]
+# CPU time: 0.21u 0.02s 00:00:00.23 Elapsed: 00:00:00.42
+# Mc/sec: 2349.68
+//
+[ok]

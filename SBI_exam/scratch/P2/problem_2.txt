@@ -1,0 +1,111 @@
+problem
+
+a) 0.5 pt
+b) 0.5 pt
+c) 0.5 pt
+d) 0.5 pt
+e) 1 pt
+f) 1 pt
+
+Our group is stuydying a transmembrane protein. 
+However, it seems to be some problem with sequence and it's not clear if it will still work (the sequence is at the bottom). 
+We have decided to model the structure and check the quality of the model with ProSA. 
+Part of our team thinks that we shouldn't use ProSA. 
+Part of the team also thinks that the molecule should work as dimer or as tetramer. 
+
+Try to answer their questions:
+
+a) What's the fold of this protein?
+
+`blastp -query target.fa -db /mnt/NFS_UPF/soft/databases/blastdat/pdb_seq > target_pdb.blast
+
+Homologs:
+
+- 2abm_H
+- 1rc2_A
+- 2o9g_A
+
+
+By finding the homologs in the SCOP databse, it shows that these has an aquaporin-like fold.
+
+b) What's its function? does it belong to some PFAM family? which one? download the HMM profile and save it as p48b.hmm 
+
+`hmmscan /mnt/NFS_UPF/soft/databases/pfam-3/Pfam-A.hmm target.fa > target_pfam.out`
+hmmfetch /mnt/NFS_UPF/soft/databases/pfam-3/Pfam-A.hmm MIP > p48b.hmm
+
+Query:       target  [L=238]
+Scores for complete sequence (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Model    Description
+    ------- ------ -----    ------- ------ -----   ---- --  -------- -----------
+    1.7e-45  155.1  19.9      2e-45  154.8  19.9    1.1  1  MIP       Major intrinsic protein
+
+
+The Major Intrinsic Protein (MIP) domain is the defining structural component of the aquaporin superfamily (from google)
+
+c) Model the structure of the protein and save the PDB file as p42c.pdb 
+
+
+```
+ 1840  cp /mnt/NFS_UPF/soft/databases/pdb/pdb/data/structures/divided/pdb/ab/pdb2abm.ent.gz .
+ 1841  cp /mnt/NFS_UPF/soft/databases/pdb/pdb/data/structures/divided/pdb/rc/pdb1rc2.ent.gz .
+ 1842  cp /mnt/NFS_UPF/soft/databases/pdb/pdb/data/structures/divided/pdb/o9/pdb2o9g.ent.gz .
+
+
+u269315:P2$ PDBtoSplitChain.pl -i pdb2abm.ent -o  2abm_
+u269315:P2$ PDBtoSplitChain.pl -i pdb1rc2.ent -o 1rc2_
+u269315:P2$ PDBtoSplitChain.pl -i pdb2o9g.ent -o 2o9g_
+
+u269315:P2$ cat target.fa > alignment.fa
+u269315:P2$ cat 2abm_H.fa >> alignment.fa 
+u269315:P2$ cat 1rc2_A.fa >> alignment.fa 
+u269315:P2$ cat 2o9g_A.fa >> alignment.fa 
+
+
+clustalw alignment.fa
+
+aconvertMod2.pl -in c -out p < alignment.aln > alignment.pir
+```
+Now modify the modeling script
+
+
+```
+>> Summary of successfully produced models:
+Filename                          molpdf
+----------------------------------------
+target.B99990001.pdb          8562.21094
+target.B99990002.pdb          8159.70850
+```
+
+`mv target.B99990001.pdb p42c.pdb`
+
+
+d) Do you think ProSA can be used to analyzer the quality of the model? 
+   Answer why, and propose some other method to validate the structure. 
+   Still, show an image with the pseudo-energy profile p42d.png 
+
+As shown on the image, the red graph is the model while the other colors are the templates. Therefore, between residues 40-50 there's a little pic and between 250 -200 there's a hige pic, probably due to a bad modelling.
+Taking a look at the .aln file, we see that at the region ~150 the templates have gaps while the target protein has a sequence. That would explain the pic on prosa.
+Yes, ProSA is a valuable tool for identifying local model inaccuracies. While it is often used to assess the overall "globular" nature of a protein (which can be tricky for transmembrane proteins), its local pseudo-energy profile is highly effective at pinpointing specific regions where the model deviates significantly from stable, native-like energetic states.
+
+Specifically within Modeller, to assess the energy of each residue and confirm if the 150–200 loop is physically plausible, we could use the DOPE score. 
+
+e) Does it work as monomer or should it work as a complex (dimer or tetramer)?
+   Model the structure of the complex and answer if the complex can be made or not.
+   Show with an image your reasonings (p42e.jpg) and if it works as a complex obtain the structure as p42e.pdb 
+
+It is highly probable that this protein functions as a tetramer rather than a monomer, because looking at the tempaltes from chimera (like 2abm, 1rc2, or 2o9g), it confirms that the target protein should also be modeled as a tetramer.
+
+Yes, works as a tetramer, because when superimposed on chimera (in red, see figure p42e.jpg) the superimposition is almost perfect!
+
+f) If there is a problem on the structure, try to fix it. Name te structure with the solved problem in the monomer as p42f1.pdb, and the structure of the complex as p42f2.pdb. Show with an image that the probelem is not there anymore p42f.jpg 
+
+As shown in prosa, the critical regions are:
+
+- 40-45
+- 150 200
+
+
+
+SEQUENCE:
+MFRKLAAECFGTFWLVFGGCGSAVLAAGFPELGIGFAGVALAFGLTVLTMAFAVGHISGGHFNPAVTIGLWAGGRFPAKEVVGYVIAQVVGGIVAAALLYLIASGKTGFDAAASGFASNGYGEHSPGGYSMLSALVVELVLSAGFLLVIHGATDKFAPAGFAPIAIGLALLLALTSTTLIHLISIPVTNTSVNPARSTAVAIFQGGWALEQLWFFWVVPIVGGIIGGLIYRTLLEKRD

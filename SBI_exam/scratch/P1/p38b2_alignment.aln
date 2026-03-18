@@ -1,0 +1,14 @@
+CLUSTAL 2.1 multiple sequence alignment
+
+
+1an2_A          ---------ADKRAHHNALERKRRDHIKDSFHSLR---DSVPSLQGEKASRAQILDKATE
+1hlo_A          NDDIEVESDADKRAHHNALERKRRDHIKDSFHSLR---DSVPSLQGEKASRAQILDKATE
+1nlw_B          -----------KRAHHNALERKRRDHIKDSFHSLR---DSVPSLQGEKASRAQILDKATE
+targetB         ----------DALAHHNALELDLADHIKDSFHSLSLFLDSVPSLQGEKASRAQILDKFTE
+                             ******* .  **********    ******************* **
+
+1an2_A          YIQYMRRKNHTHQQDIDDLKRQNALLEQQVRALEKARS
+1hlo_A          YIQYMRRKNHTHQQDIDDLKRQN---------------
+1nlw_B          YIQYMRRKNHTHQQDIDDLKRQNALLEQQV--------
+targetB         YIQYMRRKNHTHQQDIDDLKRQNALLEQQVRAL-----
+                ***********************               

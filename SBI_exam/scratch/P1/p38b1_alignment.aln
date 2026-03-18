@@ -1,0 +1,14 @@
+CLUSTAL 2.1 multiple sequence alignment
+
+
+targetA         ---NVKRRTHNVLERQRRNELKRSFFAFRDQIPELENNEKAPKVVILKKFTATATATTAY
+1nkp_A          GHMNVKRRTHNVLERQRRNELKRSFFALRDQIPELENNEKAPKVVILKK-------ATAY
+1a93_A          ------------------------------------------------------------
+1nwq_A          ----------NSNEYRVRRE--------RNNIAVRKSRDKAKQ----------------R
+                                                                            
+
+targetA         ILSVQAEEQKLISEEDLLRKRREQLKHKLEQL---
+1nkp_A          ILSVQAEEQKLISEEDLLRKRREQLKHKLEQLGGC
+1a93_A          CGGVQAEEQKLISEEDLLRKRREQLKHKLEQL---
+1nwq_A          NVETQQKVLELTSDNDRLRKRVEQLSRELDTLRG-
+                   .* :  :* *::* **** ***.::*: *   

@@ -1,7 +1,7 @@
 # 1. Load all files
 read pdb 6tim_A.pdb 6tim_A
 read pdb 2v5l_A.pdb 2v5l_A
-read pdb target.B99990002.pdb model
+read pdb problema40.B99990002.pdb model
 
 # 2. Analyze energies
 analyse energy *

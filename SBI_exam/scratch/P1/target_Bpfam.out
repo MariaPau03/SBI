@@ -1,0 +1,113 @@
+# hmmscan :: search sequence(s) against a profile database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query sequence file:             targetB.fa
+# target HMM database:             /mnt/NFS_UPF/soft/databases/pfam-3/Pfam-A.hmm
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       targetB  [L=83]
+Scores for complete sequence (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Model    Description
+    ------- ------ -----    ------- ------ -----   ---- --  -------- -----------
+    2.9e-07   29.9   0.0    5.3e-07   29.1   0.0    1.4  1  HLH       Helix-loop-helix DNA-binding domain
+     0.0004   19.9   1.2    0.00041   19.8   1.2    1.1  1  IncA      IncA protein
+  ------ inclusion threshold ------
+      0.015   15.1   0.1      0.017   14.9   0.1    1.1  1  Ipi1_N    Rix1 complex component involved in 60S ribosome mat
+      0.016   15.1   1.0       0.02   14.8   1.0    1.3  1  CENP-Q    CENP-A-nucleosome distal (CAD) centromere subunit
+      0.029   14.0   2.1       0.05   13.3   2.1    1.5  1  bZIP_2    Basic region leucine zipper
+       0.13   12.1   0.1        0.2   11.5   0.1    1.3  1  PMBR      Pseudomurein-binding repeat
+
+
+Domain annotation for each model (and alignments):
+>> HLH  Helix-loop-helix DNA-binding domain
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   29.1   0.0   2.3e-10   5.3e-07       4      53 ..       5      55 ..       3      56 .. 0.91
+
+  Alignments for each domain:
+  == domain 1  score: 29.1 bits;  conditional E-value: 2.3e-10
+             HHHHHHHHHHHHHHHHHHHH------.-..-SS-STCHHHHHHHHHHHHHH CS
+      HLH  4 ahnerErrRRdriNsafeeLrellPk.asapskKlsKaeiLekAveYIkqL 53
+              hn++E    d+i+++f+ L   l + +s +++K s a+iL k +eYI+++
+  targetB  5 HHNALELDLADHIKDSFHSLSLFLDSvPSLQGEKASRAQILDKFTEYIQYM 55
+             6*******************9887777667*******************98 PP
+
+>> IncA  IncA protein
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   19.8   1.2   1.8e-07   0.00041      76     127 ..      28      82 ..       3      83 .] 0.83
+
+  Alignments for each domain:
+  == domain 1  score: 19.8 bits;  conditional E-value: 1.8e-07
+     IncA  76 e...srlqeelsesesqlseleeeleqleerlaeleseledleedlellqeelks 127
+                  ++lq+e+++  ++l+++ e+++ +++++++ +++++dl++++ ll+++ ++
+  targetB  28 LdsvPSLQGEKASRAQILDKFTEYIQYMRRKNHTHQQDIDDLKRQNALLEQQVRA 82 
+              0445779******************************************987665 PP
+
+>> Ipi1_N  Rix1 complex component involved in 60S ribosome maturation
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   14.9   0.1   7.6e-06     0.017      29      85 ..      18      74 ..      11      83 .] 0.78
+
+  Alignments for each domain:
+  == domain 1  score: 14.9 bits;  conditional E-value: 7.6e-06
+   Ipi1_N 29 edslkfLdllLeyvpde.lvsgawvkiLknfldlLgwntesssrsltvasggksskfg 85
+             +ds++ L+l L+ vp++   + ++++iL++f ++++   ++++ ++++ +   ++++ 
+  targetB 18 KDSFHSLSLFLDSVPSLqGEKASRAQILDKFTEYIQYM-RRKNHTHQQDIDDLKRQNA 74
+             59***************655667788********9999.7777777777777776553 PP
+
+>> CENP-Q  CENP-A-nucleosome distal (CAD) centromere subunit
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   14.8   1.0   8.7e-06      0.02      38      93 ..      26      80 ..       2      83 .] 0.88
+
+  Alignments for each domain:
+  == domain 1  score: 14.8 bits;  conditional E-value: 8.7e-06
+   CENP-Q 38 aelksielLqeeirreeaelekdeekleeLeknakalererkeesknlhpvlqele 93
+               l+s+  Lq e++ + + l k +e+++ ++++ + +++ + +++++ + +l ++ 
+  targetB 26 LFLDSVPSLQGEKASRAQILDKFTEYIQYMRRKNHTHQQDIDDLKRQ-NALLEQQV 80
+             5578999***************************************9.88887765 PP
+
+>> bZIP_2  Basic region leucine zipper
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   13.3   2.1   2.2e-05      0.05      24      51 ..      56      83 .]      50      83 .] 0.90
+
+  Alignments for each domain:
+  == domain 1  score: 13.3 bits;  conditional E-value: 2.2e-05
+   bZIP_2 24 kakeeeleervkeLeeeNaqLrqkveqL 51
+             ++k+   ++ + +L+++Na L+q+v++L
+  targetB 56 RRKNHTHQQDIDDLKRQNALLEQQVRAL 83
+             567777899****************997 PP
+
+>> PMBR  Pseudomurein-binding repeat
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.5   0.1   8.6e-05       0.2       6      24 ..      40      58 ..      36      60 .. 0.91
+
+  Alignments for each domain:
+  == domain 1  score: 11.5 bits;  conditional E-value: 8.6e-05
+     PMBR  6 syeeyldmasrvlafiesn 24
+             s+ ++ld + +++++++++
+  targetB 40 SRAQILDKFTEYIQYMRRK 58
+             899************9986 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query sequence(s):                         1  (83 residues searched)
+Target model(s):                       13672  (2396357 nodes)
+Passed MSV filter:                       806  (0.0589526); expected 273.4 (0.02)
+Passed bias filter:                      413  (0.0302077); expected 273.4 (0.02)
+Passed Vit filter:                        48  (0.00351083); expected 13.7 (0.001)
+Passed Fwd filter:                         6  (0.000438853); expected 0.1 (1e-05)
+Initial search space (Z):              13672  [actual number of targets]
+Domain search space  (domZ):               6  [number of targets reported over threshold]
+# CPU time: 0.15u 0.19s 00:00:00.34 Elapsed: 00:00:04.97
+# Mc/sec: 40.02
+//
+[ok]
